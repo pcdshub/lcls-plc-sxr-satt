@@ -1,13 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
-  <POU Name="MAIN" Id="{e5334f36-3c5f-4553-b6cf-4e9240a43836}" SpecialFunc="None">
+  <POU Name="PRG_1_PlcTask" Id="{e5334f36-3c5f-4553-b6cf-4e9240a43836}" SpecialFunc="None">
     <Declaration><![CDATA[
-PROGRAM MAIN
+PROGRAM PRG_1_PlcTask
 VAR
+	fbLogHandler: FB_LogHandler;
+
+	
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[fbLogHandler();
+]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
