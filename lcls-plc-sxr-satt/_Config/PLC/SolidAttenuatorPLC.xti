@@ -911,6 +911,134 @@ External Setpoint Generation:
 					<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
 				</Var>
 				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_1.bError</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_1.bUnderrange</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_1.bOverrange</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_1.iRaw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_2.bError</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_2.bUnderrange</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_2.bOverrange</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_2.iRaw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_1.bError</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_1.bUnderrange</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_1.bOverrange</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_1.iRaw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_2.bError</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_2.bUnderrange</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_2.bOverrange</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_2.iRaw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_1.bError</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_1.bUnderrange</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_1.bOverrange</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_1.iRaw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_2.bError</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_2.bUnderrange</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_2.bOverrange</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_2.iRaw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_1.bError</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_1.bUnderrange</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_1.bOverrange</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_1.iRaw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_2.bError</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_2.bUnderrange</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_2.bOverrange</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_2.iRaw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
 					<Name>Main.M1.Axis.NcToPlc</Name>
 					<Type GUID="{6A65C767-34E5-42BF-AD87-E1A503EAC7BE}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
 					<SubVar>
@@ -1376,6 +1504,46 @@ External Setpoint Generation:
 	</Project>
 	<Mappings>
 		<OwnerA Name="SolidAttenuatorPLC Instance">
+			<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-01">
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_1.bError" VarB="RTD Inputs Channel 1^Status^Error" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_1.bOverrange" VarB="RTD Inputs Channel 1^Status^Overrange" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_1.bUnderrange" VarB="RTD Inputs Channel 1^Status^Underrange" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_1.iRaw" VarB="RTD Inputs Channel 1^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_2.bError" VarB="RTD Inputs Channel 2^Status^Error" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_2.bOverrange" VarB="RTD Inputs Channel 2^Status^Overrange" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_2.bUnderrange" VarB="RTD Inputs Channel 2^Status^Underrange" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_2.iRaw" VarB="RTD Inputs Channel 2^Value" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-02">
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_1.bError" VarB="RTD Inputs Channel 1^Status^Error" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_1.bOverrange" VarB="RTD Inputs Channel 1^Status^Overrange" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_1.bUnderrange" VarB="RTD Inputs Channel 1^Status^Underrange" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_1.iRaw" VarB="RTD Inputs Channel 1^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_2.bError" VarB="RTD Inputs Channel 2^Status^Error" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_2.bOverrange" VarB="RTD Inputs Channel 2^Status^Overrange" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_2.bUnderrange" VarB="RTD Inputs Channel 2^Status^Underrange" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_2.iRaw" VarB="RTD Inputs Channel 2^Value" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-03">
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_1.bError" VarB="RTD Inputs Channel 1^Status^Error" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_1.bOverrange" VarB="RTD Inputs Channel 1^Status^Overrange" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_1.bUnderrange" VarB="RTD Inputs Channel 1^Status^Underrange" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_1.iRaw" VarB="RTD Inputs Channel 1^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_2.bError" VarB="RTD Inputs Channel 2^Status^Error" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_2.bOverrange" VarB="RTD Inputs Channel 2^Status^Overrange" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_2.bUnderrange" VarB="RTD Inputs Channel 2^Status^Underrange" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_2.iRaw" VarB="RTD Inputs Channel 2^Value" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-04">
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_1.bError" VarB="RTD Inputs Channel 1^Status^Error" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_1.bOverrange" VarB="RTD Inputs Channel 1^Status^Overrange" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_1.bUnderrange" VarB="RTD Inputs Channel 1^Status^Underrange" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_1.iRaw" VarB="RTD Inputs Channel 1^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_2.bError" VarB="RTD Inputs Channel 2^Status^Error" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_2.bOverrange" VarB="RTD Inputs Channel 2^Status^Overrange" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_2.bUnderrange" VarB="RTD Inputs Channel 2^Status^Underrange" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_2.iRaw" VarB="RTD Inputs Channel 2^Value" AutoLink="true"/>
+			</OwnerB>
 			<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01">
 				<Link VarA="PlcTask Inputs^Main.M1.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^Main.M1.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true"/>

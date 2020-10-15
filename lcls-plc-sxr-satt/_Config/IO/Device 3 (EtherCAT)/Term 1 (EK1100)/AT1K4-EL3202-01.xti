@@ -26,19 +26,19 @@
 			<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
 			<BootStrapData>0010f400f410f400</BootStrapData>
 			<Pdo Name="RTD Inputs Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="3">
-				<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01">
+				<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01" Flags="#x00008020">
 					<Type>BIT</Type>
 				</Entry>
-				<Entry Name="Status__Overrange" Index="#x6000" Sub="#x02">
+				<Entry Name="Status__Overrange" Index="#x6000" Sub="#x02" Flags="#x00008020">
 					<Type>BIT</Type>
 				</Entry>
-				<Entry Name="Status__Limit 1" Index="#x6000" Sub="#x03">
+				<Entry Name="Status__Limit 1" Index="#x6000" Sub="#x03" Flags="#x00008020">
 					<Type>BIT2</Type>
 				</Entry>
 				<Entry Name="Status__Limit 2" Index="#x6000" Sub="#x05">
 					<Type>BIT2</Type>
 				</Entry>
-				<Entry Name="Status__Error" Index="#x6000" Sub="#x07">
+				<Entry Name="Status__Error" Index="#x6000" Sub="#x07" Flags="#x00008020">
 					<Type>BIT</Type>
 				</Entry>
 				<Entry>

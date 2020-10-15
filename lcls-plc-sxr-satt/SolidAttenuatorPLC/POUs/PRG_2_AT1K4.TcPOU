@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="PRG_2_AT1K4" Id="{566a0c30-36c4-43fa-bffd-a5c8813e129d}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK PRG_2_AT1K4
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+	(* EL3202-0020: 0.01 °C per digit *)
+	{attribute 'pytmc' := 'pv: MMS:01:RTD1'}
+    RTD_Axis1_1: FB_TempSensor := ( fResolution:=0.01 );
+	{attribute 'pytmc' := 'pv: MMS:01:RTD2'}
+    RTD_Axis1_2: FB_TempSensor := ( fResolution:=0.01 );
+
+	{attribute 'pytmc' := 'pv: MMS:02:RTD1'}
+    RTD_Axis2_1: FB_TempSensor := ( fResolution:=0.01 );
+	{attribute 'pytmc' := 'pv: MMS:02:RTD2'}
+    RTD_Axis2_2: FB_TempSensor := ( fResolution:=0.01 );
+
+	{attribute 'pytmc' := 'pv: MMS:03:RTD1'}
+    RTD_Axis3_1: FB_TempSensor := ( fResolution:=0.01 );
+	{attribute 'pytmc' := 'pv: MMS:03:RTD2'}
+    RTD_Axis3_2: FB_TempSensor := ( fResolution:=0.01 );
+
+	{attribute 'pytmc' := 'pv: MMS:04:RTD1'}
+    RTD_Axis4_1: FB_TempSensor := ( fResolution:=0.01 );
+	{attribute 'pytmc' := 'pv: MMS:04:RTD2'}
+    RTD_Axis4_2: FB_TempSensor := ( fResolution:=0.01 );
+
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[RTD_Axis1_1();
+RTD_Axis1_2();
+
+RTD_Axis2_1();
+RTD_Axis2_2();
+
+RTD_Axis3_1();
+RTD_Axis3_2();
+
+RTD_Axis4_1();
+RTD_Axis4_2();]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
