@@ -7,28 +7,28 @@ END_VAR
 VAR_OUTPUT
 END_VAR
 VAR
-	(* EL3202-0020: 0.01 °C per digit *)
-	{attribute 'pytmc' := 'pv: MMS:01:RTD1'}
+    (* EL3202-0020: 0.01 °C per digit *)
+    {attribute 'pytmc' := 'pv: MMS:01:RTD1'}
     RTD_Axis1_1: FB_TempSensor := ( fResolution:=0.01 );
-	{attribute 'pytmc' := 'pv: MMS:01:RTD2'}
+    {attribute 'pytmc' := 'pv: MMS:01:RTD2'}
     RTD_Axis1_2: FB_TempSensor := ( fResolution:=0.01 );
 
-	{attribute 'pytmc' := 'pv: MMS:02:RTD1'}
+    {attribute 'pytmc' := 'pv: MMS:02:RTD1'}
     RTD_Axis2_1: FB_TempSensor := ( fResolution:=0.01 );
-	{attribute 'pytmc' := 'pv: MMS:02:RTD2'}
+    {attribute 'pytmc' := 'pv: MMS:02:RTD2'}
     RTD_Axis2_2: FB_TempSensor := ( fResolution:=0.01 );
 
-	{attribute 'pytmc' := 'pv: MMS:03:RTD1'}
+    {attribute 'pytmc' := 'pv: MMS:03:RTD1'}
     RTD_Axis3_1: FB_TempSensor := ( fResolution:=0.01 );
-	{attribute 'pytmc' := 'pv: MMS:03:RTD2'}
+    {attribute 'pytmc' := 'pv: MMS:03:RTD2'}
     RTD_Axis3_2: FB_TempSensor := ( fResolution:=0.01 );
 
-	{attribute 'pytmc' := 'pv: MMS:04:RTD1'}
+    {attribute 'pytmc' := 'pv: MMS:04:RTD1'}
     RTD_Axis4_1: FB_TempSensor := ( fResolution:=0.01 );
-	{attribute 'pytmc' := 'pv: MMS:04:RTD2'}
+    {attribute 'pytmc' := 'pv: MMS:04:RTD2'}
     RTD_Axis4_2: FB_TempSensor := ( fResolution:=0.01 );
 
-	
+
 END_VAR
 ]]></Declaration>
     <Implementation>
