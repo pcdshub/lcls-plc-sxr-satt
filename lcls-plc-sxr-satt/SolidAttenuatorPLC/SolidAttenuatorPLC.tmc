@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{FCC33E0B-1C6A-35AF-0523-9EA0F5465443}" GeneratedBy="TwinCAT XAE Plc">
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{F149F2E9-ADDD-3858-5A89-A4A7596B5A74}" GeneratedBy="TwinCAT XAE Plc">
   <DataTypes>
     <DataType>
       <Name GUID="{18071995-0000-0000-0000-000000000041}" TcBaseType="true" HideSubItems="true" CName="AmsNetId">AMSNETID</Name>
@@ -10429,7 +10429,7 @@
       <SubItem>
         <Name>Width</Name>
         <Type GUID="{18071995-0000-0000-0000-00000000000D}">REAL</Type>
-        <Comment> distance between horizontal slits (x)</Comment>
+        <Comment>distance between horizontal slits (x)</Comment>
         <BitSize>32</BitSize>
         <BitOffs>0</BitOffs>
         <Properties>
@@ -10444,7 +10444,7 @@
       <SubItem>
         <Name>Height</Name>
         <Type GUID="{18071995-0000-0000-0000-00000000000D}">REAL</Type>
-        <Comment> distance between vertical slits (y)</Comment>
+        <Comment>distance between vertical slits (y)</Comment>
         <BitSize>32</BitSize>
         <BitOffs>32</BitOffs>
         <Properties>
@@ -10459,7 +10459,7 @@
       <SubItem>
         <Name>xOK</Name>
         <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <Comment> status of aperture, false if error or in motion</Comment>
+        <Comment>status of aperture, false if error or in motion</Comment>
         <BitSize>8</BitSize>
         <BitOffs>64</BitOffs>
         <Properties>
@@ -14346,13 +14346,11 @@
       <SubItem>
         <Name>schema</Name>
         <Type GUID="{18071995-0000-0000-0000-000100000050}">STRING(80)</Type>
-        <Comment>
-		Message or Alarm{Cleared,Confirmed,Raised} event information
+        <Comment>Message or Alarm{Cleared,Confirmed,Raised} event information
 
 		Note that elements here do not follow the usual Hungarian notation / 
 		variable-type-prefixing naming convention due to the member names being
-		used directly in the generation of the JSON document.
-	</Comment>
+		used directly in the generation of the JSON document.</Comment>
         <BitSize>648</BitSize>
         <BitOffs>0</BitOffs>
         <Default>
@@ -14457,7 +14455,7 @@
       <SubItem>
         <Name>source</Name>
         <Type GUID="{18071995-0000-0000-0000-0001000000FF}">STRING(255)</Type>
-        <Comment> This is actually: T_MaxString
+        <Comment>This is actually: T_MaxString
  which has been expanded due to requirements for pinning global data types.</Comment>
         <BitSize>2048</BitSize>
         <BitOffs>4168</BitOffs>
@@ -14472,7 +14470,7 @@
       <SubItem>
         <Name>event_type</Name>
         <Type GUID="{A81A482A-E7CE-49D8-A4DD-8280773A6946}">E_LogEventType</Type>
-        <Comment> This is actually: STRING(Tc3_EventLogger.ParameterList.cSourceNameSize - 1)
+        <Comment>This is actually: STRING(Tc3_EventLogger.ParameterList.cSourceNameSize - 1)
  which has been expanded due to requirements for pinning global data types.</Comment>
         <BitSize>16</BitSize>
         <BitOffs>6224</BitOffs>
@@ -30435,6 +30433,10 @@ External Setpoint Generation:
             <BaseType>PRG_2_AT1K4</BaseType>
             <Properties>
               <Property>
+                <Name>pytmc</Name>
+                <Value>pv: AT1K4:L2SI:</Value>
+              </Property>
+              <Property>
                 <Name>TcLinkTo</Name>
                 <Value>
 
@@ -30442,46 +30444,46 @@ External Setpoint Generation:
         .RTD_Axis1_1.bError := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^Error;
         .RTD_Axis1_1.bUnderrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^Underrange;
         .RTD_Axis1_1.bOverrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^Overrange;
-		
-		.RTD_Axis1_2.iRaw := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Value;
+
+        .RTD_Axis1_2.iRaw := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Value;
         .RTD_Axis1_2.bError := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^Error;
         .RTD_Axis1_2.bUnderrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^Underrange;
         .RTD_Axis1_2.bOverrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^Overrange;
-		
+
 
         .RTD_Axis2_1.iRaw := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Value;
         .RTD_Axis2_1.bError := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Error;
         .RTD_Axis2_1.bUnderrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Underrange;
         .RTD_Axis2_1.bOverrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Overrange;
-		
-		.RTD_Axis2_2.iRaw := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Value;
+
+        .RTD_Axis2_2.iRaw := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Value;
         .RTD_Axis2_2.bError := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Error;
         .RTD_Axis2_2.bUnderrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Underrange;
         .RTD_Axis2_2.bOverrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Overrange;
-		
+
 
         .RTD_Axis3_1.iRaw := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Value;
         .RTD_Axis3_1.bError := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Error;
         .RTD_Axis3_1.bUnderrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Underrange;
         .RTD_Axis3_1.bOverrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Overrange;
-		
-		.RTD_Axis3_2.iRaw := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Value;
+
+        .RTD_Axis3_2.iRaw := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Value;
         .RTD_Axis3_2.bError := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Error;
         .RTD_Axis3_2.bUnderrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Underrange;
         .RTD_Axis3_2.bOverrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Overrange;
-		
+
 
         .RTD_Axis4_1.iRaw := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Value;
         .RTD_Axis4_1.bError := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Error;
         .RTD_Axis4_1.bUnderrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Underrange;
         .RTD_Axis4_1.bOverrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Overrange;
-		
-		.RTD_Axis4_2.iRaw := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Value;
+
+        .RTD_Axis4_2.iRaw := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Value;
         .RTD_Axis4_2.bError := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Error;
         .RTD_Axis4_2.bUnderrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Underrange;
         .RTD_Axis4_2.bOverrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Overrange;
-		
-	</Value>
+
+    </Value>
               </Property>
             </Properties>
             <BitOffs>640122240</BitOffs>
@@ -30498,12 +30500,12 @@ External Setpoint Generation:
     supports arbitrary ads paths for motors
 
 
-	Four identical systems:
-	Instr.		Area		ID#			Z (m)			
-	TMO			FEE			AT1K4-SOLID	748
-	NEH 2.2		H2.2		AT1K2-SOLID	784
-	NEH 2.2		H2.2		AT2K2-SOLID	788.8
-	TXI			H1.1		AT1K3-SOLID	~763
+    Four identical systems:
+    Instr.		Area		ID#			Z (m)
+    TMO			FEE			AT1K4-SOLID	748
+    NEH 2.2		H2.2		AT1K2-SOLID	784
+    NEH 2.2		H2.2		AT2K2-SOLID	788.8
+    TXI			H1.1		AT1K3-SOLID	~763
 
 </Comment>
             <BitSize>21056</BitSize>
@@ -30522,9 +30524,9 @@ External Setpoint Generation:
               <Property>
                 <Name>TcLinkTo</Name>
                 <Value>
-		.bLimitForwardEnable  := TIIB[AT1K4-EL7047-01]^STM Status^Status^Digital input 1;
+        .bLimitForwardEnable  := TIIB[AT1K4-EL7047-01]^STM Status^Status^Digital input 1;
         .bLimitBackwardEnable := TIIB[AT1K4-EL7047-01]^STM Status^Status^Digital input 2;
-	</Value>
+    </Value>
               </Property>
               <Property>
                 <Name>TcVarGlobal</Name>
@@ -30550,9 +30552,9 @@ External Setpoint Generation:
               <Property>
                 <Name>TcLinkTo</Name>
                 <Value>
-		.bLimitForwardEnable  := TIIB[AT1K4-EL7047-02]^STM Status^Status^Digital input 1;
+        .bLimitForwardEnable  := TIIB[AT1K4-EL7047-02]^STM Status^Status^Digital input 1;
         .bLimitBackwardEnable := TIIB[AT1K4-EL7047-02]^STM Status^Status^Digital input 2;
-	</Value>
+    </Value>
               </Property>
               <Property>
                 <Name>TcVarGlobal</Name>
@@ -30578,9 +30580,9 @@ External Setpoint Generation:
               <Property>
                 <Name>TcLinkTo</Name>
                 <Value>
-		.bLimitForwardEnable  := TIIB[AT1K4-EL7047-03]^STM Status^Status^Digital input 1;
+        .bLimitForwardEnable  := TIIB[AT1K4-EL7047-03]^STM Status^Status^Digital input 1;
         .bLimitBackwardEnable := TIIB[AT1K4-EL7047-03]^STM Status^Status^Digital input 2;
-	</Value>
+    </Value>
               </Property>
               <Property>
                 <Name>TcVarGlobal</Name>
@@ -30606,9 +30608,9 @@ External Setpoint Generation:
               <Property>
                 <Name>TcLinkTo</Name>
                 <Value>
-		.bLimitForwardEnable  := TIIB[AT1K4-EL7047-04]^STM Status^Status^Digital input 1;
+        .bLimitForwardEnable  := TIIB[AT1K4-EL7047-04]^STM Status^Status^Digital input 1;
         .bLimitBackwardEnable := TIIB[AT1K4-EL7047-04]^STM Status^Status^Digital input 2;
-	</Value>
+    </Value>
               </Property>
               <Property>
                 <Name>TcVarGlobal</Name>
@@ -31439,7 +31441,7 @@ External Setpoint Generation:
         </Property>
         <Property>
           <Name>ChangeDate</Name>
-          <Value>2020-10-15T16:50:57</Value>
+          <Value>2020-10-15T17:10:07</Value>
         </Property>
         <Property>
           <Name>GeneratedCodeSize</Name>

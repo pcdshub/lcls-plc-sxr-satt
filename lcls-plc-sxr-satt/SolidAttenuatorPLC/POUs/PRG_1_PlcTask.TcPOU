@@ -6,7 +6,7 @@ PROGRAM PRG_1_PlcTask
 VAR
     fbLogHandler: FB_LogHandler;
 
-    {attribute pytmc := 'pv: AT1K4:L2SI:'}
+    {attribute 'pytmc' := 'pv: AT1K4:L2SI:'}
     {attribute 'TcLinkTo' := '
 
         .RTD_Axis1_1.iRaw := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Value;
