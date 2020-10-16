@@ -3,11 +3,11 @@ python: 3.7
 
 env:
   global:
-    # doctr generated secure variable for documentation upload
-    - secure: "<your secure here>"
+    # Doctr deploy key for pcdshub/lcls-plc-sxr-satt
+    - secure: "FJV0yV4nvghKmEXp2og7kdJ8CFcWbl2jjRbJaygRvhHvCxO1YDGvz+8Dw85rW0cp31PP9aauuCnRMuZvF/9zVxL/wbcpy1Gz4oC/gxp/bpm4wL+OGSM9lYnHTYG+NEGkp7fBsJC3YkKcVr42gTD2fOfFg6blKhl+5nk17tnRyol5nDTXSXOTTFn2dkcsXOOW9k4irXXVmtb6v6Eqt5ZwbXTRQj26Zk2s5b7L73Tyz4dGDdzbYgY2dMAPPk7e/6ZRAO/kfffYjn6z3cj3Tqlv/RsjsXI6+vOAhfE2sNSr0JVRRauU1ZdGF9S2WylfSdmM0wzFDE/wHIvkdaR/qy3NeGuFvP6Ljrm+lWDvgzWATLWH51hjHJhFCWvOWCFJfeaGE8QK+ImGz8AMPJZu2jLu6SsCH/2EIapN59DIXNgT3pTc955GQnwMnMGMLhZqaY+EAIiXcicyTQpvWzmV49xjNgVj6Eb/e3BSqcrJpr+Ja/da83OZSloQWdeSqV2abzRsLk8pKxiFzo3BTjOPTOEt/ZMTKVFs41bOUwQOur1EExcGasDpSrOmPHB78Ig239ToY+7wxmA45KMFiUxYuZu+TxcCD25VKdcoLLgeYGsWAAr5e5DYEPHOkvuhCNEj6w3HCObgMb1DgxzPikkrQBV9/kc4oc4NQxBz8/uKxNbTx6c="
     - TWINCAT_STYLE_EXCLUDE=
     # If using a custom version of the CI helpers, change the following in
-    # addition to the `import` block elow:
+    # addition to the `import` block below:
     # - CI_HELPER_URL=https://github.com/klauer/pcds-ci-helpers
     # - CI_HELPER_BRANCH=twincat_shared_configs
 

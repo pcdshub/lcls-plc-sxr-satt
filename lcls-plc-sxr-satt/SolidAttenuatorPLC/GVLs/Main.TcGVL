@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <GVL Name="Main" Id="{0809d9d0-9a24-41df-8670-409cf56c2afe}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+(*
+    Only includes motor definitions for the IOC
+    These are hard-coded to be Main.M#,
+    but are very convenient to store in a GVL,
+    hence the confusing namespace here
+
+    This should be refactored once the IOC
+    supports arbitrary ads paths for motors
+*)
+(*
+    Four identical systems:
+    Instr.		Area		ID#			Z (m)
+    TMO			FEE			AT1K4-SOLID	748
+    NEH 2.2		H2.2		AT1K2-SOLID	784
+    NEH 2.2		H2.2		AT2K2-SOLID	788.8
+    TXI			H1.1		AT1K3-SOLID	~763
+
+*)
+    {attribute 'pytmc' := 'pv: AT1K4:L2SI:MMS:01'}
+    {attribute 'TcLinkTo' := '
+        .bLimitForwardEnable  := TIIB[AT1K4-EL7047-01]^STM Status^Status^Digital input 1;
+        .bLimitBackwardEnable := TIIB[AT1K4-EL7047-01]^STM Status^Status^Digital input 2;
+    '}
+    M1: DUT_MotionStage := (sName := 'AT1K4:L2SI:MMS:01');
+
+    {attribute 'pytmc' := 'pv: AT1K4:L2SI:MMS:02'}
+    {attribute 'TcLinkTo' := '
+        .bLimitForwardEnable  := TIIB[AT1K4-EL7047-02]^STM Status^Status^Digital input 1;
+        .bLimitBackwardEnable := TIIB[AT1K4-EL7047-02]^STM Status^Status^Digital input 2;
+    '}
+    M2: DUT_MotionStage := (sName := 'AT1K4:L2SI:MMS:02');
+
+    {attribute 'pytmc' := 'pv: AT1K4:L2SI:MMS:03'}
+    {attribute 'TcLinkTo' := '
+        .bLimitForwardEnable  := TIIB[AT1K4-EL7047-03]^STM Status^Status^Digital input 1;
+        .bLimitBackwardEnable := TIIB[AT1K4-EL7047-03]^STM Status^Status^Digital input 2;
+    '}
+    M3: DUT_MotionStage := (sName := 'AT1K4:L2SI:MMS:03');
+
+    {attribute 'pytmc' := 'pv: AT1K4:L2SI:MMS:04'}
+    {attribute 'TcLinkTo' := '
+        .bLimitForwardEnable  := TIIB[AT1K4-EL7047-04]^STM Status^Status^Digital input 1;
+        .bLimitBackwardEnable := TIIB[AT1K4-EL7047-04]^STM Status^Status^Digital input 2;
+    '}
+    M4: DUT_MotionStage := (sName := 'AT1K4:L2SI:MMS:04');
+
+END_VAR
+]]></Declaration>
+  </GVL>
+</TcPlcObject>
