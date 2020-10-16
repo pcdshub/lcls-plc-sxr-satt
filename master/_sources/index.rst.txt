@@ -1,0 +1,29 @@
+lcls-plc-sxr-satt
+-----------------
+
+.. toctree::
+    :maxdepth: 2
+    :caption: lcls-plc-sxr-satt
+
+    lcls-plc-sxr-satt_pragmas
+    lcls-plc-sxr-satt_nc
+    lcls-plc-sxr-satt_boxes
+    lcls-plc-sxr-satt_links
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: SolidAttenuatorPLC
+
+    lcls-plc-sxr-satt_SolidAttenuatorPLC_summary
+    lcls-plc-sxr-satt_SolidAttenuatorPLC_epics
+    lcls-plc-sxr-satt_SolidAttenuatorPLC_source
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

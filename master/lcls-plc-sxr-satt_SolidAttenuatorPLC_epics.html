@@ -1,0 +1,4950 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Data Types &mdash; pcdshub/lcls-plc-sxr-satt  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/doctr-versions-menu.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="DUTs" href="lcls-plc-sxr-satt_SolidAttenuatorPLC_source.html" />
+    <link rel="prev" title="Settings" href="lcls-plc-sxr-satt_SolidAttenuatorPLC_summary.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pcdshub/lcls-plc-sxr-satt
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">lcls-plc-sxr-satt</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-sxr-satt_pragmas.html">Pragmas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-sxr-satt_nc.html">NC Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-sxr-satt_boxes.html">Boxes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-sxr-satt_links.html">Links</a></li>
+</ul>
+<p class="caption"><span class="caption-text">SolidAttenuatorPLC</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-sxr-satt_SolidAttenuatorPLC_summary.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-sxr-satt_SolidAttenuatorPLC_summary.html#pragmas">Pragmas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-sxr-satt_SolidAttenuatorPLC_summary.html#libraries">Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-sxr-satt_SolidAttenuatorPLC_summary.html#symbols">Symbols</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data Types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#lcls-general-fb-listener">LCLS_General.FB_Listener</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lcls-general-fb-loghandler">LCLS_General.FB_LogHandler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lcls-general-fb-logmessage">LCLS_General.FB_LogMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lcls-general-fb-tempsensor">LCLS_General.FB_TempSensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lcls-general-st-pendingevent">LCLS_General.ST_PendingEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lcls-twincat-motion-dut-motionstage">lcls_twincat_motion.DUT_MotionStage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lcls-twincat-motion-dut-positionstate">lcls_twincat_motion.DUT_PositionState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lcls-twincat-motion-pmps-st-beamparams">lcls_twincat_motion.PMPS.ST_BeamParams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lcls-twincat-motion-pmps-st-pmps-aperture">lcls_twincat_motion.PMPS.ST_PMPS_Aperture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prg-2-at1k4">PRG_2_AT1K4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#st-loggingeventinfo">ST_LoggingEventInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#st-pmps-aperture-io">ST_PMPS_Aperture_IO</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#database-records">Database Records</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-sxr-satt_SolidAttenuatorPLC_source.html">DUTs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-sxr-satt_SolidAttenuatorPLC_source.html#gvls">GVLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-sxr-satt_SolidAttenuatorPLC_source.html#pous">POUs</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pcdshub/lcls-plc-sxr-satt</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Data Types</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/lcls-plc-sxr-satt_SolidAttenuatorPLC_epics.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="data-types">
+<h1>Data Types<a class="headerlink" href="#data-types" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="lcls-general-fb-listener">
+<h2>LCLS_General.FB_Listener<a class="headerlink" href="#lcls-general-fb-listener" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Record</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Pragma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$(PREFIX):AlarmsCleared_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).nCntAlarmsCleared</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):AlarmsConfirmed_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).nCntAlarmsConfirmed</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):AlarmsRaised_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).nCntAlarmsRaised</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Log:EventClass_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>TwinCAT Event class</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Log:EventType_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>The event type</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Log:Hostname_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>PLC Hostname</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Log:Message_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).stEventInfo.msg</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Log:MessageID_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>TwinCAT Message ID</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Log:MessageJSON_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Metadata with the message</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Log:Schema_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Schema string</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Log:Severity_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>TcEventSeverity</p></td>
+<td><div class="line-block">
+<div class="line">field: ONST Info</div>
+<div class="line">field: THST Error</div>
+<div class="line">field: TWST Warning</div>
+<div class="line">field: ZRST Verbose</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Log:Source_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).stEventInfo.source</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Log:Timestamp_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Unix timestamp</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):LogToVisualStudio</p></td>
+<td><p>bo</p></td>
+<td><p>$(SYMBOL).bLogToVisualStudio</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):LogToVisualStudio_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).bLogToVisualStudio</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):MessagesSent_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).nCntMessagesSent</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):MinSeverity</p></td>
+<td><p>mbbo</p></td>
+<td><p>$(SYMBOL).eMinSeverity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):MinSeverity_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>$(SYMBOL).eMinSeverity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="lcls-general-fb-loghandler">
+<h2>LCLS_General.FB_LogHandler<a class="headerlink" href="#lcls-general-fb-loghandler" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Record</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Pragma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$(PREFIX):ADS:AlarmsCleared_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbTcAdsListener.nCntAlarmsCleared</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):ADS:AlarmsConfirmed_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbTcAdsListener.nCntAlarmsConfirmed</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):ADS:AlarmsRaised_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbTcAdsListener.nCntAlarmsRaised</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):ADS:Log:EventClass_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>TwinCAT Event class</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):ADS:Log:EventType_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>The event type</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):ADS:Log:Hostname_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>PLC Hostname</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):ADS:Log:Message_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).fbTcAdsListener.stEventInfo.msg</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):ADS:Log:MessageID_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>TwinCAT Message ID</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):ADS:Log:MessageJSON_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Metadata with the message</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):ADS:Log:Schema_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Schema string</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):ADS:Log:Severity_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>TcEventSeverity</p></td>
+<td><div class="line-block">
+<div class="line">field: ONST Info</div>
+<div class="line">field: THST Error</div>
+<div class="line">field: TWST Warning</div>
+<div class="line">field: ZRST Verbose</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):ADS:Log:Source_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).fbTcAdsListener.stEventInfo.source</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):ADS:Log:Timestamp_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Unix timestamp</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):ADS:LogToVisualStudio</p></td>
+<td><p>bo</p></td>
+<td><p>$(SYMBOL).fbTcAdsListener.bLogToVisualStudio</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):ADS:LogToVisualStudio_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).fbTcAdsListener.bLogToVisualStudio</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):ADS:MessagesSent_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbTcAdsListener.nCntMessagesSent</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):ADS:MinSeverity</p></td>
+<td><p>mbbo</p></td>
+<td><p>$(SYMBOL).fbTcAdsListener.eMinSeverity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):ADS:MinSeverity_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>$(SYMBOL).fbTcAdsListener.eMinSeverity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):LCLS:AlarmsCleared_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbLCLSListener.nCntAlarmsCleared</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):LCLS:AlarmsConfirmed_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbLCLSListener.nCntAlarmsConfirmed</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):LCLS:AlarmsRaised_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbLCLSListener.nCntAlarmsRaised</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):LCLS:Log:EventClass_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>TwinCAT Event class</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):LCLS:Log:EventType_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>The event type</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):LCLS:Log:Hostname_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>PLC Hostname</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):LCLS:Log:Message_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).fbLCLSListener.stEventInfo.msg</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):LCLS:Log:MessageID_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>TwinCAT Message ID</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):LCLS:Log:MessageJSON_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Metadata with the message</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):LCLS:Log:Schema_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Schema string</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):LCLS:Log:Severity_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>TcEventSeverity</p></td>
+<td><div class="line-block">
+<div class="line">field: ONST Info</div>
+<div class="line">field: THST Error</div>
+<div class="line">field: TWST Warning</div>
+<div class="line">field: ZRST Verbose</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):LCLS:Log:Source_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).fbLCLSListener.stEventInfo.source</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):LCLS:Log:Timestamp_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Unix timestamp</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):LCLS:LogToVisualStudio</p></td>
+<td><p>bo</p></td>
+<td><p>$(SYMBOL).fbLCLSListener.bLogToVisualStudio</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):LCLS:LogToVisualStudio_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).fbLCLSListener.bLogToVisualStudio</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):LCLS:MessagesSent_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbLCLSListener.nCntMessagesSent</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):LCLS:MinSeverity</p></td>
+<td><p>mbbo</p></td>
+<td><p>$(SYMBOL).fbLCLSListener.eMinSeverity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):LCLS:MinSeverity_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>$(SYMBOL).fbLCLSListener.eMinSeverity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Router:AlarmsCleared_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbTcRouterListener.nCntAlarmsCleared</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Router:AlarmsConfirmed_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbTcRouterListener.nCntAlarmsConfirmed</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Router:AlarmsRaised_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbTcRouterListener.nCntAlarmsRaised</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Router:Log:EventClass_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>TwinCAT Event class</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Router:Log:EventType_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>The event type</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Router:Log:Hostname_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>PLC Hostname</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Router:Log:Message_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).fbTcRouterListener.stEventInfo.msg</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Router:Log:MessageID_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>TwinCAT Message ID</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Router:Log:MessageJSON_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Metadata with the message</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Router:Log:Schema_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Schema string</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Router:Log:Severity_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>TcEventSeverity</p></td>
+<td><div class="line-block">
+<div class="line">field: ONST Info</div>
+<div class="line">field: THST Error</div>
+<div class="line">field: TWST Warning</div>
+<div class="line">field: ZRST Verbose</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Router:Log:Source_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).fbTcRouterListener.stEventInfo.source</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Router:Log:Timestamp_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Unix timestamp</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Router:LogToVisualStudio</p></td>
+<td><p>bo</p></td>
+<td><p>$(SYMBOL).fbTcRouterListener.bLogToVisualStudio</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Router:LogToVisualStudio_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).fbTcRouterListener.bLogToVisualStudio</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Router:MessagesSent_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbTcRouterListener.nCntMessagesSent</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Router:MinSeverity</p></td>
+<td><p>mbbo</p></td>
+<td><p>$(SYMBOL).fbTcRouterListener.eMinSeverity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Router:MinSeverity_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>$(SYMBOL).fbTcRouterListener.eMinSeverity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):RTime:AlarmsCleared_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbTcRTimeListener.nCntAlarmsCleared</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):RTime:AlarmsConfirmed_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbTcRTimeListener.nCntAlarmsConfirmed</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):RTime:AlarmsRaised_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbTcRTimeListener.nCntAlarmsRaised</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):RTime:Log:EventClass_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>TwinCAT Event class</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):RTime:Log:EventType_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>The event type</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):RTime:Log:Hostname_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>PLC Hostname</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):RTime:Log:Message_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).fbTcRTimeListener.stEventInfo.msg</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):RTime:Log:MessageID_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>TwinCAT Message ID</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):RTime:Log:MessageJSON_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Metadata with the message</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):RTime:Log:Schema_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Schema string</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):RTime:Log:Severity_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>TcEventSeverity</p></td>
+<td><div class="line-block">
+<div class="line">field: ONST Info</div>
+<div class="line">field: THST Error</div>
+<div class="line">field: TWST Warning</div>
+<div class="line">field: ZRST Verbose</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):RTime:Log:Source_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).fbTcRTimeListener.stEventInfo.source</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):RTime:Log:Timestamp_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Unix timestamp</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):RTime:LogToVisualStudio</p></td>
+<td><p>bo</p></td>
+<td><p>$(SYMBOL).fbTcRTimeListener.bLogToVisualStudio</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):RTime:LogToVisualStudio_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).fbTcRTimeListener.bLogToVisualStudio</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):RTime:MessagesSent_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbTcRTimeListener.nCntMessagesSent</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):RTime:MinSeverity</p></td>
+<td><p>mbbo</p></td>
+<td><p>$(SYMBOL).fbTcRTimeListener.eMinSeverity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):RTime:MinSeverity_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>$(SYMBOL).fbTcRTimeListener.eMinSeverity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):System:AlarmsCleared_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbTcSystemListener.nCntAlarmsCleared</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):System:AlarmsConfirmed_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbTcSystemListener.nCntAlarmsConfirmed</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):System:AlarmsRaised_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbTcSystemListener.nCntAlarmsRaised</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):System:Log:EventClass_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>TwinCAT Event class</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):System:Log:EventType_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>The event type</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):System:Log:Hostname_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>PLC Hostname</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):System:Log:Message_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).fbTcSystemListener.stEventInfo.msg</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):System:Log:MessageID_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>TwinCAT Message ID</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):System:Log:MessageJSON_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Metadata with the message</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):System:Log:Schema_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Schema string</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):System:Log:Severity_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>TcEventSeverity</p></td>
+<td><div class="line-block">
+<div class="line">field: ONST Info</div>
+<div class="line">field: THST Error</div>
+<div class="line">field: TWST Warning</div>
+<div class="line">field: ZRST Verbose</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):System:Log:Source_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).fbTcSystemListener.stEventInfo.source</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):System:Log:Timestamp_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Unix timestamp</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):System:LogToVisualStudio</p></td>
+<td><p>bo</p></td>
+<td><p>$(SYMBOL).fbTcSystemListener.bLogToVisualStudio</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):System:LogToVisualStudio_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).fbTcSystemListener.bLogToVisualStudio</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):System:MessagesSent_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbTcSystemListener.nCntMessagesSent</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):System:MinSeverity</p></td>
+<td><p>mbbo</p></td>
+<td><p>$(SYMBOL).fbTcSystemListener.eMinSeverity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):System:MinSeverity_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>$(SYMBOL).fbTcSystemListener.eMinSeverity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Windows:AlarmsCleared_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbWindowsListener.nCntAlarmsCleared</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Windows:AlarmsConfirmed_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbWindowsListener.nCntAlarmsConfirmed</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Windows:AlarmsRaised_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbWindowsListener.nCntAlarmsRaised</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Windows:Log:EventClass_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>TwinCAT Event class</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Windows:Log:EventType_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>The event type</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Windows:Log:Hostname_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>PLC Hostname</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Windows:Log:Message_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).fbWindowsListener.stEventInfo.msg</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Windows:Log:MessageID_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>TwinCAT Message ID</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Windows:Log:MessageJSON_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Metadata with the message</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Windows:Log:Schema_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Schema string</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Windows:Log:Severity_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>TcEventSeverity</p></td>
+<td><div class="line-block">
+<div class="line">field: ONST Info</div>
+<div class="line">field: THST Error</div>
+<div class="line">field: TWST Warning</div>
+<div class="line">field: ZRST Verbose</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Windows:Log:Source_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).fbWindowsListener.stEventInfo.source</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Windows:Log:Timestamp_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Unix timestamp</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Windows:LogToVisualStudio</p></td>
+<td><p>bo</p></td>
+<td><p>$(SYMBOL).fbWindowsListener.bLogToVisualStudio</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Windows:LogToVisualStudio_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).fbWindowsListener.bLogToVisualStudio</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Windows:MessagesSent_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).fbWindowsListener.nCntMessagesSent</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Windows:MinSeverity</p></td>
+<td><p>mbbo</p></td>
+<td><p>$(SYMBOL).fbWindowsListener.eMinSeverity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Windows:MinSeverity_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>$(SYMBOL).fbWindowsListener.eMinSeverity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="lcls-general-fb-logmessage">
+<h2>LCLS_General.FB_LogMessage<a class="headerlink" href="#lcls-general-fb-logmessage" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Record</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Pragma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$(PREFIX):Reset</p></td>
+<td><p>bo</p></td>
+<td><p>Rising-edge reset of trip</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Reset_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Rising-edge reset of trip</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Tripped_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Log message FB tripped</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="lcls-general-fb-tempsensor">
+<h2>LCLS_General.FB_TempSensor<a class="headerlink" href="#lcls-general-fb-tempsensor" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Record</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Pragma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$(PREFIX):CONN_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).bConnected</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM Connected</div>
+<div class="line">field: ZNAM Disconnected</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):ERR_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).bError</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM True</div>
+<div class="line">field: ZNAM False</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):TEMP_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>$(SYMBOL).fTemp</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU C</div>
+<div class="line">field: PREC 2</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="lcls-general-st-pendingevent">
+<h2>LCLS_General.ST_PendingEvent<a class="headerlink" href="#lcls-general-st-pendingevent" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Record</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Pragma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$(PREFIX):EventClass_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>TwinCAT Event class</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):EventType_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>The event type</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Hostname_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>PLC Hostname</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Message_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).stEventInfo.msg</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):MessageID_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>TwinCAT Message ID</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):MessageJSON_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Metadata with the message</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Schema_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Schema string</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Severity_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>TcEventSeverity</p></td>
+<td><div class="line-block">
+<div class="line">field: ONST Info</div>
+<div class="line">field: THST Error</div>
+<div class="line">field: TWST Warning</div>
+<div class="line">field: ZRST Verbose</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Source_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).stEventInfo.source</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Timestamp_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Unix timestamp</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="lcls-twincat-motion-dut-motionstage">
+<h2>lcls_twincat_motion.DUT_MotionStage<a class="headerlink" href="#lcls-twincat-motion-dut-motionstage" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Record</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Pragma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$(PREFIX):PLC:bAllBackwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Summary of axis permission to move backward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:bAllEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Summary of axis permission to have power</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:bAllForwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Summary of axis permission to move forward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:bBrakeRelease_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if brake released</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:bBusy_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if in the middle of a command</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:bDone_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if command finished successfully</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:bEnable</p></td>
+<td><p>bo</p></td>
+<td><p>Used internally to request enables</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:bEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Used internally to request enables</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:bEnableDone_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if done enabling</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:bError_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if we</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:bExecute</p></td>
+<td><p>bo</p></td>
+<td><p>Used internally and by the IOC to start or stop</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:bExecute_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Used internally and by the IOC to start or stop</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:bGantryAxis_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if gantry EPS active</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:bGantryBackwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if gantry ok to move backward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:bGantryForwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if gantry ok to move forward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:bHardwareEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if STO not hit</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:bHome_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if at homing switch</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:bLimitBackwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>FALSE if reverse limit hit</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:bLimitForwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>FALSE if forward limit hit</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:bPowerSelf_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>FALSE if axis is in PMPS</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:bReset</p></td>
+<td><p>bo</p></td>
+<td><p>Used internally to reset errors</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:bReset_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Used internally to reset errors</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:bSafetyReady_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if safe to start a move</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:fAcceleration</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to set acceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:fAcceleration_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to set acceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:fDeceleration</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to set deceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:fDeceleration_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to set deceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:fHomePosition</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to pick home position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:fHomePosition_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to pick home position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:fPosition</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC as the set position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:fPosition_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC as the set position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:fVelocity</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to set velocity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:fVelocity_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to set velocity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:nBrakeMode_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>Describes when the brake will be released</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:nCmdData</p></td>
+<td><p>longout</p></td>
+<td><p>Used internally and by the IOC to pass extra args</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:nCmdData_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Used internally and by the IOC to pass extra args</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:nCommand</p></td>
+<td><p>longout</p></td>
+<td><p>Used internally and by the IOC to pick move type</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:nCommand_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Used internally and by the IOC to pick move type</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:nEnableMode_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>Describes when the axis will automatically get power</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:nEncoderCount_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Count from encoder hardware</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:nErrorId_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Error code if nonzero</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:nHomingMode_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>Describes our homing strategy</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:nMotionAxisID_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Unique ID assigned to each axis in the NC</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PLC:sErrorMessage_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Message to identify the error state</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PLC:sName_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>PLC program name</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="lcls-twincat-motion-dut-positionstate">
+<h2>lcls_twincat_motion.DUT_PositionState<a class="headerlink" href="#lcls-twincat-motion-dut-positionstate" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Record</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Pragma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$(PREFIX):ACCL</p></td>
+<td><p>ao</p></td>
+<td><p>Acceleration to use for moves to this state</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):ACCL_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Acceleration to use for moves to this state</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):DCCL</p></td>
+<td><p>ao</p></td>
+<td><p>Deceleration to use for moves to this state</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):DCCL_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Deceleration to use for moves to this state</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):DELTA</p></td>
+<td><p>ao</p></td>
+<td><p>Max deviation from position at this state</p></td>
+<td><div class="line-block">
+<div class="line">field: DRVL 0.0</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):DELTA_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Max deviation from position at this state</p></td>
+<td><div class="line-block">
+<div class="line">field: DRVL 0.0</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):ENCODER_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Encoder count associated with this state</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):LOCKED_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if state is immutable</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):MOVE_OK_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if the move would be safe</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):NAME_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Name of this position state</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):SETPOINT</p></td>
+<td><p>ao</p></td>
+<td><p>Axis position associated with this state</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):SETPOINT_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Axis position associated with this state</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):VALID_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if this is a real state</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):VELO</p></td>
+<td><p>ao</p></td>
+<td><p>Speed at which to move to this state</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):VELO_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Speed at which to move to this state</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="lcls-twincat-motion-pmps-st-beamparams">
+<h2>lcls_twincat_motion.PMPS.ST_BeamParams<a class="headerlink" href="#lcls-twincat-motion-pmps-st-beamparams" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Record</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Pragma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$(PREFIX):Cohort_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Cohort inc on each arb cycle</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):PhotonEnergyRanges_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).neVRange</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU eV</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):PulseEnergy_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>This beam parameter is non-op for now.</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU mJ</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Rate_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).nRate</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU Hz</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):ST_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).aStoppers</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Transmission_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).nTran</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU %</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Valid_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).xValid</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="lcls-twincat-motion-pmps-st-pmps-aperture">
+<h2>lcls_twincat_motion.PMPS.ST_PMPS_Aperture<a class="headerlink" href="#lcls-twincat-motion-pmps-st-pmps-aperture" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Record</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Pragma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$(PREFIX):Height_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>$(SYMBOL).Height</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU mm</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):OK_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).xOK</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Width_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>$(SYMBOL).Width</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU mm</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="prg-2-at1k4">
+<h2>PRG_2_AT1K4<a class="headerlink" href="#prg-2-at1k4" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Record</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Pragma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$(PREFIX):MMS:01:RTD1:CONN_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).RTD_Axis1_1.bConnected</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM Connected</div>
+<div class="line">field: ZNAM Disconnected</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):MMS:01:RTD1:ERR_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).RTD_Axis1_1.bError</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM True</div>
+<div class="line">field: ZNAM False</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):MMS:01:RTD1:TEMP_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>$(SYMBOL).RTD_Axis1_1.fTemp</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU C</div>
+<div class="line">field: PREC 2</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):MMS:01:RTD2:CONN_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).RTD_Axis1_2.bConnected</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM Connected</div>
+<div class="line">field: ZNAM Disconnected</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):MMS:01:RTD2:ERR_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).RTD_Axis1_2.bError</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM True</div>
+<div class="line">field: ZNAM False</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):MMS:01:RTD2:TEMP_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>$(SYMBOL).RTD_Axis1_2.fTemp</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU C</div>
+<div class="line">field: PREC 2</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):MMS:02:RTD1:CONN_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).RTD_Axis2_1.bConnected</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM Connected</div>
+<div class="line">field: ZNAM Disconnected</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):MMS:02:RTD1:ERR_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).RTD_Axis2_1.bError</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM True</div>
+<div class="line">field: ZNAM False</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):MMS:02:RTD1:TEMP_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>$(SYMBOL).RTD_Axis2_1.fTemp</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU C</div>
+<div class="line">field: PREC 2</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):MMS:02:RTD2:CONN_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).RTD_Axis2_2.bConnected</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM Connected</div>
+<div class="line">field: ZNAM Disconnected</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):MMS:02:RTD2:ERR_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).RTD_Axis2_2.bError</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM True</div>
+<div class="line">field: ZNAM False</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):MMS:02:RTD2:TEMP_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>$(SYMBOL).RTD_Axis2_2.fTemp</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU C</div>
+<div class="line">field: PREC 2</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):MMS:03:RTD1:CONN_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).RTD_Axis3_1.bConnected</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM Connected</div>
+<div class="line">field: ZNAM Disconnected</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):MMS:03:RTD1:ERR_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).RTD_Axis3_1.bError</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM True</div>
+<div class="line">field: ZNAM False</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):MMS:03:RTD1:TEMP_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>$(SYMBOL).RTD_Axis3_1.fTemp</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU C</div>
+<div class="line">field: PREC 2</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):MMS:03:RTD2:CONN_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).RTD_Axis3_2.bConnected</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM Connected</div>
+<div class="line">field: ZNAM Disconnected</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):MMS:03:RTD2:ERR_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).RTD_Axis3_2.bError</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM True</div>
+<div class="line">field: ZNAM False</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):MMS:03:RTD2:TEMP_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>$(SYMBOL).RTD_Axis3_2.fTemp</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU C</div>
+<div class="line">field: PREC 2</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):MMS:04:RTD1:CONN_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).RTD_Axis4_1.bConnected</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM Connected</div>
+<div class="line">field: ZNAM Disconnected</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):MMS:04:RTD1:ERR_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).RTD_Axis4_1.bError</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM True</div>
+<div class="line">field: ZNAM False</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):MMS:04:RTD1:TEMP_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>$(SYMBOL).RTD_Axis4_1.fTemp</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU C</div>
+<div class="line">field: PREC 2</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):MMS:04:RTD2:CONN_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).RTD_Axis4_2.bConnected</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM Connected</div>
+<div class="line">field: ZNAM Disconnected</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):MMS:04:RTD2:ERR_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).RTD_Axis4_2.bError</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM True</div>
+<div class="line">field: ZNAM False</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):MMS:04:RTD2:TEMP_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>$(SYMBOL).RTD_Axis4_2.fTemp</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU C</div>
+<div class="line">field: PREC 2</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="st-loggingeventinfo">
+<h2>ST_LoggingEventInfo<a class="headerlink" href="#st-loggingeventinfo" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Record</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Pragma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$(PREFIX):EventClass_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>TwinCAT Event class</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):EventType_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>The event type</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Hostname_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>PLC Hostname</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Message_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).msg</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):MessageID_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>TwinCAT Message ID</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):MessageJSON_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Metadata with the message</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Schema_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Schema string</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Severity_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>TcEventSeverity</p></td>
+<td><div class="line-block">
+<div class="line">field: ONST Info</div>
+<div class="line">field: THST Error</div>
+<div class="line">field: TWST Warning</div>
+<div class="line">field: ZRST Verbose</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Source_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).source</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Timestamp_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Unix timestamp</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="st-pmps-aperture-io">
+<h2>ST_PMPS_Aperture_IO<a class="headerlink" href="#st-pmps-aperture-io" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Record</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Pragma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$(PREFIX):Height_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>$(SYMBOL).Height</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU mm</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):OK_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).xOK</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Width_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>$(SYMBOL).Width</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU mm</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="database-records">
+<h1>Database Records<a class="headerlink" href="#database-records" title="Permalink to this headline">¶</a></h1>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Record</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Pragma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$(PREFIX)0RateBeamCnst:Cohort_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Cohort inc on each arb cycle</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)0RateBeamCnst:PhotonEnergyRanges_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>0-rate beam constant</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU eV</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)0RateBeamCnst:PulseEnergy_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>This beam parameter is non-op for now.</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU mJ</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)0RateBeamCnst:Rate_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>0-rate beam constant</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU Hz</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)0RateBeamCnst:ST_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>0-rate beam constant</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)0RateBeamCnst:Transmission_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>0-rate beam constant</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU %</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)0RateBeamCnst:Valid_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>0-rate beam constant</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)AccumulatedFastFaults_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>PMPS_GVL.AccumulatedFF</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)CurrentBP:Cohort_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Cohort inc on each arb cycle</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)CurrentBP:PhotonEnergyRanges_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>PMPS_GVL.stCurrentBeamParameters.neVRange</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU eV</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)CurrentBP:PulseEnergy_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>This beam parameter is non-op for now.</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU mJ</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)CurrentBP:Rate_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>PMPS_GVL.stCurrentBeamParameters.nRate</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU Hz</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)CurrentBP:ST_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>PMPS_GVL.stCurrentBeamParameters.aStoppers</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)CurrentBP:Transmission_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>PMPS_GVL.stCurrentBeamParameters.nTran</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU %</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)CurrentBP:Valid_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>PMPS_GVL.stCurrentBeamParameters.xValid</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)eVRangeCnst_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Active eV Range constants</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU eV</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)eVRangeHyst_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>eV Range hystersis</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU eV</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)FullBeamCnst:Cohort_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Cohort inc on each arb cycle</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)FullBeamCnst:PhotonEnergyRanges_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Full beam constant</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU eV</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)FullBeamCnst:PulseEnergy_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>This beam parameter is non-op for now.</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU mJ</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)FullBeamCnst:Rate_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Full beam constant</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU Hz</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)FullBeamCnst:ST_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Full beam constant</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)FullBeamCnst:Transmission_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Full beam constant</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU %</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)FullBeamCnst:Valid_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Full beam constant</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)K:eVRangeCnst_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>eV Range constants</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU eV</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)L:eVRangeCnst_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>eV Range constants</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU eV</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)LCLSGeneral:GlobalLogTrickleTrip_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Tripped by overall log count</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)LCLSGeneral:LogHost</p></td>
+<td><p>waveform</p></td>
+<td><p>The log host IP address</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)LCLSGeneral:LogHost_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>The log host IP address</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)LCLSGeneral:LogMessageCount_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Total log messages on the last cycle</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)LCLSGeneral:LogPort</p></td>
+<td><p>longout</p></td>
+<td><p>The log host UDP port</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)LCLSGeneral:LogPort_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>The log host UDP port</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)RequestedBP:Cohort_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Cohort inc on each arb cycle</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)RequestedBP:PhotonEnergyRanges_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>PMPS_GVL.stRequestedBeamParameters.neVRange</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU eV</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)RequestedBP:PulseEnergy_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>This beam parameter is non-op for now.</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU mJ</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)RequestedBP:Rate_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>PMPS_GVL.stRequestedBeamParameters.nRate</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU Hz</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)RequestedBP:ST_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>PMPS_GVL.stRequestedBeamParameters.aStoppers</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)RequestedBP:Transmission_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>PMPS_GVL.stRequestedBeamParameters.nTran</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU %</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)RequestedBP:Valid_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>PMPS_GVL.stRequestedBeamParameters.xValid</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)SafeBeamCnst:Cohort_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Cohort inc on each arb cycle</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)SafeBeamCnst:PhotonEnergyRanges_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Safe beam constant</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU eV</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)SafeBeamCnst:PulseEnergy_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>This beam parameter is non-op for now.</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU mJ</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)SafeBeamCnst:Rate_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Safe beam constant</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU Hz</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)SafeBeamCnst:ST_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Safe beam constant</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)SafeBeamCnst:Transmission_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Safe beam constant</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">field: EGU %</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)SafeBeamCnst:Valid_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Safe beam constant</p></td>
+<td><div class="line-block">
+<div class="line">archive: 1s monitor</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)SuccessfulPreemptions_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>PMPS_GVL.SuccessfulPreemption</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI::MMS:01:RTD1:CONN_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_1.bConnected</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM Connected</div>
+<div class="line">field: ZNAM Disconnected</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI::MMS:01:RTD1:ERR_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_1.bError</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM True</div>
+<div class="line">field: ZNAM False</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI::MMS:01:RTD1:TEMP_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_1.fTemp</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU C</div>
+<div class="line">field: PREC 2</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI::MMS:01:RTD2:CONN_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_2.bConnected</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM Connected</div>
+<div class="line">field: ZNAM Disconnected</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI::MMS:01:RTD2:ERR_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_2.bError</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM True</div>
+<div class="line">field: ZNAM False</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI::MMS:01:RTD2:TEMP_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis1_2.fTemp</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU C</div>
+<div class="line">field: PREC 2</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI::MMS:02:RTD1:CONN_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_1.bConnected</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM Connected</div>
+<div class="line">field: ZNAM Disconnected</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI::MMS:02:RTD1:ERR_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_1.bError</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM True</div>
+<div class="line">field: ZNAM False</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI::MMS:02:RTD1:TEMP_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_1.fTemp</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU C</div>
+<div class="line">field: PREC 2</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI::MMS:02:RTD2:CONN_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_2.bConnected</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM Connected</div>
+<div class="line">field: ZNAM Disconnected</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI::MMS:02:RTD2:ERR_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_2.bError</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM True</div>
+<div class="line">field: ZNAM False</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI::MMS:02:RTD2:TEMP_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis2_2.fTemp</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU C</div>
+<div class="line">field: PREC 2</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI::MMS:03:RTD1:CONN_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_1.bConnected</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM Connected</div>
+<div class="line">field: ZNAM Disconnected</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI::MMS:03:RTD1:ERR_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_1.bError</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM True</div>
+<div class="line">field: ZNAM False</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI::MMS:03:RTD1:TEMP_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_1.fTemp</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU C</div>
+<div class="line">field: PREC 2</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI::MMS:03:RTD2:CONN_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_2.bConnected</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM Connected</div>
+<div class="line">field: ZNAM Disconnected</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI::MMS:03:RTD2:ERR_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_2.bError</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM True</div>
+<div class="line">field: ZNAM False</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI::MMS:03:RTD2:TEMP_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis3_2.fTemp</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU C</div>
+<div class="line">field: PREC 2</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI::MMS:04:RTD1:CONN_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_1.bConnected</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM Connected</div>
+<div class="line">field: ZNAM Disconnected</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI::MMS:04:RTD1:ERR_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_1.bError</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM True</div>
+<div class="line">field: ZNAM False</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI::MMS:04:RTD1:TEMP_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_1.fTemp</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU C</div>
+<div class="line">field: PREC 2</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI::MMS:04:RTD2:CONN_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_2.bConnected</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM Connected</div>
+<div class="line">field: ZNAM Disconnected</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI::MMS:04:RTD2:ERR_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_2.bError</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM True</div>
+<div class="line">field: ZNAM False</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI::MMS:04:RTD2:TEMP_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>PRG_1_PlcTask.prg_2_at1k4.RTD_Axis4_2.fTemp</p></td>
+<td><div class="line-block">
+<div class="line">field: EGU C</div>
+<div class="line">field: PREC 2</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:bAllBackwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Summary of axis permission to move backward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:bAllEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Summary of axis permission to have power</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:bAllForwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Summary of axis permission to move forward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:bBrakeRelease_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if brake released</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:bBusy_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if in the middle of a command</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:bDone_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if command finished successfully</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:bEnable</p></td>
+<td><p>bo</p></td>
+<td><p>Used internally to request enables</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:bEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Used internally to request enables</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:bEnableDone_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if done enabling</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:bError_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if we</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:bExecute</p></td>
+<td><p>bo</p></td>
+<td><p>Used internally and by the IOC to start or stop</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:bExecute_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Used internally and by the IOC to start or stop</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:bGantryAxis_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if gantry EPS active</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:bGantryBackwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if gantry ok to move backward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:bGantryForwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if gantry ok to move forward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:bHardwareEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if STO not hit</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:bHome_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if at homing switch</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:bLimitBackwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>FALSE if reverse limit hit</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:bLimitForwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>FALSE if forward limit hit</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:bPowerSelf_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>FALSE if axis is in PMPS</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:bReset</p></td>
+<td><p>bo</p></td>
+<td><p>Used internally to reset errors</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:bReset_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Used internally to reset errors</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:bSafetyReady_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if safe to start a move</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:fAcceleration</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to set acceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:fAcceleration_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to set acceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:fDeceleration</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to set deceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:fDeceleration_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to set deceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:fHomePosition</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to pick home position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:fHomePosition_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to pick home position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:fPosition</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC as the set position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:fPosition_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC as the set position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:fVelocity</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to set velocity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:fVelocity_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to set velocity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:nBrakeMode_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>Describes when the brake will be released</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:nCmdData</p></td>
+<td><p>longout</p></td>
+<td><p>Used internally and by the IOC to pass extra args</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:nCmdData_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Used internally and by the IOC to pass extra args</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:nCommand</p></td>
+<td><p>longout</p></td>
+<td><p>Used internally and by the IOC to pick move type</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:nCommand_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Used internally and by the IOC to pick move type</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:nEnableMode_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>Describes when the axis will automatically get power</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:nEncoderCount_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Count from encoder hardware</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:nErrorId_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Error code if nonzero</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:nHomingMode_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>Describes our homing strategy</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:nMotionAxisID_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Unique ID assigned to each axis in the NC</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:01:PLC:sErrorMessage_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Message to identify the error state</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:01:PLC:sName_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>PLC program name</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:bAllBackwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Summary of axis permission to move backward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:bAllEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Summary of axis permission to have power</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:bAllForwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Summary of axis permission to move forward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:bBrakeRelease_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if brake released</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:bBusy_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if in the middle of a command</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:bDone_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if command finished successfully</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:bEnable</p></td>
+<td><p>bo</p></td>
+<td><p>Used internally to request enables</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:bEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Used internally to request enables</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:bEnableDone_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if done enabling</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:bError_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if we</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:bExecute</p></td>
+<td><p>bo</p></td>
+<td><p>Used internally and by the IOC to start or stop</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:bExecute_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Used internally and by the IOC to start or stop</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:bGantryAxis_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if gantry EPS active</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:bGantryBackwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if gantry ok to move backward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:bGantryForwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if gantry ok to move forward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:bHardwareEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if STO not hit</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:bHome_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if at homing switch</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:bLimitBackwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>FALSE if reverse limit hit</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:bLimitForwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>FALSE if forward limit hit</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:bPowerSelf_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>FALSE if axis is in PMPS</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:bReset</p></td>
+<td><p>bo</p></td>
+<td><p>Used internally to reset errors</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:bReset_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Used internally to reset errors</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:bSafetyReady_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if safe to start a move</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:fAcceleration</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to set acceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:fAcceleration_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to set acceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:fDeceleration</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to set deceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:fDeceleration_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to set deceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:fHomePosition</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to pick home position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:fHomePosition_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to pick home position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:fPosition</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC as the set position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:fPosition_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC as the set position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:fVelocity</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to set velocity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:fVelocity_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to set velocity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:nBrakeMode_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>Describes when the brake will be released</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:nCmdData</p></td>
+<td><p>longout</p></td>
+<td><p>Used internally and by the IOC to pass extra args</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:nCmdData_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Used internally and by the IOC to pass extra args</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:nCommand</p></td>
+<td><p>longout</p></td>
+<td><p>Used internally and by the IOC to pick move type</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:nCommand_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Used internally and by the IOC to pick move type</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:nEnableMode_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>Describes when the axis will automatically get power</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:nEncoderCount_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Count from encoder hardware</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:nErrorId_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Error code if nonzero</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:nHomingMode_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>Describes our homing strategy</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:nMotionAxisID_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Unique ID assigned to each axis in the NC</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:02:PLC:sErrorMessage_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Message to identify the error state</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:02:PLC:sName_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>PLC program name</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:bAllBackwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Summary of axis permission to move backward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:bAllEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Summary of axis permission to have power</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:bAllForwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Summary of axis permission to move forward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:bBrakeRelease_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if brake released</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:bBusy_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if in the middle of a command</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:bDone_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if command finished successfully</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:bEnable</p></td>
+<td><p>bo</p></td>
+<td><p>Used internally to request enables</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:bEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Used internally to request enables</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:bEnableDone_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if done enabling</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:bError_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if we</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:bExecute</p></td>
+<td><p>bo</p></td>
+<td><p>Used internally and by the IOC to start or stop</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:bExecute_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Used internally and by the IOC to start or stop</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:bGantryAxis_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if gantry EPS active</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:bGantryBackwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if gantry ok to move backward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:bGantryForwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if gantry ok to move forward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:bHardwareEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if STO not hit</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:bHome_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if at homing switch</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:bLimitBackwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>FALSE if reverse limit hit</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:bLimitForwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>FALSE if forward limit hit</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:bPowerSelf_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>FALSE if axis is in PMPS</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:bReset</p></td>
+<td><p>bo</p></td>
+<td><p>Used internally to reset errors</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:bReset_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Used internally to reset errors</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:bSafetyReady_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if safe to start a move</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:fAcceleration</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to set acceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:fAcceleration_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to set acceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:fDeceleration</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to set deceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:fDeceleration_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to set deceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:fHomePosition</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to pick home position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:fHomePosition_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to pick home position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:fPosition</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC as the set position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:fPosition_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC as the set position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:fVelocity</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to set velocity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:fVelocity_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to set velocity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:nBrakeMode_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>Describes when the brake will be released</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:nCmdData</p></td>
+<td><p>longout</p></td>
+<td><p>Used internally and by the IOC to pass extra args</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:nCmdData_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Used internally and by the IOC to pass extra args</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:nCommand</p></td>
+<td><p>longout</p></td>
+<td><p>Used internally and by the IOC to pick move type</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:nCommand_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Used internally and by the IOC to pick move type</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:nEnableMode_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>Describes when the axis will automatically get power</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:nEncoderCount_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Count from encoder hardware</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:nErrorId_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Error code if nonzero</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:nHomingMode_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>Describes our homing strategy</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:nMotionAxisID_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Unique ID assigned to each axis in the NC</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:03:PLC:sErrorMessage_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Message to identify the error state</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:03:PLC:sName_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>PLC program name</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:bAllBackwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Summary of axis permission to move backward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:bAllEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Summary of axis permission to have power</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:bAllForwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Summary of axis permission to move forward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:bBrakeRelease_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if brake released</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:bBusy_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if in the middle of a command</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:bDone_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if command finished successfully</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:bEnable</p></td>
+<td><p>bo</p></td>
+<td><p>Used internally to request enables</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:bEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Used internally to request enables</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:bEnableDone_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if done enabling</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:bError_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if we</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:bExecute</p></td>
+<td><p>bo</p></td>
+<td><p>Used internally and by the IOC to start or stop</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:bExecute_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Used internally and by the IOC to start or stop</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:bGantryAxis_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if gantry EPS active</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:bGantryBackwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if gantry ok to move backward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:bGantryForwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if gantry ok to move forward</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:bHardwareEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if STO not hit</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:bHome_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if at homing switch</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:bLimitBackwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>FALSE if reverse limit hit</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:bLimitForwardEnable_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>FALSE if forward limit hit</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:bPowerSelf_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>FALSE if axis is in PMPS</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:bReset</p></td>
+<td><p>bo</p></td>
+<td><p>Used internally to reset errors</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:bReset_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Used internally to reset errors</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:bSafetyReady_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>TRUE if safe to start a move</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM FALSE</div>
+<div class="line">field: ZNAM TRUE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:fAcceleration</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to set acceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:fAcceleration_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to set acceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:fDeceleration</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to set deceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:fDeceleration_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to set deceleration</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:fHomePosition</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to pick home position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:fHomePosition_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to pick home position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:fPosition</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC as the set position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:fPosition_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC as the set position</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:fVelocity</p></td>
+<td><p>ao</p></td>
+<td><p>Used internally and by the IOC to set velocity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:fVelocity_RBV</p></td>
+<td><p>ai</p></td>
+<td><p>Used internally and by the IOC to set velocity</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:nBrakeMode_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>Describes when the brake will be released</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:nCmdData</p></td>
+<td><p>longout</p></td>
+<td><p>Used internally and by the IOC to pass extra args</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:nCmdData_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Used internally and by the IOC to pass extra args</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:nCommand</p></td>
+<td><p>longout</p></td>
+<td><p>Used internally and by the IOC to pick move type</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:nCommand_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Used internally and by the IOC to pick move type</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:nEnableMode_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>Describes when the axis will automatically get power</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:nEncoderCount_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Count from encoder hardware</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:nErrorId_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Error code if nonzero</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:nHomingMode_RBV</p></td>
+<td><p>mbbi</p></td>
+<td><p>Describes our homing strategy</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:nMotionAxisID_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Unique ID assigned to each axis in the NC</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>AT1K4:L2SI:MMS:04:PLC:sErrorMessage_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>Message to identify the error state</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AT1K4:L2SI:MMS:04:PLC:sName_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>PLC program name</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="lcls-plc-sxr-satt_SolidAttenuatorPLC_source.html" class="btn btn-neutral float-right" title="DUTs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="lcls-plc-sxr-satt_SolidAttenuatorPLC_summary.html" class="btn btn-neutral float-left" title="Settings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, SLAC National Accelerator Laboratory
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
