@@ -1391,7 +1391,7 @@ lcls_twincat_motion.DUT_PositionState
       - | io: output
 
 
-  
+                    
 lcls_twincat_motion.PMPS.ST_BeamParams
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1481,7 +1481,7 @@ lcls_twincat_motion.PMPS.ST_PMPS_Aperture
         | io: input
 
 
-                                  
+                                                             
 PRG_2_AT1K4
 ^^^^^^^^^^^
 
@@ -1793,7 +1793,7 @@ ST_PMPS_Aperture_IO
         | io: input
 
 
-                    
+                      
 Database Records
 ----------------
 

@@ -24,11 +24,20 @@ Axis 1: AT1K4-M1
     Name, AT1K4-M1
     AxisType, 1
     CreateSymbols, true
+    Dynamic:Acceleration, 160
+    Dynamic:AccelerationMaximum, 400
+    Dynamic:Deceleration, 160
+    Dynamic:DecelerationMaximum, 400
+    Dynamic:DelayTime, 0.008
+    Dynamic:Jerk, 80
     Enc:EncType, 29
     Enc:Inc:RefSoftSyncMask, #x0000ffff
     Enc:MaxCount, #xffffffff
+    Enc:ReferenceSystem, 1
+    Enc:ScaleFactorNumerator, 5e-05
     Id, 1
     OtherSettings:AllowMotionCmdToSlave, true
+    Velo:Maximum, 80
 
 
 
@@ -43,11 +52,20 @@ Axis 2: AT1K4-M2
     Name, AT1K4-M2
     AxisType, 1
     CreateSymbols, true
+    Dynamic:Acceleration, 160
+    Dynamic:AccelerationMaximum, 400
+    Dynamic:Deceleration, 160
+    Dynamic:DecelerationMaximum, 400
+    Dynamic:DelayTime, 0.008
+    Dynamic:Jerk, 80
     Enc:EncType, 29
     Enc:Inc:RefSoftSyncMask, #x0000ffff
     Enc:MaxCount, #xffffffff
+    Enc:ReferenceSystem, 1
+    Enc:ScaleFactorNumerator, 5e-05
     Id, 2
     OtherSettings:AllowMotionCmdToSlave, true
+    Velo:Maximum, 80
 
 
 
@@ -62,11 +80,20 @@ Axis 3: AT1K4-M3
     Name, AT1K4-M3
     AxisType, 1
     CreateSymbols, true
+    Dynamic:Acceleration, 160
+    Dynamic:AccelerationMaximum, 400
+    Dynamic:Deceleration, 160
+    Dynamic:DecelerationMaximum, 400
+    Dynamic:DelayTime, 0.008
+    Dynamic:Jerk, 80
     Enc:EncType, 29
     Enc:Inc:RefSoftSyncMask, #x0000ffff
     Enc:MaxCount, #xffffffff
+    Enc:ReferenceSystem, 1
+    Enc:ScaleFactorNumerator, 5e-05
     Id, 3
     OtherSettings:AllowMotionCmdToSlave, true
+    Velo:Maximum, 80
 
 
 
@@ -81,10 +108,19 @@ Axis 4: AT1K4-M4
     Name, AT1K4-M4
     AxisType, 1
     CreateSymbols, true
+    Dynamic:Acceleration, 160
+    Dynamic:AccelerationMaximum, 400
+    Dynamic:Deceleration, 160
+    Dynamic:DecelerationMaximum, 400
+    Dynamic:DelayTime, 0.008
+    Dynamic:Jerk, 80
     Enc:EncType, 29
     Enc:Inc:RefSoftSyncMask, #x0000ffff
     Enc:MaxCount, #xffffffff
+    Enc:ReferenceSystem, 1
+    Enc:ScaleFactorNumerator, 5e-05
     Id, 4
     OtherSettings:AllowMotionCmdToSlave, true
+    Velo:Maximum, 80
 
 
