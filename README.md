@@ -11,6 +11,44 @@ SXR Solid Attenuator TwinCAT Project
 | AT2K2-SOLID | NEH 2.2    | H2.2 | 788.8 |
 | AT1K3-SOLID | TXI        | H1.1 | ~763  |
 
+## Controls
+
+### PLC Rail
+
+| Component   | Count | Description                                                   |
+|-------------|-------|---------------------------------------------------------------|
+| N/A         | 1x    | Standard block of DC supply connections                       |
+| EK1100      | 1x    | EtherCAT coupler                                              |
+| EL7047      | 4x    | Stepper motor terminal 48 V DC, 5 A, with incremental encoder |
+| EL5042      | 2x    | 2-channel BiSS-C interface                                    |
+| EL3202-0020 | 2x    | 2-channel input terminal PT100 (RTD) for 4-wire connection    |
+| EL9070      | 1x    | shield terminal                                               |
+| EL3202-0020 | 2x    | 2-channel input terminal PT100 (RTD) for 4-wire connection    |
+| EL9011      | 1x    | End cap                                                       |
+
+### Motor and encoder specifics
+
+4 axes:
+- Motor: PKP268D28B2 1.8 deg stepangle 2.8A/phase Bipolar
+- 20µm per full step
+- Limits: low/high limit switches (per-axis)
+- Brake: no
+- Home switch: no
+
+Encoder information:
+- Renishaw RL32BAT050B05A
+- 50nm resolution
+- Requires adapter
+
+### Settings
+
+| Project     | Name                       | Unit | Unit/Rev | Step/Rev | Terminal Freq | Full Step Size (Unit/Step) | Reference Velocity | Open-loop Encoder | Notes       | Maximum current (mA) | Reduced Current (mA) | Nominal Voltage (mV) | Motor coil Resistance (0.01Ω) | Motor fullsteps | Inductance (mH) |
+|-------------|----------------------------|------|----------|----------|---------------|----------------------------|--------------------|-------------------|-------------|----------------------|----------------------|----------------------|-------------------------------|-----------------|-----------------|
+| AT1K4-SOLID | SXR Solid Attenuator (all) | mm   | 4        | 200      | 2000          | 0.02                       | 40                 | 0.0003125         | PKP268D28B2 | 1400                 | 100                  | 3400                 | 120                           | 200             | 4.6             |
+| AT1K2-SOLID | SXR Solid Attenuator (all) | mm   | 4        | 200      | 2000          | 0.02                       | 40                 | 0.0003125         | PKP268D28B2 | 1400                 | 100                  | 3400                 | 120                           | 200             | 4.6             |
+| AT2K2-SOLID | SXR Solid Attenuator (all) | mm   | 4        | 200      | 2000          | 0.02                       | 40                 | 0.0003125         | PKP268D28B2 | 1400                 | 100                  | 3400                 | 120                           | 200             | 4.6             |
+| AT1K3-SOLID | SXR Solid Attenuator (all) | mm   | 4        | 200      | 2000          | 0.02                       | 40                 | 0.0003125         | PKP268D28B2 | 1400                 | 100                  | 3400                 | 120                           | 200             | 4.6             |
+
 ## Factory Acceptance Test Open-loop Motion Results
 
 | Attenuator | Axis | Encoder readout at CW/negative limit | Encoder readout at CCW/positive limit | Range measured with encoder | Range measured with motor controller | Reversal Error  | Unidirectional Positioning Repeatability  | RMS Accuracy  | Actuator speed  |
