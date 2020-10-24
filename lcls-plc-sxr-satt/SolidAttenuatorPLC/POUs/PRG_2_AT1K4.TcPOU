@@ -54,7 +54,9 @@ VAR
         .RTD_Axis4_2.bOverrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Overrange;
 
     '}
-    fbSATT : FB_SXR_SATT;
+    fbSATT : FB_SXR_SATT_Sim;
+
+    //   fbSATT : FB_SXR_SATT;
 
 END_VAR
 ]]></Declaration>
@@ -74,7 +76,6 @@ fbSATT(
     stAxis4 := Main.M4,
     nEnableMode := nEnableMode
 );
-
 ]]></ST>
     </Implementation>
   </POU>

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <GlobalTextList Name="GlobalTextList" Id="{8d41656a-d98f-4e83-9d58-bfb847d2154f}">
+    <XmlArchive>
+      <Data>
+        <o xml:space="preserve" t="GlobalTextListObject">
+          <l n="TextList" t="ArrayList" cet="TextListRow">
+            <o>
+              <v n="TextID">"405"</v>
+              <v n="TextDefault">"%f"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"425"</v>
+              <v n="TextDefault">"%X"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"417"</v>
+              <v n="TextDefault">"+"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"411"</v>
+              <v n="TextDefault">"-"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"421"</v>
+              <v n="TextDefault">"0 = Default Acceleration"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"423"</v>
+              <v n="TextDefault">"0 = Default Deceleration"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"420"</v>
+              <v n="TextDefault">"Acceleration: %f"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"17"</v>
+              <v n="TextDefault">"Axis 1"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"746"</v>
+              <v n="TextDefault">"Axis 2"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"124"</v>
+              <v n="TextDefault">"Axis 3"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"441"</v>
+              <v n="TextDefault">"Axis 4"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"650"</v>
+              <v n="TextDefault">"Axis X"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"415"</v>
+              <v n="TextDefault">"Clear"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"409"</v>
+              <v n="TextDefault">"Control"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"406"</v>
+              <v n="TextDefault">"Current Position"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"422"</v>
+              <v n="TextDefault">"Deceleration: %f"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"426"</v>
+              <v n="TextDefault">"Error Code"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"424"</v>
+              <v n="TextDefault">"Error:"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"413"</v>
+              <v n="TextDefault">"GO"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"414"</v>
+              <v n="TextDefault">"GO to set position"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"407"</v>
+              <v n="TextDefault">"High Limit Hit Indicator"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"404"</v>
+              <v n="TextDefault">"Low Limit Hit Indicator"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"408"</v>
+              <v n="TextDefault">"Moving:"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"410"</v>
+              <v n="TextDefault">"Set Position"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"418"</v>
+              <v n="TextDefault">"Settings"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"403"</v>
+              <v n="TextDefault">"Status"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"412"</v>
+              <v n="TextDefault">"Step Size"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"416"</v>
+              <v n="TextDefault">"STOP"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"917"</v>
+              <v n="TextDefault">"Temp 1: %f C"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"719"</v>
+              <v n="TextDefault">"Temp 2: %f C"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"865"</v>
+              <v n="TextDefault">"Thermocouple Readback"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"419"</v>
+              <v n="TextDefault">"Velocity: %f"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+          </l>
+          <l n="Languages" t="ArrayList" />
+          <v n="GuidInit">{7745867b-42a9-46e5-9c75-1713ac5b6a6d}</v>
+          <v n="GuidReInit">{22c4c690-91cc-4b9d-88da-50464a1fbe09}</v>
+          <v n="GuidExitX">{ab9ea9e9-0878-477b-8cda-5e2e74a0d490}</v>
+        </o>
+      </Data>
+      <TypeList>
+        <Type n="ArrayList">System.Collections.ArrayList</Type>
+        <Type n="GlobalTextListObject">{63784cbb-9ba0-45e6-9d69-babf3f040511}</Type>
+        <Type n="Guid">System.Guid</Type>
+        <Type n="String">System.String</Type>
+        <Type n="TextListRow">{53da1be7-ad25-47c3-b0e8-e26286dad2e0}</Type>
+      </TypeList>
+    </XmlArchive>
+  </GlobalTextList>
+</TcPlcObject>

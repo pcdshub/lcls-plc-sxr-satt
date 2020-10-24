@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
-  <POU Name="FB_SXR_SATT" Id="{2f1f83e9-4200-4508-be54-d328575501f6}" SpecialFunc="None">
-    <Declaration><![CDATA[FUNCTION_BLOCK FB_SXR_SATT
+  <POU Name="FB_SXR_SATT_Sim" Id="{919f485d-0e3b-4833-b2b8-2e5bf5a56ed1}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_SXR_SATT_Sim
 VAR_INPUT
     stAxis1 : DUT_MotionStage;
     stAxis2 : DUT_MotionStage;
@@ -18,10 +18,10 @@ VAR
 
         Note that the DUT_MotionStage is where the pytmc pragmas go.
     *)
-    fbMotion1: FB_MotionStage;
-    fbMotion2: FB_MotionStage;
-    fbMotion3: FB_MotionStage;
-    fbMotion4: FB_MotionStage;
+    fbMotion1: FB_MotionStageSim;
+    fbMotion2: FB_MotionStageSim;
+    fbMotion3: FB_MotionStageSim;
+    fbMotion4: FB_MotionStageSim;
 
     stAxis1Extra : DUT_MotionStage_Extras;
     stAxis2Extra : DUT_MotionStage_Extras;
