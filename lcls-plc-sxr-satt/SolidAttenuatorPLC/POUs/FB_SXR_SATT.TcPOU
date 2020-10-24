@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <POU Name="FB_SXR_SATT" Id="{2f1f83e9-4200-4508-be54-d328575501f6}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_SXR_SATT
+VAR_INPUT
+    stAxis1 : DUT_MotionStage;
+    stAxis2 : DUT_MotionStage;
+    stAxis3 : DUT_MotionStage;
+    stAxis4 : DUT_MotionStage;
+    nEnableMode : ENUM_StageEnableMode;
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+    bInit : BOOL := TRUE;
+    (*
+        The 4 motion axes - linked to GVL Main.{M1, M2, M3, and M4}.
+
+        Note that the DUT_MotionStage is where the pytmc pragmas go.
+    *)
+    fbMotion1: FB_MotionStage;
+    fbMotion2: FB_MotionStage;
+    fbMotion3: FB_MotionStage;
+    fbMotion4: FB_MotionStage;
+
+    (* EL3202-0020: 0.01 °C per digit *)
+    {attribute 'pytmc' := 'pv: MMS:01:RTD1'}
+    RTD_Axis1_1: FB_TempSensor := ( fResolution:=0.01 );
+    {attribute 'pytmc' := 'pv: MMS:01:RTD2'}
+    RTD_Axis1_2: FB_TempSensor := ( fResolution:=0.01 );
+
+    {attribute 'pytmc' := 'pv: MMS:02:RTD1'}
+    RTD_Axis2_1: FB_TempSensor := ( fResolution:=0.01 );
+    {attribute 'pytmc' := 'pv: MMS:02:RTD2'}
+    RTD_Axis2_2: FB_TempSensor := ( fResolution:=0.01 );
+
+    {attribute 'pytmc' := 'pv: MMS:03:RTD1'}
+    RTD_Axis3_1: FB_TempSensor := ( fResolution:=0.01 );
+    {attribute 'pytmc' := 'pv: MMS:03:RTD2'}
+    RTD_Axis3_2: FB_TempSensor := ( fResolution:=0.01 );
+
+    {attribute 'pytmc' := 'pv: MMS:04:RTD1'}
+    RTD_Axis4_1: FB_TempSensor := ( fResolution:=0.01 );
+    {attribute 'pytmc' := 'pv: MMS:04:RTD2'}
+    RTD_Axis4_2: FB_TempSensor := ( fResolution:=0.01 );
+
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[(* RTDs *)
+RTD_Axis1_1();
+RTD_Axis1_2();
+
+RTD_Axis2_1();
+RTD_Axis2_2();
+
+RTD_Axis3_1();
+RTD_Axis3_2();
+
+RTD_Axis4_1();
+RTD_Axis4_2();
+
+(* Motion *)
+
+IF bInit THEN
+    bInit := FALSE;
+
+    stAxis1.bHardwareEnable      := TRUE;
+    stAxis1.bLimitBackwardEnable := TRUE;
+    stAxis1.bLimitForwardEnable  := TRUE;
+    stAxis1.bPowerSelf           := TRUE;
+    stAxis1.nBrakeMode           := ENUM_StageBrakeMode.NO_BRAKE;
+    stAxis1.nHomingMode          := ENUM_EpicsHomeCmd.NONE;
+
+    stAxis2.bHardwareEnable      := TRUE;
+    stAxis2.bLimitBackwardEnable := TRUE;
+    stAxis2.bLimitForwardEnable  := TRUE;
+    stAxis2.bPowerSelf           := TRUE;
+    stAxis2.nBrakeMode           := ENUM_StageBrakeMode.NO_BRAKE;
+    stAxis2.nHomingMode          := ENUM_EpicsHomeCmd.NONE;
+
+    stAxis3.bHardwareEnable      := TRUE;
+    stAxis3.bLimitBackwardEnable := TRUE;
+    stAxis3.bLimitForwardEnable  := TRUE;
+    stAxis3.bPowerSelf           := TRUE;
+    stAxis3.nBrakeMode           := ENUM_StageBrakeMode.NO_BRAKE;
+    stAxis3.nHomingMode          := ENUM_EpicsHomeCmd.NONE;
+
+    stAxis4.bHardwareEnable      := TRUE;
+    stAxis4.bLimitBackwardEnable := TRUE;
+    stAxis4.bLimitForwardEnable  := TRUE;
+    stAxis4.bPowerSelf           := TRUE;
+    stAxis4.nBrakeMode           := ENUM_StageBrakeMode.NO_BRAKE;
+    stAxis4.nHomingMode          := ENUM_EpicsHomeCmd.NONE;
+END_IF
+
+stAxis1.nEnableMode := nEnableMode;
+stAxis2.nEnableMode := nEnableMode;
+stAxis3.nEnableMode := nEnableMode;
+stAxis4.nEnableMode := nEnableMode;
+fbMotion1(stMotionStage:=stAxis1);
+fbMotion2(stMotionStage:=stAxis2);
+fbMotion3(stMotionStage:=stAxis3);
+fbMotion4(stMotionStage:=stAxis4);]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

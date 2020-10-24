@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
   <GVL Name="Main" Id="{0809d9d0-9a24-41df-8670-409cf56c2afe}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
@@ -25,6 +25,7 @@ VAR_GLOBAL
     {attribute 'TcLinkTo' := '
         .bLimitForwardEnable  := TIIB[AT1K4-EL7047-01]^STM Status^Status^Digital input 1;
         .bLimitBackwardEnable := TIIB[AT1K4-EL7047-01]^STM Status^Status^Digital input 2;
+        .nRawEncoderULINT     := TIIB[AT1K4-EL5042-01]^FB Inputs Channel 1^Position;
     '}
     M1: DUT_MotionStage := (sName := 'AT1K4:L2SI:MMS:01');
 
@@ -32,6 +33,7 @@ VAR_GLOBAL
     {attribute 'TcLinkTo' := '
         .bLimitForwardEnable  := TIIB[AT1K4-EL7047-02]^STM Status^Status^Digital input 1;
         .bLimitBackwardEnable := TIIB[AT1K4-EL7047-02]^STM Status^Status^Digital input 2;
+        .nRawEncoderULINT     := TIIB[AT1K4-EL5042-01]^FB Inputs Channel 2^Position;
     '}
     M2: DUT_MotionStage := (sName := 'AT1K4:L2SI:MMS:02');
 
@@ -39,6 +41,7 @@ VAR_GLOBAL
     {attribute 'TcLinkTo' := '
         .bLimitForwardEnable  := TIIB[AT1K4-EL7047-03]^STM Status^Status^Digital input 1;
         .bLimitBackwardEnable := TIIB[AT1K4-EL7047-03]^STM Status^Status^Digital input 2;
+        .nRawEncoderULINT     := TIIB[AT1K4-EL5042-02]^FB Inputs Channel 1^Position;
     '}
     M3: DUT_MotionStage := (sName := 'AT1K4:L2SI:MMS:03');
 
@@ -46,6 +49,7 @@ VAR_GLOBAL
     {attribute 'TcLinkTo' := '
         .bLimitForwardEnable  := TIIB[AT1K4-EL7047-04]^STM Status^Status^Digital input 1;
         .bLimitBackwardEnable := TIIB[AT1K4-EL7047-04]^STM Status^Status^Digital input 2;
+        .nRawEncoderULINT     := TIIB[AT1K4-EL5042-02]^FB Inputs Channel 2^Position;
     '}
     M4: DUT_MotionStage := (sName := 'AT1K4:L2SI:MMS:04');
 
