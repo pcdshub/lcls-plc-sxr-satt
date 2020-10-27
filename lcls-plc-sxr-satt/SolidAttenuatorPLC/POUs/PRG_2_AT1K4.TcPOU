@@ -12,15 +12,15 @@ VAR
     {attribute 'pytmc' := 'pv: AT1K4:L2SI:MMS:01'}
     {attribute 'TcLinkTo' := '
 
-        .RTD_1.iRaw := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Value;
-        .RTD_1.bError := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^error;
-        .RTD_1.bUnderrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^Underrange;
-        .RTD_1.bOverrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^Overrange;
+        .fbRTD_1.iRaw := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Value;
+        .fbRTD_1.bError := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^error;
+        .fbRTD_1.bUnderrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^Underrange;
+        .fbRTD_1.bOverrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^Overrange;
 
-        .RTD_2.iRaw := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Value;
-        .RTD_2.bError := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^error;
-        .RTD_2.bUnderrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^Underrange;
-        .RTD_2.bOverrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^Overrange;
+        .fbRTD_2.iRaw := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Value;
+        .fbRTD_2.bError := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^error;
+        .fbRTD_2.bUnderrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^Underrange;
+        .fbRTD_2.bOverrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^Overrange;
 
     '}
     fbStage1: FB_SXR_SATT_Stage;
@@ -28,15 +28,15 @@ VAR
     {attribute 'pytmc' := 'pv: AT1K4:L2SI:MMS:02'}
     {attribute 'TcLinkTo' := '
 
-        .RTD_1.iRaw := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Value;
-        .RTD_1.bError := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Error;
-        .RTD_1.bUnderrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Underrange;
-        .RTD_1.bOverrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Overrange;
+        .fbRTD_1.iRaw := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Value;
+        .fbRTD_1.bError := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Error;
+        .fbRTD_1.bUnderrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Underrange;
+        .fbRTD_1.bOverrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Overrange;
 
-        .RTD_2.iRaw := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Value;
-        .RTD_2.bError := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Error;
-        .RTD_2.bUnderrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Underrange;
-        .RTD_2.bOverrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Overrange;
+        .fbRTD_2.iRaw := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Value;
+        .fbRTD_2.bError := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Error;
+        .fbRTD_2.bUnderrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Underrange;
+        .fbRTD_2.bOverrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Overrange;
 
     '}
     fbStage2: FB_SXR_SATT_Stage;
@@ -44,30 +44,30 @@ VAR
     {attribute 'pytmc' := 'pv: AT1K4:L2SI:MMS:03'}
     {attribute 'TcLinkTo' := '
 
-        .RTD_1.iRaw := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Value;
-        .RTD_1.bError := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Error;
-        .RTD_1.bUnderrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Underrange;
-        .RTD_1.bOverrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Overrange;
+        .fbRTD_1.iRaw := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Value;
+        .fbRTD_1.bError := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Error;
+        .fbRTD_1.bUnderrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Underrange;
+        .fbRTD_1.bOverrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Overrange;
 
-        .RTD_2.iRaw := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Value;
-        .RTD_2.bError := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Error;
-        .RTD_2.bUnderrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Underrange;
-        .RTD_2.bOverrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Overrange;
+        .fbRTD_2.iRaw := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Value;
+        .fbRTD_2.bError := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Error;
+        .fbRTD_2.bUnderrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Underrange;
+        .fbRTD_2.bOverrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Overrange;
     '}
     fbStage3: FB_SXR_SATT_Stage;
 
     {attribute 'pytmc' := 'pv: AT1K4:L2SI:MMS:04'}
     {attribute 'TcLinkTo' := '
 
-        .RTD_1.iRaw := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Value;
-        .RTD_1.bError := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Error;
-        .RTD_1.bUnderrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Underrange;
-        .RTD_1.bOverrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Overrange;
+        .fbRTD_1.iRaw := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Value;
+        .fbRTD_1.bError := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Error;
+        .fbRTD_1.bUnderrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Underrange;
+        .fbRTD_1.bOverrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Overrange;
 
-        .RTD_2.iRaw := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Value;
-        .RTD_2.bError := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Error;
-        .RTD_2.bUnderrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Underrange;
-        .RTD_2.bOverrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Overrange;
+        .fbRTD_2.iRaw := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Value;
+        .fbRTD_2.bError := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Error;
+        .fbRTD_2.bUnderrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Underrange;
+        .fbRTD_2.bOverrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Overrange;
     '}
     fbStage4: FB_SXR_SATT_Stage;
 

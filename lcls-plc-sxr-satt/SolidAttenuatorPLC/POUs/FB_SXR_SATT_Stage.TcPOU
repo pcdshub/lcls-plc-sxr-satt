@@ -15,13 +15,14 @@ VAR_INPUT
     stFilter4	: DUT_PositionState;
 END_VAR
 VAR_OUTPUT
+    stExtra : DUT_MotionStage_Extras;
+    fTemp1 : LREAL;
+    fTemp2 : LREAL;
 END_VAR
 VAR
     // TODO: debug
     // fbMotion: FB_MotionStage;
     fbMotion: FB_MotionStageSim;
-
-    stExtra : DUT_MotionStage_Extras;
 
     {attribute 'pytmc' := '
          pv: STATE
@@ -32,9 +33,9 @@ VAR
 
     (* EL3202-0020: 0.01 °C per digit *)
     {attribute 'pytmc' := 'pv: RTD:1'}
-    RTD_1: FB_TempSensor := ( fResolution:=0.01 );
+    fbRTD_1: FB_TempSensor := ( fResolution:=0.01 );
     {attribute 'pytmc' := 'pv: RTD:2'}
-    RTD_2: FB_TempSensor := ( fResolution:=0.01 );
+    fbRTD_2: FB_TempSensor := ( fResolution:=0.01 );
 
 END_VAR
 ]]></Declaration>
@@ -55,8 +56,11 @@ END_VAR
 
 END_IF
 
-RTD_1();
-RTD_2();
+fbRTD_1();
+fTemp1 := fbRTD_1.fTemp;
+
+fbRTD_2();
+fTemp2 := fbRTD_2.fTemp;
 
 stAxis.nEnableMode := nEnableMode;
 fbMotion(stMotionStage:=stAxis);

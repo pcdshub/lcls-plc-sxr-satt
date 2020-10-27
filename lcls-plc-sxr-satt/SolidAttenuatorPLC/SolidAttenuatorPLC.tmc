@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{6E7A09F2-DC2B-95FE-F358-C550939A4022}" GeneratedBy="TwinCAT XAE Plc">
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{5F7BF21F-1863-4A9E-94E8-93BCB6CC9A8A}" GeneratedBy="TwinCAT XAE Plc">
   <DataTypes>
     <DataType>
       <Name GUID="{18071995-0000-0000-0000-000000000041}" TcBaseType="true" HideSubItems="true" CName="AmsNetId">AMSNETID</Name>
@@ -23792,6 +23792,28 @@ External Setpoint Generation:
       </SubItem>
     </DataType>
     <DataType>
+      <Name Namespace="lcls_twincat_motion">DUT_MotionStage_Extras</Name>
+      <BitSize>128</BitSize>
+      <SubItem>
+        <Name>fVisuStep</Name>
+        <Type>LREAL</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>0</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>bVisuLowLim</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>64</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>bVisuHighLim</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>72</BitOffs>
+      </SubItem>
+    </DataType>
+    <DataType>
       <Name Namespace="lcls_twincat_motion.Tc2_MC2">_E_TcMC_STATES</Name>
       <BitSize>16</BitSize>
       <BaseType>INT</BaseType>
@@ -32276,28 +32298,6 @@ External Setpoint Generation:
       </Properties>
     </DataType>
     <DataType>
-      <Name Namespace="lcls_twincat_motion">DUT_MotionStage_Extras</Name>
-      <BitSize>128</BitSize>
-      <SubItem>
-        <Name>fVisuStep</Name>
-        <Type>LREAL</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>0</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bVisuLowLim</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>64</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bVisuHighLim</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>72</BitOffs>
-      </SubItem>
-    </DataType>
-    <DataType>
       <Name Namespace="lcls_twincat_motion">ENUM_MotionRequest</Name>
       <BitSize>16</BitSize>
       <BaseType>INT</BaseType>
@@ -33859,7 +33859,7 @@ External Setpoint Generation:
     </DataType>
     <DataType>
       <Name>FB_SXR_SATT_Stage</Name>
-      <BitSize>292096</BitSize>
+      <BitSize>292224</BitSize>
       <SubItem>
         <Name>stAxis</Name>
         <Type Namespace="lcls_twincat_motion" ReferenceTo="true">DUT_MotionStage</Type>
@@ -33945,24 +33945,54 @@ External Setpoint Generation:
         </Properties>
       </SubItem>
       <SubItem>
+        <Name>stExtra</Name>
+        <Type Namespace="lcls_twincat_motion">DUT_MotionStage_Extras</Type>
+        <BitSize>128</BitSize>
+        <BitOffs>12352</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>fTemp1</Name>
+        <Type>LREAL</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>12480</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>fTemp2</Name>
+        <Type>LREAL</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>12544</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
         <Name>fbMotion</Name>
         <Type Namespace="lcls_twincat_motion">FB_MotionStageSim</Type>
         <Comment> TODO: debug
  fbMotion: FB_MotionStage;</Comment>
         <BitSize>174400</BitSize>
-        <BitOffs>12352</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>stExtra</Name>
-        <Type Namespace="lcls_twincat_motion">DUT_MotionStage_Extras</Type>
-        <BitSize>128</BitSize>
-        <BitOffs>186752</BitOffs>
+        <BitOffs>12608</BitOffs>
       </SubItem>
       <SubItem>
         <Name>fbState</Name>
         <Type>FB_SXR_SATT_PositionState</Type>
         <BitSize>104640</BitSize>
-        <BitOffs>186880</BitOffs>
+        <BitOffs>187008</BitOffs>
         <Properties>
           <Property>
             <Name>pytmc</Name>
@@ -33976,17 +34006,17 @@ External Setpoint Generation:
         <Name>bInitialized</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <BitOffs>291520</BitOffs>
+        <BitOffs>291648</BitOffs>
         <Default>
           <Value>0</Value>
         </Default>
       </SubItem>
       <SubItem>
-        <Name>RTD_1</Name>
+        <Name>fbRTD_1</Name>
         <Type Namespace="LCLS_General">FB_TempSensor</Type>
         <Comment> EL3202-0020: 0.01 °C per digit </Comment>
         <BitSize>256</BitSize>
-        <BitOffs>291584</BitOffs>
+        <BitOffs>291712</BitOffs>
         <Default>
           <SubItem>
             <Name>.fResolution</Name>
@@ -34001,10 +34031,10 @@ External Setpoint Generation:
         </Properties>
       </SubItem>
       <SubItem>
-        <Name>RTD_2</Name>
+        <Name>fbRTD_2</Name>
         <Type Namespace="LCLS_General">FB_TempSensor</Type>
         <BitSize>256</BitSize>
-        <BitOffs>291840</BitOffs>
+        <BitOffs>291968</BitOffs>
         <Default>
           <SubItem>
             <Name>.fResolution</Name>
@@ -35878,7 +35908,7 @@ External Setpoint Generation:
           <AreaNo AreaType="InputDst" CreateSymbols="true">0</AreaNo>
           <Name>PlcTask Inputs</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80805888</ByteSize>
+          <ByteSize>80740352</ByteSize>
           <Symbol>
             <Name>LCLS_General.DefaultGlobals.stSys.I_EcatMaster1</Name>
             <Comment> AMS Net ID used for FB_EcatDiag, among others </Comment>
@@ -35906,10 +35936,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639502912</BitOffs>
+            <BitOffs>639503168</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage1.RTD_1.bError</Name>
+            <Name>PRG_2_AT1K4.fbStage1.fbRTD_1.bError</Name>
             <BitSize>8</BitSize>
             <BaseType>BOOL</BaseType>
             <Default>
@@ -35930,10 +35960,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639779528</BitOffs>
+            <BitOffs>639779656</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage1.RTD_1.bUnderrange</Name>
+            <Name>PRG_2_AT1K4.fbStage1.fbRTD_1.bUnderrange</Name>
             <BitSize>8</BitSize>
             <BaseType>BOOL</BaseType>
             <Properties>
@@ -35942,10 +35972,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639779536</BitOffs>
+            <BitOffs>639779664</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage1.RTD_1.bOverrange</Name>
+            <Name>PRG_2_AT1K4.fbStage1.fbRTD_1.bOverrange</Name>
             <BitSize>8</BitSize>
             <BaseType>BOOL</BaseType>
             <Properties>
@@ -35954,10 +35984,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639779544</BitOffs>
+            <BitOffs>639779672</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage1.RTD_1.iRaw</Name>
+            <Name>PRG_2_AT1K4.fbStage1.fbRTD_1.iRaw</Name>
             <BitSize>16</BitSize>
             <BaseType>INT</BaseType>
             <Properties>
@@ -35966,10 +35996,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639779552</BitOffs>
+            <BitOffs>639779680</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage1.RTD_2.bError</Name>
+            <Name>PRG_2_AT1K4.fbStage1.fbRTD_2.bError</Name>
             <BitSize>8</BitSize>
             <BaseType>BOOL</BaseType>
             <Default>
@@ -35990,10 +36020,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639779784</BitOffs>
+            <BitOffs>639779912</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage1.RTD_2.bUnderrange</Name>
+            <Name>PRG_2_AT1K4.fbStage1.fbRTD_2.bUnderrange</Name>
             <BitSize>8</BitSize>
             <BaseType>BOOL</BaseType>
             <Properties>
@@ -36002,10 +36032,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639779792</BitOffs>
+            <BitOffs>639779920</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage1.RTD_2.bOverrange</Name>
+            <Name>PRG_2_AT1K4.fbStage1.fbRTD_2.bOverrange</Name>
             <BitSize>8</BitSize>
             <BaseType>BOOL</BaseType>
             <Properties>
@@ -36014,10 +36044,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639779800</BitOffs>
+            <BitOffs>639779928</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage1.RTD_2.iRaw</Name>
+            <Name>PRG_2_AT1K4.fbStage1.fbRTD_2.iRaw</Name>
             <BitSize>16</BitSize>
             <BaseType>INT</BaseType>
             <Properties>
@@ -36026,7 +36056,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639779808</BitOffs>
+            <BitOffs>639779936</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbStage2.fbMotion.fbMotionStage.fbDriveVirtual.MasterAxis.NcToPlc</Name>
@@ -36038,70 +36068,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639795008</BitOffs>
+            <BitOffs>639795392</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage2.RTD_1.bError</Name>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Default>
-              <Value>1</Value>
-            </Default>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: ERR
-        io: input
-        field: ONAM True
-        field: ZNAM False
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>640071624</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbStage2.RTD_1.bUnderrange</Name>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>640071632</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbStage2.RTD_1.bOverrange</Name>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>640071640</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbStage2.RTD_1.iRaw</Name>
-            <BitSize>16</BitSize>
-            <BaseType>INT</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>640071648</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbStage2.RTD_2.bError</Name>
+            <Name>PRG_2_AT1K4.fbStage2.fbRTD_1.bError</Name>
             <BitSize>8</BitSize>
             <BaseType>BOOL</BaseType>
             <Default>
@@ -36125,7 +36095,7 @@ External Setpoint Generation:
             <BitOffs>640071880</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage2.RTD_2.bUnderrange</Name>
+            <Name>PRG_2_AT1K4.fbStage2.fbRTD_1.bUnderrange</Name>
             <BitSize>8</BitSize>
             <BaseType>BOOL</BaseType>
             <Properties>
@@ -36137,7 +36107,7 @@ External Setpoint Generation:
             <BitOffs>640071888</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage2.RTD_2.bOverrange</Name>
+            <Name>PRG_2_AT1K4.fbStage2.fbRTD_1.bOverrange</Name>
             <BitSize>8</BitSize>
             <BaseType>BOOL</BaseType>
             <Properties>
@@ -36149,7 +36119,7 @@ External Setpoint Generation:
             <BitOffs>640071896</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage2.RTD_2.iRaw</Name>
+            <Name>PRG_2_AT1K4.fbStage2.fbRTD_1.iRaw</Name>
             <BitSize>16</BitSize>
             <BaseType>INT</BaseType>
             <Properties>
@@ -36161,6 +36131,66 @@ External Setpoint Generation:
             <BitOffs>640071904</BitOffs>
           </Symbol>
           <Symbol>
+            <Name>PRG_2_AT1K4.fbStage2.fbRTD_2.bError</Name>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Default>
+              <Value>1</Value>
+            </Default>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: ERR
+        io: input
+        field: ONAM True
+        field: ZNAM False
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Input</Value>
+              </Property>
+            </Properties>
+            <BitOffs>640072136</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>PRG_2_AT1K4.fbStage2.fbRTD_2.bUnderrange</Name>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Input</Value>
+              </Property>
+            </Properties>
+            <BitOffs>640072144</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>PRG_2_AT1K4.fbStage2.fbRTD_2.bOverrange</Name>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Input</Value>
+              </Property>
+            </Properties>
+            <BitOffs>640072152</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>PRG_2_AT1K4.fbStage2.fbRTD_2.iRaw</Name>
+            <BitSize>16</BitSize>
+            <BaseType>INT</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Input</Value>
+              </Property>
+            </Properties>
+            <BitOffs>640072160</BitOffs>
+          </Symbol>
+          <Symbol>
             <Name>PRG_2_AT1K4.fbStage3.fbMotion.fbMotionStage.fbDriveVirtual.MasterAxis.NcToPlc</Name>
             <BitSize>2048</BitSize>
             <BaseType GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}">NCTOPLC_AXIS_REF</BaseType>
@@ -36170,10 +36200,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640087104</BitOffs>
+            <BitOffs>640087616</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage3.RTD_1.bError</Name>
+            <Name>PRG_2_AT1K4.fbStage3.fbRTD_1.bError</Name>
             <BitSize>8</BitSize>
             <BaseType>BOOL</BaseType>
             <Default>
@@ -36194,10 +36224,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640363720</BitOffs>
+            <BitOffs>640364104</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage3.RTD_1.bUnderrange</Name>
+            <Name>PRG_2_AT1K4.fbStage3.fbRTD_1.bUnderrange</Name>
             <BitSize>8</BitSize>
             <BaseType>BOOL</BaseType>
             <Properties>
@@ -36206,10 +36236,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640363728</BitOffs>
+            <BitOffs>640364112</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage3.RTD_1.bOverrange</Name>
+            <Name>PRG_2_AT1K4.fbStage3.fbRTD_1.bOverrange</Name>
             <BitSize>8</BitSize>
             <BaseType>BOOL</BaseType>
             <Properties>
@@ -36218,10 +36248,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640363736</BitOffs>
+            <BitOffs>640364120</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage3.RTD_1.iRaw</Name>
+            <Name>PRG_2_AT1K4.fbStage3.fbRTD_1.iRaw</Name>
             <BitSize>16</BitSize>
             <BaseType>INT</BaseType>
             <Properties>
@@ -36230,10 +36260,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640363744</BitOffs>
+            <BitOffs>640364128</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage3.RTD_2.bError</Name>
+            <Name>PRG_2_AT1K4.fbStage3.fbRTD_2.bError</Name>
             <BitSize>8</BitSize>
             <BaseType>BOOL</BaseType>
             <Default>
@@ -36254,10 +36284,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640363976</BitOffs>
+            <BitOffs>640364360</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage3.RTD_2.bUnderrange</Name>
+            <Name>PRG_2_AT1K4.fbStage3.fbRTD_2.bUnderrange</Name>
             <BitSize>8</BitSize>
             <BaseType>BOOL</BaseType>
             <Properties>
@@ -36266,10 +36296,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640363984</BitOffs>
+            <BitOffs>640364368</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage3.RTD_2.bOverrange</Name>
+            <Name>PRG_2_AT1K4.fbStage3.fbRTD_2.bOverrange</Name>
             <BitSize>8</BitSize>
             <BaseType>BOOL</BaseType>
             <Properties>
@@ -36278,10 +36308,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640363992</BitOffs>
+            <BitOffs>640364376</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbStage3.RTD_2.iRaw</Name>
+            <Name>PRG_2_AT1K4.fbStage3.fbRTD_2.iRaw</Name>
             <BitSize>16</BitSize>
             <BaseType>INT</BaseType>
             <Properties>
@@ -36290,139 +36320,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640364000</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbStage4.fbMotion.fbMotionStage.fbDriveVirtual.MasterAxis.NcToPlc</Name>
-            <BitSize>2048</BitSize>
-            <BaseType GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}">NCTOPLC_AXIS_REF</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>640379200</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbStage4.RTD_1.bError</Name>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Default>
-              <Value>1</Value>
-            </Default>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: ERR
-        io: input
-        field: ONAM True
-        field: ZNAM False
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>640655816</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbStage4.RTD_1.bUnderrange</Name>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>640655824</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbStage4.RTD_1.bOverrange</Name>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>640655832</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbStage4.RTD_1.iRaw</Name>
-            <BitSize>16</BitSize>
-            <BaseType>INT</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>640655840</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbStage4.RTD_2.bError</Name>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Default>
-              <Value>1</Value>
-            </Default>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: ERR
-        io: input
-        field: ONAM True
-        field: ZNAM False
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>640656072</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbStage4.RTD_2.bUnderrange</Name>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>640656080</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbStage4.RTD_2.bOverrange</Name>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>640656088</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbStage4.RTD_2.iRaw</Name>
-            <BitSize>16</BitSize>
-            <BaseType>INT</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>640656096</BitOffs>
+            <BitOffs>640364384</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.Axis.NcToPlc</Name>
@@ -36996,12 +36894,144 @@ External Setpoint Generation:
             </Properties>
             <BitOffs>640729872</BitOffs>
           </Symbol>
+          <Symbol>
+            <Name>PRG_2_AT1K4.fbStage4.fbMotion.fbMotionStage.fbDriveVirtual.MasterAxis.NcToPlc</Name>
+            <BitSize>2048</BitSize>
+            <BaseType GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}">NCTOPLC_AXIS_REF</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Input</Value>
+              </Property>
+            </Properties>
+            <BitOffs>645350208</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>PRG_2_AT1K4.fbStage4.fbRTD_1.bError</Name>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Default>
+              <Value>1</Value>
+            </Default>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: ERR
+        io: input
+        field: ONAM True
+        field: ZNAM False
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Input</Value>
+              </Property>
+            </Properties>
+            <BitOffs>645626696</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>PRG_2_AT1K4.fbStage4.fbRTD_1.bUnderrange</Name>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Input</Value>
+              </Property>
+            </Properties>
+            <BitOffs>645626704</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>PRG_2_AT1K4.fbStage4.fbRTD_1.bOverrange</Name>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Input</Value>
+              </Property>
+            </Properties>
+            <BitOffs>645626712</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>PRG_2_AT1K4.fbStage4.fbRTD_1.iRaw</Name>
+            <BitSize>16</BitSize>
+            <BaseType>INT</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Input</Value>
+              </Property>
+            </Properties>
+            <BitOffs>645626720</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>PRG_2_AT1K4.fbStage4.fbRTD_2.bError</Name>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Default>
+              <Value>1</Value>
+            </Default>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: ERR
+        io: input
+        field: ONAM True
+        field: ZNAM False
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Input</Value>
+              </Property>
+            </Properties>
+            <BitOffs>645626952</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>PRG_2_AT1K4.fbStage4.fbRTD_2.bUnderrange</Name>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Input</Value>
+              </Property>
+            </Properties>
+            <BitOffs>645626960</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>PRG_2_AT1K4.fbStage4.fbRTD_2.bOverrange</Name>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Input</Value>
+              </Property>
+            </Properties>
+            <BitOffs>645626968</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>PRG_2_AT1K4.fbStage4.fbRTD_2.iRaw</Name>
+            <BitSize>16</BitSize>
+            <BaseType>INT</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Input</Value>
+              </Property>
+            </Properties>
+            <BitOffs>645626976</BitOffs>
+          </Symbol>
         </DataArea>
         <DataArea>
           <AreaNo AreaType="OutputSrc" CreateSymbols="true">1</AreaNo>
           <Name>PlcTask Outputs</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80805888</ByteSize>
+          <ByteSize>80740352</ByteSize>
           <Symbol>
             <Name>PRG_2_AT1K4.fbStage1.fbMotion.fbMotionStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
             <BitSize>1024</BitSize>
@@ -37012,7 +37042,7 @@ External Setpoint Generation:
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>639501888</BitOffs>
+            <BitOffs>639502144</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbStage2.fbMotion.fbMotionStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
@@ -37024,7 +37054,7 @@ External Setpoint Generation:
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>639793984</BitOffs>
+            <BitOffs>639794368</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbStage3.fbMotion.fbMotionStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
@@ -37036,19 +37066,7 @@ External Setpoint Generation:
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>640086080</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbStage4.fbMotion.fbMotionStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
-            <BitSize>1024</BitSize>
-            <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>640378176</BitOffs>
+            <BitOffs>640086592</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.Axis.PlcToNc</Name>
@@ -37190,12 +37208,24 @@ External Setpoint Generation:
             </Properties>
             <BitOffs>640729752</BitOffs>
           </Symbol>
+          <Symbol>
+            <Name>PRG_2_AT1K4.fbStage4.fbMotion.fbMotionStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
+            <BitSize>1024</BitSize>
+            <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Output</Value>
+              </Property>
+            </Properties>
+            <BitOffs>645349184</BitOffs>
+          </Symbol>
         </DataArea>
         <DataArea>
           <AreaNo AreaType="Internal" CreateSymbols="true">3</AreaNo>
           <Name>PlcTask Internal</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80805888</ByteSize>
+          <ByteSize>80740352</ByteSize>
           <Symbol>
             <Name>DefaultGlobals.stSys</Name>
             <Comment>Included for you</Comment>
@@ -43399,7 +43429,7 @@ External Setpoint Generation:
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbStage1</Name>
-            <BitSize>292096</BitSize>
+            <BitSize>292224</BitSize>
             <BaseType>FB_SXR_SATT_Stage</BaseType>
             <Properties>
               <Property>
@@ -43410,15 +43440,15 @@ External Setpoint Generation:
                 <Name>TcLinkTo</Name>
                 <Value>
 
-        .RTD_1.iRaw := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Value;
-        .RTD_1.bError := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^error;
-        .RTD_1.bUnderrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^Underrange;
-        .RTD_1.bOverrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^Overrange;
+        .fbRTD_1.iRaw := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Value;
+        .fbRTD_1.bError := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^error;
+        .fbRTD_1.bUnderrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^Underrange;
+        .fbRTD_1.bOverrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^Overrange;
 
-        .RTD_2.iRaw := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Value;
-        .RTD_2.bError := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^error;
-        .RTD_2.bUnderrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^Underrange;
-        .RTD_2.bOverrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^Overrange;
+        .fbRTD_2.iRaw := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Value;
+        .fbRTD_2.bError := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^error;
+        .fbRTD_2.bUnderrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^Underrange;
+        .fbRTD_2.bOverrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^Overrange;
 
     </Value>
               </Property>
@@ -43427,7 +43457,7 @@ External Setpoint Generation:
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbStage2</Name>
-            <BitSize>292096</BitSize>
+            <BitSize>292224</BitSize>
             <BaseType>FB_SXR_SATT_Stage</BaseType>
             <Properties>
               <Property>
@@ -43438,24 +43468,24 @@ External Setpoint Generation:
                 <Name>TcLinkTo</Name>
                 <Value>
 
-        .RTD_1.iRaw := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Value;
-        .RTD_1.bError := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Error;
-        .RTD_1.bUnderrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Underrange;
-        .RTD_1.bOverrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Overrange;
+        .fbRTD_1.iRaw := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Value;
+        .fbRTD_1.bError := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Error;
+        .fbRTD_1.bUnderrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Underrange;
+        .fbRTD_1.bOverrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Overrange;
 
-        .RTD_2.iRaw := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Value;
-        .RTD_2.bError := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Error;
-        .RTD_2.bUnderrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Underrange;
-        .RTD_2.bOverrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Overrange;
+        .fbRTD_2.iRaw := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Value;
+        .fbRTD_2.bError := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Error;
+        .fbRTD_2.bUnderrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Underrange;
+        .fbRTD_2.bOverrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Overrange;
 
     </Value>
               </Property>
             </Properties>
-            <BitOffs>639779840</BitOffs>
+            <BitOffs>639779968</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbStage3</Name>
-            <BitSize>292096</BitSize>
+            <BitSize>292224</BitSize>
             <BaseType>FB_SXR_SATT_Stage</BaseType>
             <Properties>
               <Property>
@@ -43466,46 +43496,19 @@ External Setpoint Generation:
                 <Name>TcLinkTo</Name>
                 <Value>
 
-        .RTD_1.iRaw := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Value;
-        .RTD_1.bError := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Error;
-        .RTD_1.bUnderrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Underrange;
-        .RTD_1.bOverrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Overrange;
+        .fbRTD_1.iRaw := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Value;
+        .fbRTD_1.bError := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Error;
+        .fbRTD_1.bUnderrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Underrange;
+        .fbRTD_1.bOverrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Overrange;
 
-        .RTD_2.iRaw := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Value;
-        .RTD_2.bError := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Error;
-        .RTD_2.bUnderrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Underrange;
-        .RTD_2.bOverrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Overrange;
+        .fbRTD_2.iRaw := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Value;
+        .fbRTD_2.bError := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Error;
+        .fbRTD_2.bUnderrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Underrange;
+        .fbRTD_2.bOverrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Overrange;
     </Value>
               </Property>
             </Properties>
-            <BitOffs>640071936</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbStage4</Name>
-            <BitSize>292096</BitSize>
-            <BaseType>FB_SXR_SATT_Stage</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>pv: AT1K4:L2SI:MMS:04</Value>
-              </Property>
-              <Property>
-                <Name>TcLinkTo</Name>
-                <Value>
-
-        .RTD_1.iRaw := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Value;
-        .RTD_1.bError := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Error;
-        .RTD_1.bUnderrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Underrange;
-        .RTD_1.bOverrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Overrange;
-
-        .RTD_2.iRaw := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Value;
-        .RTD_2.bError := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Error;
-        .RTD_2.bUnderrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Underrange;
-        .RTD_2.bOverrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Overrange;
-    </Value>
-              </Property>
-            </Properties>
-            <BitOffs>640364032</BitOffs>
+            <BitOffs>640072192</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1</Name>
@@ -44270,12 +44273,39 @@ External Setpoint Generation:
             </Properties>
             <BitOffs>640789312</BitOffs>
           </Symbol>
+          <Symbol>
+            <Name>PRG_2_AT1K4.fbStage4</Name>
+            <BitSize>292224</BitSize>
+            <BaseType>FB_SXR_SATT_Stage</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>pv: AT1K4:L2SI:MMS:04</Value>
+              </Property>
+              <Property>
+                <Name>TcLinkTo</Name>
+                <Value>
+
+        .fbRTD_1.iRaw := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Value;
+        .fbRTD_1.bError := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Error;
+        .fbRTD_1.bUnderrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Underrange;
+        .fbRTD_1.bOverrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Overrange;
+
+        .fbRTD_2.iRaw := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Value;
+        .fbRTD_2.bError := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Error;
+        .fbRTD_2.bUnderrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Underrange;
+        .fbRTD_2.bOverrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Overrange;
+    </Value>
+              </Property>
+            </Properties>
+            <BitOffs>645334784</BitOffs>
+          </Symbol>
         </DataArea>
         <DataArea>
           <AreaNo AreaType="RetainSrc" CreateSymbols="true">4</AreaNo>
           <Name>PlcTask Retains</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80805888</ByteSize>
+          <ByteSize>80740352</ByteSize>
           <Symbol>
             <Name>PMPS_GVL.SuccessfulPreemption</Name>
             <Comment> Any time BPTM applies a new BP request which is confirmed</Comment>
@@ -44319,9 +44349,6 @@ External Setpoint Generation:
       <Deployment/>
       <EventClasses>
         <EventClass>
-          <Type GUID="{97CF8247-B59C-4E2C-B4B0-7350D0471457}">LCLSGeneralEventClass</Type>
-        </EventClass>
-        <EventClass>
           <Type GUID="{BB2A9999-102E-421A-8D3D-B0660E07B1FE}">TcSystemEventClass</Type>
         </EventClass>
         <EventClass>
@@ -44336,6 +44363,9 @@ External Setpoint Generation:
         <EventClass>
           <Type GUID="{1D0C4BAC-ECF3-4F33-8F20-A12E77AB6387}">Win32EventClass</Type>
         </EventClass>
+        <EventClass>
+          <Type GUID="{97CF8247-B59C-4E2C-B4B0-7350D0471457}">LCLSGeneralEventClass</Type>
+        </EventClass>
       </EventClasses>
       <Properties>
         <Property>
@@ -44344,7 +44374,7 @@ External Setpoint Generation:
         </Property>
         <Property>
           <Name>ChangeDate</Name>
-          <Value>2020-10-27T14:58:03</Value>
+          <Value>2020-10-27T15:36:28</Value>
         </Property>
         <Property>
           <Name>GeneratedCodeSize</Name>
@@ -44352,7 +44382,7 @@ External Setpoint Generation:
         </Property>
         <Property>
           <Name>GlobalDataSize</Name>
-          <Value>79736832</Value>
+          <Value>79740928</Value>
         </Property>
       </Properties>
     </Module>
