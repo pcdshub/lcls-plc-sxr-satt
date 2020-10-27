@@ -9,54 +9,67 @@ VAR
 
     nEnableMode : ENUM_StageEnableMode;
 
-    {attribute 'pytmc' := 'pv: AT1K4:L2SI'}
+    {attribute 'pytmc' := 'pv: AT1K4:L2SI:MMS:01'}
     {attribute 'TcLinkTo' := '
 
-        .RTD_Axis1_1.iRaw := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Value;
-        .RTD_Axis1_1.bError := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^Error;
-        .RTD_Axis1_1.bUnderrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^Underrange;
-        .RTD_Axis1_1.bOverrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^Overrange;
+        .RTD_1.iRaw := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Value;
+        .RTD_1.bError := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^error;
+        .RTD_1.bUnderrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^Underrange;
+        .RTD_1.bOverrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^Overrange;
 
-        .RTD_Axis1_2.iRaw := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Value;
-        .RTD_Axis1_2.bError := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^Error;
-        .RTD_Axis1_2.bUnderrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^Underrange;
-        .RTD_Axis1_2.bOverrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^Overrange;
-
-
-        .RTD_Axis2_1.iRaw := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Value;
-        .RTD_Axis2_1.bError := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Error;
-        .RTD_Axis2_1.bUnderrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Underrange;
-        .RTD_Axis2_1.bOverrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Overrange;
-
-        .RTD_Axis2_2.iRaw := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Value;
-        .RTD_Axis2_2.bError := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Error;
-        .RTD_Axis2_2.bUnderrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Underrange;
-        .RTD_Axis2_2.bOverrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Overrange;
-
-
-        .RTD_Axis3_1.iRaw := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Value;
-        .RTD_Axis3_1.bError := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Error;
-        .RTD_Axis3_1.bUnderrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Underrange;
-        .RTD_Axis3_1.bOverrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Overrange;
-
-        .RTD_Axis3_2.iRaw := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Value;
-        .RTD_Axis3_2.bError := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Error;
-        .RTD_Axis3_2.bUnderrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Underrange;
-        .RTD_Axis3_2.bOverrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Overrange;
-
-
-        .RTD_Axis4_1.iRaw := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Value;
-        .RTD_Axis4_1.bError := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Error;
-        .RTD_Axis4_1.bUnderrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Underrange;
-        .RTD_Axis4_1.bOverrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Overrange;
-
-        .RTD_Axis4_2.iRaw := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Value;
-        .RTD_Axis4_2.bError := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Error;
-        .RTD_Axis4_2.bUnderrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Underrange;
-        .RTD_Axis4_2.bOverrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Overrange;
+        .RTD_2.iRaw := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Value;
+        .RTD_2.bError := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^error;
+        .RTD_2.bUnderrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^Underrange;
+        .RTD_2.bOverrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^Overrange;
 
     '}
-    fbSATT : FB_SXR_SATT;
+    fbStage1: FB_SXR_SATT_Stage;
+
+    {attribute 'pytmc' := 'pv: AT1K4:L2SI:MMS:02'}
+    {attribute 'TcLinkTo' := '
+
+        .RTD_1.iRaw := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Value;
+        .RTD_1.bError := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Error;
+        .RTD_1.bUnderrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Underrange;
+        .RTD_1.bOverrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 1^Status^Overrange;
+
+        .RTD_2.iRaw := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Value;
+        .RTD_2.bError := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Error;
+        .RTD_2.bUnderrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Underrange;
+        .RTD_2.bOverrange := TIIB[AT1K4-EL3202-02]^RTD Inputs Channel 2^Status^Overrange;
+
+    '}
+    fbStage2: FB_SXR_SATT_Stage;
+
+    {attribute 'pytmc' := 'pv: AT1K4:L2SI:MMS:03'}
+    {attribute 'TcLinkTo' := '
+
+        .RTD_1.iRaw := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Value;
+        .RTD_1.bError := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Error;
+        .RTD_1.bUnderrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Underrange;
+        .RTD_1.bOverrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 1^Status^Overrange;
+
+        .RTD_2.iRaw := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Value;
+        .RTD_2.bError := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Error;
+        .RTD_2.bUnderrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Underrange;
+        .RTD_2.bOverrange := TIIB[AT1K4-EL3202-03]^RTD Inputs Channel 2^Status^Overrange;
+    '}
+    fbStage3: FB_SXR_SATT_Stage;
+
+    {attribute 'pytmc' := 'pv: AT1K4:L2SI:MMS:04'}
+    {attribute 'TcLinkTo' := '
+
+        .RTD_1.iRaw := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Value;
+        .RTD_1.bError := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Error;
+        .RTD_1.bUnderrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Underrange;
+        .RTD_1.bOverrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 1^Status^Overrange;
+
+        .RTD_2.iRaw := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Value;
+        .RTD_2.bError := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Error;
+        .RTD_2.bUnderrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Underrange;
+        .RTD_2.bOverrange := TIIB[AT1K4-EL3202-04]^RTD Inputs Channel 2^Status^Overrange;
+    '}
+    fbStage4: FB_SXR_SATT_Stage;
 
 END_VAR
 ]]></Declaration>
@@ -69,13 +82,157 @@ ELSE
     nEnableMode := ENUM_StageEnableMode.ALWAYS;
 END_IF
 
-fbSATT(
-    stAxis1 := Main.M1,
-    stAxis2 := Main.M2,
-    stAxis3 := Main.M3,
-    stAxis4 := Main.M4,
-    nEnableMode := nEnableMode
-);
+(* State setup - stage 1 *)
+fbStage1.stOut.sName         := 'Out';
+fbStage1.stOut.fPosition     := 50;
+fbStage1.stOut.fDelta        := 100;
+fbStage1.stOut.fVelocity     := 10;
+fbStage1.stOut.bValid        := TRUE;
+fbStage1.stOut.bMoveOk       := TRUE;
+
+fbStage1.stFilter1.sName     := 'Filter 1';
+fbStage1.stFilter1.fPosition := 500;
+fbStage1.stFilter1.fDelta    := 0;
+fbStage1.stFilter1.fVelocity := 10;
+fbStage1.stFilter1.bValid    := FALSE;
+fbStage1.stFilter1.bMoveOk   := FALSE;
+
+fbStage1.stFilter2.sName     := 'Filter 2';
+fbStage1.stFilter2.fPosition := 500;
+fbStage1.stFilter2.fDelta    := 0;
+fbStage1.stFilter2.fVelocity := 10;
+fbStage1.stFilter2.bValid    := FALSE;
+fbStage1.stFilter2.bMoveOk   := FALSE;
+
+fbStage1.stFilter3.sName     := 'Filter 3';
+fbStage1.stFilter3.fPosition := 500;
+fbStage1.stFilter3.fDelta    := 0;
+fbStage1.stFilter3.fVelocity := 10;
+fbStage1.stFilter3.bValid    := FALSE;
+fbStage1.stFilter3.bMoveOk   := FALSE;
+
+fbStage1.stFilter4.sName     := 'Filter 4';
+fbStage1.stFilter4.fPosition := 500;
+fbStage1.stFilter4.fDelta    := 0;
+fbStage1.stFilter4.fVelocity := 10;
+fbStage1.stFilter4.bValid    := FALSE;
+fbStage1.stFilter4.bMoveOk   := FALSE;
+
+fbStage1(stAxis:=Main.M1, nEnableMode:=nEnableMode);
+
+(* State setup - stage 2 *)
+fbStage2.stOut.sName         := 'Out';
+fbStage2.stOut.fPosition     := 50;
+fbStage2.stOut.fDelta        := 100;
+fbStage2.stOut.fVelocity     := 10;
+fbStage2.stOut.bValid        := TRUE;
+fbStage2.stOut.bMoveOk       := TRUE;
+
+fbStage2.stFilter1.sName     := 'Filter 1';
+fbStage2.stFilter1.fPosition := 500;
+fbStage2.stFilter1.fDelta    := 0;
+fbStage2.stFilter1.fVelocity := 10;
+fbStage2.stFilter1.bValid    := FALSE;
+fbStage2.stFilter1.bMoveOk   := FALSE;
+
+fbStage2.stFilter2.sName     := 'Filter 2';
+fbStage2.stFilter2.fPosition := 500;
+fbStage2.stFilter2.fDelta    := 0;
+fbStage2.stFilter2.fVelocity := 10;
+fbStage2.stFilter2.bValid    := FALSE;
+fbStage2.stFilter2.bMoveOk   := FALSE;
+
+fbStage2.stFilter3.sName     := 'Filter 3';
+fbStage2.stFilter3.fPosition := 500;
+fbStage2.stFilter3.fDelta    := 0;
+fbStage2.stFilter3.fVelocity := 10;
+fbStage2.stFilter3.bValid    := FALSE;
+fbStage2.stFilter3.bMoveOk   := FALSE;
+
+fbStage2.stFilter4.sName     := 'Filter 4';
+fbStage2.stFilter4.fPosition := 500;
+fbStage2.stFilter4.fDelta    := 0;
+fbStage2.stFilter4.fVelocity := 10;
+fbStage2.stFilter4.bValid    := FALSE;
+fbStage2.stFilter4.bMoveOk   := FALSE;
+
+fbStage2(stAxis:=Main.M2, nEnableMode:=nEnableMode);
+
+(* State setup - stage 3 *)
+fbStage3.stOut.sName         := 'Out';
+fbStage3.stOut.fPosition     := 50;
+fbStage3.stOut.fDelta        := 100;
+fbStage3.stOut.fVelocity     := 10;
+fbStage3.stOut.bValid        := TRUE;
+fbStage3.stOut.bMoveOk       := TRUE;
+
+fbStage3.stFilter1.sName     := 'Filter 1';
+fbStage3.stFilter1.fPosition := 500;
+fbStage3.stFilter1.fDelta    := 0;
+fbStage3.stFilter1.fVelocity := 10;
+fbStage3.stFilter1.bValid    := FALSE;
+fbStage3.stFilter1.bMoveOk   := FALSE;
+
+fbStage3.stFilter2.sName     := 'Filter 2';
+fbStage3.stFilter2.fPosition := 500;
+fbStage3.stFilter2.fDelta    := 0;
+fbStage3.stFilter2.fVelocity := 10;
+fbStage3.stFilter2.bValid    := FALSE;
+fbStage3.stFilter2.bMoveOk   := FALSE;
+
+fbStage3.stFilter3.sName     := 'Filter 3';
+fbStage3.stFilter3.fPosition := 500;
+fbStage3.stFilter3.fDelta    := 0;
+fbStage3.stFilter3.fVelocity := 10;
+fbStage3.stFilter3.bValid    := FALSE;
+fbStage3.stFilter3.bMoveOk   := FALSE;
+
+fbStage3.stFilter4.sName     := 'Filter 4';
+fbStage3.stFilter4.fPosition := 500;
+fbStage3.stFilter4.fDelta    := 0;
+fbStage3.stFilter4.fVelocity := 10;
+fbStage3.stFilter4.bValid    := FALSE;
+fbStage3.stFilter4.bMoveOk   := FALSE;
+
+fbStage3(stAxis:=Main.M3, nEnableMode:=nEnableMode);
+
+(* State setup - stage 4 *)
+fbStage4.stOut.sName         := 'Out';
+fbStage4.stOut.fPosition     := 50;
+fbStage4.stOut.fDelta        := 100;
+fbStage4.stOut.fVelocity     := 10;
+fbStage4.stOut.bValid        := TRUE;
+fbStage4.stOut.bMoveOk       := TRUE;
+
+fbStage4.stFilter1.sName     := 'Filter 1';
+fbStage4.stFilter1.fPosition := 500;
+fbStage4.stFilter1.fDelta    := 0;
+fbStage4.stFilter1.fVelocity := 10;
+fbStage4.stFilter1.bValid    := FALSE;
+fbStage4.stFilter1.bMoveOk   := FALSE;
+
+fbStage4.stFilter2.sName     := 'Filter 2';
+fbStage4.stFilter2.fPosition := 500;
+fbStage4.stFilter2.fDelta    := 0;
+fbStage4.stFilter2.fVelocity := 10;
+fbStage4.stFilter2.bValid    := FALSE;
+fbStage4.stFilter2.bMoveOk   := FALSE;
+
+fbStage4.stFilter3.sName     := 'Filter 3';
+fbStage4.stFilter3.fPosition := 500;
+fbStage4.stFilter3.fDelta    := 0;
+fbStage4.stFilter3.fVelocity := 10;
+fbStage4.stFilter3.bValid    := FALSE;
+fbStage4.stFilter3.bMoveOk   := FALSE;
+
+fbStage4.stFilter4.sName     := 'Filter 4';
+fbStage4.stFilter4.fPosition := 500;
+fbStage4.stFilter4.fDelta    := 0;
+fbStage4.stFilter4.fVelocity := 10;
+fbStage4.stFilter4.bValid    := FALSE;
+fbStage4.stFilter4.bMoveOk   := FALSE;
+
+fbStage4(stAxis:=Main.M4, nEnableMode:=nEnableMode);
 ]]></ST>
     </Implementation>
   </POU>

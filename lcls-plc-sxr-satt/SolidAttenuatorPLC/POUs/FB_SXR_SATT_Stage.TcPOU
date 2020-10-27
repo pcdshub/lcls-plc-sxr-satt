@@ -7,6 +7,12 @@ VAR_IN_OUT
 END_VAR
 VAR_INPUT
     nEnableMode : ENUM_StageEnableMode;
+
+    stOut		: DUT_PositionState;
+    stFilter1	: DUT_PositionState;
+    stFilter2	: DUT_PositionState;
+    stFilter3	: DUT_PositionState;
+    stFilter4	: DUT_PositionState;
 END_VAR
 VAR_OUTPUT
 END_VAR
@@ -21,12 +27,14 @@ VAR
          pv: STATE
     '}
     fbState 	: FB_SXR_SATT_PositionState;
-    stOut		: DUT_PositionState;
-    stFilter1	: DUT_PositionState;
-    stFilter2	: DUT_PositionState;
-    stFilter3	: DUT_PositionState;
-    stFilter4	: DUT_PositionState;
+
     bInitialized: BOOL := FALSE;
+
+    (* EL3202-0020: 0.01 °C per digit *)
+    {attribute 'pytmc' := 'pv: RTD:1'}
+    RTD_1: FB_TempSensor := ( fResolution:=0.01 );
+    {attribute 'pytmc' := 'pv: RTD:2'}
+    RTD_2: FB_TempSensor := ( fResolution:=0.01 );
 
 END_VAR
 ]]></Declaration>
@@ -45,43 +53,10 @@ END_VAR
     (* Defaults for visualization *)
     stExtra.fVisuStep			:= 0.1;
 
-    (* State setup *)
-    stOut.sName 	:= 'Out';
-    stOut.fPosition := 50;
-    stOut.fDelta 	:= 100;
-    stOut.fVelocity := 10;
-    stOut.bValid 	:= TRUE;
-    stOut.bMoveOk 	:= TRUE;
-
-    stFilter1.sName 	:= 'Filter 1';
-    stFilter1.fPosition := 500;
-    stFilter1.fDelta 	:= 0;
-    stFilter1.fVelocity := 10;
-    stFilter1.bValid 	:= FALSE;
-    stFilter1.bMoveOk 	:= FALSE;
-
-    stFilter2.sName 	:= 'Filter 2';
-    stFilter2.fPosition := 500;
-    stFilter2.fDelta 	:= 0;
-    stFilter2.fVelocity := 10;
-    stFilter2.bValid 	:= FALSE;
-    stFilter2.bMoveOk 	:= FALSE;
-
-    stFilter3.sName 	:= 'Filter 1';
-    stFilter3.fPosition := 500;
-    stFilter3.fDelta 	:= 0;
-    stFilter3.fVelocity := 10;
-    stFilter3.bValid 	:= FALSE;
-    stFilter3.bMoveOk 	:= FALSE;
-
-    stFilter4.sName 	:= 'Filter 4';
-    stFilter4.fPosition := 500;
-    stFilter4.fDelta 	:= 0;
-    stFilter4.fVelocity := 10;
-    stFilter4.bValid 	:= FALSE;
-    stFilter4.bMoveOk 	:= FALSE;
-
 END_IF
+
+RTD_1();
+RTD_2();
 
 stAxis.nEnableMode := nEnableMode;
 fbMotion(stMotionStage:=stAxis);

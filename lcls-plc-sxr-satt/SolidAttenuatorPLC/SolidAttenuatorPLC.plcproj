@@ -28,9 +28,6 @@
     <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FB_SXR_SATT.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="POUs\FB_SXR_SATT_PositionState.TcPOU">
       <SubType>Code</SubType>
     </Compile>
