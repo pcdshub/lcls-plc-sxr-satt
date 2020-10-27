@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{F402322B-475B-34F8-7414-6CE6A4446205}" GeneratedBy="TwinCAT XAE Plc">
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{346ADE79-82AC-0751-127E-746C450A30D3}" GeneratedBy="TwinCAT XAE Plc">
   <DataTypes>
     <DataType>
       <Name GUID="{18071995-0000-0000-0000-000000000041}" TcBaseType="true" HideSubItems="true" CName="AmsNetId">AMSNETID</Name>
@@ -209,31 +209,31 @@
         <Name>bBusy</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <GetCodeOffs>80092448</GetCodeOffs>
+        <GetCodeOffs>80059000</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>bError</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <GetCodeOffs>80092512</GetCodeOffs>
+        <GetCodeOffs>80059064</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>hrErrorCode</Name>
         <Type GUID="{18071995-0000-0000-0000-000000000019}">HRESULT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>80092528</GetCodeOffs>
+        <GetCodeOffs>80059080</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>nStringSize</Name>
         <Type>UDINT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>80092496</GetCodeOffs>
+        <GetCodeOffs>80059048</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>sResult</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>80092520</GetCodeOffs>
+        <GetCodeOffs>80059072</GetCodeOffs>
       </PropertyItem>
       <Method>
         <Name RpcEnable="plc" VTableIndex="0">__getbBusy</Name>
@@ -1476,15 +1476,15 @@
         <Name>nId</Name>
         <Type>UDINT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>80092328</GetCodeOffs>
-        <SetCodeOffs>80092376</SetCodeOffs>
+        <GetCodeOffs>80058880</GetCodeOffs>
+        <SetCodeOffs>80058928</SetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>sName</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>80092400</GetCodeOffs>
-        <SetCodeOffs>80092424</SetCodeOffs>
+        <GetCodeOffs>80058952</GetCodeOffs>
+        <SetCodeOffs>80058976</SetCodeOffs>
       </PropertyItem>
       <Method>
         <Name>__setbCutInstancePathByLastInst</Name>
@@ -1777,31 +1777,31 @@
         <Name>eSeverity</Name>
         <Type GUID="{B57D3F4A-0836-49B0-81C3-BED5F4817EC9}">TcEventSeverity</Type>
         <BitSize>16</BitSize>
-        <GetCodeOffs>80092624</GetCodeOffs>
+        <GetCodeOffs>80059176</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>ipSourceInfo</Name>
         <Type Namespace="LCLS_General.Tc3_EventLogger">I_TcSourceInfo</Type>
         <BitSize>64</BitSize>
-        <GetCodeOffs>80092584</GetCodeOffs>
+        <GetCodeOffs>80059136</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>nEventId</Name>
         <Type>UDINT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>80092760</GetCodeOffs>
+        <GetCodeOffs>80059312</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>sEventClassName</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>80092680</GetCodeOffs>
+        <GetCodeOffs>80059232</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>sEventText</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>80092768</GetCodeOffs>
+        <GetCodeOffs>80059320</GetCodeOffs>
       </PropertyItem>
       <Method>
         <Name>EqualsToEventClass</Name>
@@ -2399,7 +2399,7 @@
         <Name>nTimeSent</Name>
         <Type>ULINT</Type>
         <BitSize>64</BitSize>
-        <GetCodeOffs>80092824</GetCodeOffs>
+        <GetCodeOffs>80059376</GetCodeOffs>
       </PropertyItem>
       <Method>
         <Name>SetJsonAttribute</Name>
@@ -15260,8 +15260,8 @@
         <Name>nTimestamp</Name>
         <Type>ULINT</Type>
         <BitSize>64</BitSize>
-        <GetCodeOffs>80098536</GetCodeOffs>
-        <SetCodeOffs>80098552</SetCodeOffs>
+        <GetCodeOffs>80065088</GetCodeOffs>
+        <SetCodeOffs>80065104</SetCodeOffs>
       </PropertyItem>
       <Method>
         <Name RpcEnable="plc" VTableIndex="44">__getnTimestamp</Name>
@@ -16515,31 +16515,31 @@
         <Name>bBusy</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <GetCodeOffs>80097584</GetCodeOffs>
+        <GetCodeOffs>80064136</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>bError</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <GetCodeOffs>80097648</GetCodeOffs>
+        <GetCodeOffs>80064200</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>hrErrorCode</Name>
         <Type GUID="{18071995-0000-0000-0000-000000000019}">HRESULT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>80097656</GetCodeOffs>
+        <GetCodeOffs>80064208</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>nStringSize</Name>
         <Type>UDINT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>80097632</GetCodeOffs>
+        <GetCodeOffs>80064184</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>sEventText</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>80097672</GetCodeOffs>
+        <GetCodeOffs>80064224</GetCodeOffs>
       </PropertyItem>
       <Method>
         <Name RpcEnable="plc" VTableIndex="0">__getbBusy</Name>
@@ -32276,1239 +32276,6 @@ External Setpoint Generation:
       </Properties>
     </DataType>
     <DataType>
-      <Name Namespace="lcls_twincat_motion">ENUM_MotionRequest</Name>
-      <BitSize>16</BitSize>
-      <BaseType>INT</BaseType>
-      <EnumInfo>
-        <Text>WAIT</Text>
-        <Enum>0</Enum>
-      </EnumInfo>
-      <EnumInfo>
-        <Text>INTERRUPT</Text>
-        <Enum>1</Enum>
-      </EnumInfo>
-      <EnumInfo>
-        <Text>ABORT</Text>
-        <Enum>2</Enum>
-      </EnumInfo>
-    </DataType>
-    <DataType>
-      <Name Namespace="lcls_twincat_motion">FB_MotionRequest</Name>
-      <BitSize>1920</BitSize>
-      <SubItem>
-        <Name>stMotionStage</Name>
-        <Type Namespace="lcls_twincat_motion" ReferenceTo="true">DUT_MotionStage</Type>
-        <Comment> Motor to move</Comment>
-        <BitSize>64</BitSize>
-        <BitOffs>64</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>InOut</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bExecute</Name>
-        <Type>BOOL</Type>
-        <Comment> Start move on rising edge, stop move on falling edge</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>128</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bReset</Name>
-        <Type>BOOL</Type>
-        <Comment> Reset errors on rising edge</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>136</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>enumMotionRequest</Name>
-        <Type Namespace="lcls_twincat_motion">ENUM_MotionRequest</Type>
-        <Comment> Define behavior for when the motor is already moving</Comment>
-        <BitSize>16</BitSize>
-        <BitOffs>144</BitOffs>
-        <Default>
-          <Value>0</Value>
-        </Default>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fPos</Name>
-        <Type>LREAL</Type>
-        <Comment> Goal position</Comment>
-        <BitSize>64</BitSize>
-        <BitOffs>192</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fVel</Name>
-        <Type>LREAL</Type>
-        <Comment> Move velocity</Comment>
-        <BitSize>64</BitSize>
-        <BitOffs>256</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fAcc</Name>
-        <Type>LREAL</Type>
-        <Comment> Optional acceleration</Comment>
-        <BitSize>64</BitSize>
-        <BitOffs>320</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fDec</Name>
-        <Type>LREAL</Type>
-        <Comment> Optional deceleration</Comment>
-        <BitSize>64</BitSize>
-        <BitOffs>384</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bError</Name>
-        <Type>BOOL</Type>
-        <Comment> True if in error state</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>448</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>nErrorId</Name>
-        <Type>UDINT</Type>
-        <Comment> Error code</Comment>
-        <BitSize>32</BitSize>
-        <BitOffs>480</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>sErrorMessage</Name>
-        <Type>STRING(80)</Type>
-        <Comment> What the error code means</Comment>
-        <BitSize>648</BitSize>
-        <BitOffs>512</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bBusy</Name>
-        <Type>BOOL</Type>
-        <Comment> If TRUE, we are moving the motor</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>1160</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bDone</Name>
-        <Type>BOOL</Type>
-        <Comment> If TRUE, we are not moving the motor and our most recent move was successful</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>1168</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>rtExec</Name>
-        <Type Namespace="Tc2_Standard">R_TRIG</Type>
-        <BitSize>128</BitSize>
-        <BitOffs>1216</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>ftExec</Name>
-        <Type Namespace="Tc2_Standard">F_TRIG</Type>
-        <BitSize>128</BitSize>
-        <BitOffs>1344</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>rtReset</Name>
-        <Type Namespace="Tc2_Standard">R_TRIG</Type>
-        <BitSize>128</BitSize>
-        <BitOffs>1472</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>ftBusy</Name>
-        <Type Namespace="Tc2_Standard">F_TRIG</Type>
-        <BitSize>128</BitSize>
-        <BitOffs>1600</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>nState</Name>
-        <Type>UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>1728</BitOffs>
-        <Default>
-          <Value>0</Value>
-        </Default>
-      </SubItem>
-      <SubItem>
-        <Name>bMyMove</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>1744</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bCausedError</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>1752</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>INIT</Name>
-        <Type>UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>1760</BitOffs>
-        <Default>
-          <Value>0</Value>
-        </Default>
-      </SubItem>
-      <SubItem>
-        <Name>WAIT_EXEC</Name>
-        <Type>UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>1776</BitOffs>
-        <Default>
-          <Value>1</Value>
-        </Default>
-      </SubItem>
-      <SubItem>
-        <Name>PICK_REQUEST</Name>
-        <Type>UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>1792</BitOffs>
-        <Default>
-          <Value>2</Value>
-        </Default>
-      </SubItem>
-      <SubItem>
-        <Name>WAIT_OTHER_MOVE</Name>
-        <Type>UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>1808</BitOffs>
-        <Default>
-          <Value>3</Value>
-        </Default>
-      </SubItem>
-      <SubItem>
-        <Name>STOP_OTHER_MOVE</Name>
-        <Type>UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>1824</BitOffs>
-        <Default>
-          <Value>4</Value>
-        </Default>
-      </SubItem>
-      <SubItem>
-        <Name>START_MOVE</Name>
-        <Type>UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>1840</BitOffs>
-        <Default>
-          <Value>5</Value>
-        </Default>
-      </SubItem>
-      <SubItem>
-        <Name>WAIT_MY_MOVE</Name>
-        <Type>UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>1856</BitOffs>
-        <Default>
-          <Value>6</Value>
-        </Default>
-      </SubItem>
-      <SubItem>
-        <Name>STOP_MY_MOVE</Name>
-        <Type>UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>1872</BitOffs>
-        <Default>
-          <Value>7</Value>
-        </Default>
-      </SubItem>
-      <SubItem>
-        <Name>DONE_MOVING</Name>
-        <Type>UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>1888</BitOffs>
-        <Default>
-          <Value>8</Value>
-        </Default>
-      </SubItem>
-      <SubItem>
-        <Name>ERROR</Name>
-        <Type>UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>1904</BitOffs>
-        <Default>
-          <Value>9</Value>
-        </Default>
-      </SubItem>
-      <Method>
-        <Name>__GetInterfaceReference</Name>
-        <ReturnType>BOOL</ReturnType>
-        <ReturnBitSize>8</ReturnBitSize>
-        <Parameter>
-          <Name>nInterfaceId</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Parameter>
-        <Parameter>
-          <Name>pRef</Name>
-          <Type PointerTo="2">DWORD</Type>
-          <BitSize>64</BitSize>
-        </Parameter>
-      </Method>
-      <Method>
-        <Name>__GetInterfacePointer</Name>
-        <ReturnType>BOOL</ReturnType>
-        <ReturnBitSize>8</ReturnBitSize>
-        <Parameter>
-          <Name>pRef</Name>
-          <Type PointerTo="2">DWORD</Type>
-          <BitSize>64</BitSize>
-        </Parameter>
-      </Method>
-      <Properties>
-        <Property>
-          <Name>PouType</Name>
-          <Value>FunctionBlock</Value>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
-      <Name Namespace="lcls_twincat_motion">FB_PositionStateMove</Name>
-      <BitSize>2944</BitSize>
-      <SubItem>
-        <Name>stMotionStage</Name>
-        <Type Namespace="lcls_twincat_motion" ReferenceTo="true">DUT_MotionStage</Type>
-        <Comment> Motor to move</Comment>
-        <BitSize>64</BitSize>
-        <BitOffs>64</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>InOut</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>stPositionState</Name>
-        <Type Namespace="lcls_twincat_motion" ReferenceTo="true">DUT_PositionState</Type>
-        <Comment> State to move to</Comment>
-        <BitSize>64</BitSize>
-        <BitOffs>128</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>InOut</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv:
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bExecute</Name>
-        <Type>BOOL</Type>
-        <Comment> Start move on rising edge, stop move on falling edge</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>192</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: GO
-        io: io
-        field: ZNAM False
-        field: ONAM True
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bReset</Name>
-        <Type>BOOL</Type>
-        <Comment> Rising edge error reset</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>200</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: RESET
-        io: io
-        field: ZNAM False
-        field: ONAM True
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>enumMotionRequest</Name>
-        <Type Namespace="lcls_twincat_motion">ENUM_MotionRequest</Type>
-        <Comment> Define behavior for when a move is already active</Comment>
-        <BitSize>16</BitSize>
-        <BitOffs>208</BitOffs>
-        <Default>
-          <Value>0</Value>
-        </Default>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bAtState</Name>
-        <Type>BOOL</Type>
-        <Comment> TRUE if the motor is at this state</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>224</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: AT_STATE
-        io: input
-        field: ZNAM False
-        field: ONAM True
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bError</Name>
-        <Type>BOOL</Type>
-        <Comment> TRUE if we have an error</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>232</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: ERR
-        io: input
-        field: ZNAM False
-        field: ONAM True
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>nErrorID</Name>
-        <Type>UDINT</Type>
-        <Comment> Error code</Comment>
-        <BitSize>32</BitSize>
-        <BitOffs>256</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: ERRID
-        io: input
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>sErrorMessage</Name>
-        <Type>STRING(80)</Type>
-        <Comment> Error description</Comment>
-        <BitSize>648</BitSize>
-        <BitOffs>288</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: ERRMSG
-        io: input
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bBusy</Name>
-        <Type>BOOL</Type>
-        <Comment> TRUE if we are moving to a state</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>936</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: BUSY
-        io: input
-        field: ZNAM False
-        field: ONAM True
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bDone</Name>
-        <Type>BOOL</Type>
-        <Comment> TRUE if we are note moving and we reached a state successfully on our last move</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>944</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: DONE
-        io: input
-        field: ZNAM False
-        field: ONAM True
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fbMotionRequest</Name>
-        <Type Namespace="lcls_twincat_motion">FB_MotionRequest</Type>
-        <BitSize>1920</BitSize>
-        <BitOffs>960</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bAllowMove</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>2880</BitOffs>
-      </SubItem>
-      <Method>
-        <Name>__GetInterfaceReference</Name>
-        <ReturnType>BOOL</ReturnType>
-        <ReturnBitSize>8</ReturnBitSize>
-        <Parameter>
-          <Name>nInterfaceId</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Parameter>
-        <Parameter>
-          <Name>pRef</Name>
-          <Type PointerTo="2">DWORD</Type>
-          <BitSize>64</BitSize>
-        </Parameter>
-      </Method>
-      <Method>
-        <Name>__GetInterfacePointer</Name>
-        <ReturnType>BOOL</ReturnType>
-        <ReturnBitSize>8</ReturnBitSize>
-        <Parameter>
-          <Name>pRef</Name>
-          <Type PointerTo="2">DWORD</Type>
-          <BitSize>64</BitSize>
-        </Parameter>
-      </Method>
-      <Properties>
-        <Property>
-          <Name>PouType</Name>
-          <Value>FunctionBlock</Value>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
-      <Name Namespace="lcls_twincat_motion">FB_RawCountConverter</Name>
-      <BitSize>8576</BitSize>
-      <SubItem>
-        <Name>stParameters</Name>
-        <Type Namespace="lcls_twincat_motion.Tc2_MC2">ST_AxisParameterSet</Type>
-        <Comment> Parameters to check against</Comment>
-        <BitSize>8192</BitSize>
-        <BitOffs>64</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>nCountCheck</Name>
-        <Type>UDINT</Type>
-        <Comment> Optional count to convert to a real position</Comment>
-        <BitSize>32</BitSize>
-        <BitOffs>8256</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fPosCheck</Name>
-        <Type>LREAL</Type>
-        <Comment> Optional position to convert to encoder counts</Comment>
-        <BitSize>64</BitSize>
-        <BitOffs>8320</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>nCountGet</Name>
-        <Type>UDINT</Type>
-        <Comment> If converting position, the number of counts</Comment>
-        <BitSize>32</BitSize>
-        <BitOffs>8384</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fPosGet</Name>
-        <Type>LREAL</Type>
-        <Comment> If converting counts, the position</Comment>
-        <BitSize>64</BitSize>
-        <BitOffs>8448</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bBusy</Name>
-        <Type>BOOL</Type>
-        <Comment> True during a parameter get/calc</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>8512</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bDone</Name>
-        <Type>BOOL</Type>
-        <Comment> True after a successful get/calc</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>8520</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bError</Name>
-        <Type>BOOL</Type>
-        <Comment> True if the calculation errored</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>8528</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <Method>
-        <Name>__GetInterfaceReference</Name>
-        <ReturnType>BOOL</ReturnType>
-        <ReturnBitSize>8</ReturnBitSize>
-        <Parameter>
-          <Name>nInterfaceId</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Parameter>
-        <Parameter>
-          <Name>pRef</Name>
-          <Type PointerTo="2">DWORD</Type>
-          <BitSize>64</BitSize>
-        </Parameter>
-      </Method>
-      <Method>
-        <Name>__GetInterfacePointer</Name>
-        <ReturnType>BOOL</ReturnType>
-        <ReturnBitSize>8</ReturnBitSize>
-        <Parameter>
-          <Name>pRef</Name>
-          <Type PointerTo="2">DWORD</Type>
-          <BitSize>64</BitSize>
-        </Parameter>
-      </Method>
-      <Properties>
-        <Property>
-          <Name>PouType</Name>
-          <Value>FunctionBlock</Value>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
-      <Name Namespace="lcls_twincat_motion">FB_PositionStateLock</Name>
-      <BitSize>2688</BitSize>
-      <SubItem>
-        <Name>stPositionState</Name>
-        <Type Namespace="lcls_twincat_motion" ReferenceTo="true">DUT_PositionState</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>64</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>InOut</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bEnable</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>128</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>stCachedPositionState</Name>
-        <Type Namespace="lcls_twincat_motion">DUT_PositionState</Type>
-        <BitSize>2432</BitSize>
-        <BitOffs>192</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bInit</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>2624</BitOffs>
-        <Default>
-          <Value>0</Value>
-        </Default>
-      </SubItem>
-      <Method>
-        <Name>__GetInterfaceReference</Name>
-        <ReturnType>BOOL</ReturnType>
-        <ReturnBitSize>8</ReturnBitSize>
-        <Parameter>
-          <Name>nInterfaceId</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Parameter>
-        <Parameter>
-          <Name>pRef</Name>
-          <Type PointerTo="2">DWORD</Type>
-          <BitSize>64</BitSize>
-        </Parameter>
-      </Method>
-      <Method>
-        <Name>__GetInterfacePointer</Name>
-        <ReturnType>BOOL</ReturnType>
-        <ReturnBitSize>8</ReturnBitSize>
-        <Parameter>
-          <Name>pRef</Name>
-          <Type PointerTo="2">DWORD</Type>
-          <BitSize>64</BitSize>
-        </Parameter>
-      </Method>
-      <Properties>
-        <Property>
-          <Name>PouType</Name>
-          <Value>FunctionBlock</Value>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
-      <Name Namespace="lcls_twincat_motion">FB_PositionStateInternal</Name>
-      <BitSize>11456</BitSize>
-      <SubItem>
-        <Name>stMotionStage</Name>
-        <Type Namespace="lcls_twincat_motion" ReferenceTo="true">DUT_MotionStage</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>64</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>InOut</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>stPositionState</Name>
-        <Type Namespace="lcls_twincat_motion" ReferenceTo="true">DUT_PositionState</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>128</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>InOut</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fbEncConverter</Name>
-        <Type Namespace="lcls_twincat_motion">FB_RawCountConverter</Type>
-        <BitSize>8576</BitSize>
-        <BitOffs>192</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>fbLock</Name>
-        <Type Namespace="lcls_twincat_motion">FB_PositionStateLock</Type>
-        <BitSize>2688</BitSize>
-        <BitOffs>8768</BitOffs>
-      </SubItem>
-      <Method>
-        <Name>__GetInterfaceReference</Name>
-        <ReturnType>BOOL</ReturnType>
-        <ReturnBitSize>8</ReturnBitSize>
-        <Parameter>
-          <Name>nInterfaceId</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Parameter>
-        <Parameter>
-          <Name>pRef</Name>
-          <Type PointerTo="2">DWORD</Type>
-          <BitSize>64</BitSize>
-        </Parameter>
-      </Method>
-      <Method>
-        <Name>__GetInterfacePointer</Name>
-        <ReturnType>BOOL</ReturnType>
-        <ReturnBitSize>8</ReturnBitSize>
-        <Parameter>
-          <Name>pRef</Name>
-          <Type PointerTo="2">DWORD</Type>
-          <BitSize>64</BitSize>
-        </Parameter>
-      </Method>
-      <Properties>
-        <Property>
-          <Name>PouType</Name>
-          <Value>FunctionBlock</Value>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
-      <Name Namespace="lcls_twincat_motion">FB_PositionStateManager</Name>
-      <BitSize>180992</BitSize>
-      <SubItem>
-        <Name>stMotionStage</Name>
-        <Type Namespace="lcls_twincat_motion" ReferenceTo="true">DUT_MotionStage</Type>
-        <Comment> Motor to move</Comment>
-        <BitSize>64</BitSize>
-        <BitOffs>64</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>InOut</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>arrStates</Name>
-        <Type Namespace="lcls_twincat_motion">DUT_PositionState</Type>
-        <ArrayInfo ReferenceTo="true">
-          <LBound>1</LBound>
-          <Elements>15</Elements>
-        </ArrayInfo>
-        <Comment> Allocated space for 15 states besides Unknown (16 is the max for an EPICS MBBI)</Comment>
-        <BitSize>64</BitSize>
-        <BitOffs>128</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>InOut</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv:
-        io: io
-        expand: %.2d
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>setState</Name>
-        <Type ReferenceTo="true">INT</Type>
-        <Comment> Corresponding arrStates index to move to, or 0 if no move selected</Comment>
-        <BitSize>64</BitSize>
-        <BitOffs>192</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>InOut</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bEnable</Name>
-        <Type>BOOL</Type>
-        <Comment> If TRUE, start a move when setState transitions to a nonzero number</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>256</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bReset</Name>
-        <Type>BOOL</Type>
-        <Comment> On rising edge, reset this FB</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>264</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: RESET
-        io: io
-        field: ZNAM False
-        field: ONAM True
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bError</Name>
-        <Type>BOOL</Type>
-        <Comment> If TRUE, there is an error</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>272</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: ERR
-        io: i
-        field: ZNAM False
-        field: ONAM True
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>nErrorId</Name>
-        <Type>UDINT</Type>
-        <Comment> Error ID</Comment>
-        <BitSize>32</BitSize>
-        <BitOffs>288</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: ERRID
-        io: i
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>sErrorMessage</Name>
-        <Type>STRING(80)</Type>
-        <Comment> The error that caused bError to flip TRUE</Comment>
-        <BitSize>648</BitSize>
-        <BitOffs>320</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: ERRMSG
-        io: i
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bBusy</Name>
-        <Type>BOOL</Type>
-        <Comment> If TRUE, we are moving the motor</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>968</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: BUSY
-        io: i
-        field: ZNAM False
-        field: ONAM True
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bDone</Name>
-        <Type>BOOL</Type>
-        <Comment> If TRUE, we are not moving the motor and the last move completed successfully</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>976</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: DONE
-        io: i
-        field: ZNAM False
-        field: ONAM True
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>goalState</Name>
-        <Type>INT</Type>
-        <Comment> The current position we are trying to reach, or 0</Comment>
-        <BitSize>16</BitSize>
-        <BitOffs>992</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>getState</Name>
-        <Type>INT</Type>
-        <Comment> The readback position</Comment>
-        <BitSize>16</BitSize>
-        <BitOffs>1008</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bInit</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>1024</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>stUnknown</Name>
-        <Type Namespace="lcls_twincat_motion">DUT_PositionState</Type>
-        <BitSize>2432</BitSize>
-        <BitOffs>1088</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>stGoal</Name>
-        <Type Namespace="lcls_twincat_motion">DUT_PositionState</Type>
-        <BitSize>2432</BitSize>
-        <BitOffs>3520</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>fbStateMove</Name>
-        <Type Namespace="lcls_twincat_motion">FB_PositionStateMove</Type>
-        <BitSize>2944</BitSize>
-        <BitOffs>5952</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>fbStateInternal</Name>
-        <Type Namespace="lcls_twincat_motion">FB_PositionStateInternal</Type>
-        <ArrayInfo>
-          <LBound>1</LBound>
-          <Elements>15</Elements>
-        </ArrayInfo>
-        <BitSize>171840</BitSize>
-        <BitOffs>8896</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>nIndex</Name>
-        <Type>INT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>180736</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bNewGoal</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>180752</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bInnerExec</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>180760</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bInnerReset</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>180768</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>rtReset</Name>
-        <Type Namespace="Tc2_Standard">R_TRIG</Type>
-        <BitSize>128</BitSize>
-        <BitOffs>180800</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bMoveRequested</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>180928</BitOffs>
-      </SubItem>
-      <Method>
-        <Name>__GetInterfaceReference</Name>
-        <ReturnType>BOOL</ReturnType>
-        <ReturnBitSize>8</ReturnBitSize>
-        <Parameter>
-          <Name>nInterfaceId</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Parameter>
-        <Parameter>
-          <Name>pRef</Name>
-          <Type PointerTo="2">DWORD</Type>
-          <BitSize>64</BitSize>
-        </Parameter>
-      </Method>
-      <Method>
-        <Name>__GetInterfacePointer</Name>
-        <ReturnType>BOOL</ReturnType>
-        <ReturnBitSize>8</ReturnBitSize>
-        <Parameter>
-          <Name>pRef</Name>
-          <Type PointerTo="2">DWORD</Type>
-          <BitSize>64</BitSize>
-        </Parameter>
-      </Method>
-      <Properties>
-        <Property>
-          <Name>PouType</Name>
-          <Value>FunctionBlock</Value>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
       <Name Namespace="lcls_twincat_motion">DUT_MotionStage_Extras</Name>
       <BitSize>128</BitSize>
       <SubItem>
@@ -33529,6 +32296,88 @@ External Setpoint Generation:
         <BitSize>8</BitSize>
         <BitOffs>72</BitOffs>
       </SubItem>
+    </DataType>
+    <DataType>
+      <Name>FB_SXR_SATT_Stage</Name>
+      <BitSize>174784</BitSize>
+      <SubItem>
+        <Name>stAxis</Name>
+        <Type Namespace="lcls_twincat_motion" ReferenceTo="true">DUT_MotionStage</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>64</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>InOut</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>nEnableMode</Name>
+        <Type Namespace="lcls_twincat_motion">ENUM_StageEnableMode</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>128</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>fbMotion</Name>
+        <Type Namespace="lcls_twincat_motion">FB_MotionStageSim</Type>
+        <Comment> TODO: debug
+ fbMotion: FB_MotionStage;</Comment>
+        <BitSize>174400</BitSize>
+        <BitOffs>192</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>stExtra</Name>
+        <Type Namespace="lcls_twincat_motion">DUT_MotionStage_Extras</Type>
+        <BitSize>128</BitSize>
+        <BitOffs>174592</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>bInitialized</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>174720</BitOffs>
+        <Default>
+          <Value>0</Value>
+        </Default>
+      </SubItem>
+      <Method>
+        <Name>__GetInterfacePointer</Name>
+        <ReturnType>BOOL</ReturnType>
+        <ReturnBitSize>8</ReturnBitSize>
+        <Parameter>
+          <Name>pRef</Name>
+          <Type PointerTo="2">DWORD</Type>
+          <BitSize>64</BitSize>
+        </Parameter>
+      </Method>
+      <Method>
+        <Name>__GetInterfaceReference</Name>
+        <ReturnType>BOOL</ReturnType>
+        <ReturnBitSize>8</ReturnBitSize>
+        <Parameter>
+          <Name>nInterfaceId</Name>
+          <Type>DINT</Type>
+          <BitSize>32</BitSize>
+        </Parameter>
+        <Parameter>
+          <Name>pRef</Name>
+          <Type PointerTo="2">DWORD</Type>
+          <BitSize>64</BitSize>
+        </Parameter>
+      </Method>
+      <Properties>
+        <Property>
+          <Name>PouType</Name>
+          <Value>FunctionBlock</Value>
+        </Property>
+      </Properties>
     </DataType>
     <DataType>
       <Name Namespace="LCLS_General">FB_TempSensor</Name>
@@ -33696,8 +32545,8 @@ External Setpoint Generation:
       </Properties>
     </DataType>
     <DataType>
-      <Name>FB_SXR_SATT_Sim</Name>
-      <BitSize>881536</BitSize>
+      <Name>FB_SXR_SATT</Name>
+      <BitSize>701568</BitSize>
       <SubItem>
         <Name>stAxis1</Name>
         <Type Namespace="lcls_twincat_motion" ReferenceTo="true">DUT_MotionStage</Type>
@@ -33759,79 +32608,35 @@ External Setpoint Generation:
         </Properties>
       </SubItem>
       <SubItem>
-        <Name>bInit</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>336</BitOffs>
-        <Default>
-          <Value>1</Value>
-        </Default>
-      </SubItem>
-      <SubItem>
-        <Name>fbMotion1</Name>
-        <Type Namespace="lcls_twincat_motion">FB_MotionStageSim</Type>
-        <Comment>
-        The 4 motion axes - linked to GVL Main.{M1, M2, M3, and M4}.
-
-        Note that the DUT_MotionStage is where the pytmc pragmas go.
-    </Comment>
-        <BitSize>174400</BitSize>
+        <Name>fbStage1</Name>
+        <Type>FB_SXR_SATT_Stage</Type>
+        <BitSize>174784</BitSize>
         <BitOffs>384</BitOffs>
       </SubItem>
       <SubItem>
-        <Name>fbMotion2</Name>
-        <Type Namespace="lcls_twincat_motion">FB_MotionStageSim</Type>
-        <BitSize>174400</BitSize>
-        <BitOffs>174784</BitOffs>
+        <Name>fbStage2</Name>
+        <Type>FB_SXR_SATT_Stage</Type>
+        <BitSize>174784</BitSize>
+        <BitOffs>175168</BitOffs>
       </SubItem>
       <SubItem>
-        <Name>fbMotion3</Name>
-        <Type Namespace="lcls_twincat_motion">FB_MotionStageSim</Type>
-        <BitSize>174400</BitSize>
-        <BitOffs>349184</BitOffs>
+        <Name>fbStage3</Name>
+        <Type>FB_SXR_SATT_Stage</Type>
+        <BitSize>174784</BitSize>
+        <BitOffs>349952</BitOffs>
       </SubItem>
       <SubItem>
-        <Name>fbMotion4</Name>
-        <Type Namespace="lcls_twincat_motion">FB_MotionStageSim</Type>
-        <BitSize>174400</BitSize>
-        <BitOffs>523584</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>fbState</Name>
-        <Type Namespace="lcls_twincat_motion">FB_PositionStateManager</Type>
-        <BitSize>180992</BitSize>
-        <BitOffs>697984</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>stAxis1Extra</Name>
-        <Type Namespace="lcls_twincat_motion">DUT_MotionStage_Extras</Type>
-        <BitSize>128</BitSize>
-        <BitOffs>878976</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>stAxis2Extra</Name>
-        <Type Namespace="lcls_twincat_motion">DUT_MotionStage_Extras</Type>
-        <BitSize>128</BitSize>
-        <BitOffs>879104</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>stAxis3Extra</Name>
-        <Type Namespace="lcls_twincat_motion">DUT_MotionStage_Extras</Type>
-        <BitSize>128</BitSize>
-        <BitOffs>879232</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>stAxis4Extra</Name>
-        <Type Namespace="lcls_twincat_motion">DUT_MotionStage_Extras</Type>
-        <BitSize>128</BitSize>
-        <BitOffs>879360</BitOffs>
+        <Name>fbStage4</Name>
+        <Type>FB_SXR_SATT_Stage</Type>
+        <BitSize>174784</BitSize>
+        <BitOffs>524736</BitOffs>
       </SubItem>
       <SubItem>
         <Name>RTD_Axis1_1</Name>
         <Type Namespace="LCLS_General">FB_TempSensor</Type>
         <Comment> EL3202-0020: 0.01 °C per digit </Comment>
         <BitSize>256</BitSize>
-        <BitOffs>879488</BitOffs>
+        <BitOffs>699520</BitOffs>
         <Default>
           <SubItem>
             <Name>.fResolution</Name>
@@ -33849,7 +32654,7 @@ External Setpoint Generation:
         <Name>RTD_Axis1_2</Name>
         <Type Namespace="LCLS_General">FB_TempSensor</Type>
         <BitSize>256</BitSize>
-        <BitOffs>879744</BitOffs>
+        <BitOffs>699776</BitOffs>
         <Default>
           <SubItem>
             <Name>.fResolution</Name>
@@ -33867,7 +32672,7 @@ External Setpoint Generation:
         <Name>RTD_Axis2_1</Name>
         <Type Namespace="LCLS_General">FB_TempSensor</Type>
         <BitSize>256</BitSize>
-        <BitOffs>880000</BitOffs>
+        <BitOffs>700032</BitOffs>
         <Default>
           <SubItem>
             <Name>.fResolution</Name>
@@ -33885,7 +32690,7 @@ External Setpoint Generation:
         <Name>RTD_Axis2_2</Name>
         <Type Namespace="LCLS_General">FB_TempSensor</Type>
         <BitSize>256</BitSize>
-        <BitOffs>880256</BitOffs>
+        <BitOffs>700288</BitOffs>
         <Default>
           <SubItem>
             <Name>.fResolution</Name>
@@ -33903,7 +32708,7 @@ External Setpoint Generation:
         <Name>RTD_Axis3_1</Name>
         <Type Namespace="LCLS_General">FB_TempSensor</Type>
         <BitSize>256</BitSize>
-        <BitOffs>880512</BitOffs>
+        <BitOffs>700544</BitOffs>
         <Default>
           <SubItem>
             <Name>.fResolution</Name>
@@ -33921,7 +32726,7 @@ External Setpoint Generation:
         <Name>RTD_Axis3_2</Name>
         <Type Namespace="LCLS_General">FB_TempSensor</Type>
         <BitSize>256</BitSize>
-        <BitOffs>880768</BitOffs>
+        <BitOffs>700800</BitOffs>
         <Default>
           <SubItem>
             <Name>.fResolution</Name>
@@ -33939,7 +32744,7 @@ External Setpoint Generation:
         <Name>RTD_Axis4_1</Name>
         <Type Namespace="LCLS_General">FB_TempSensor</Type>
         <BitSize>256</BitSize>
-        <BitOffs>881024</BitOffs>
+        <BitOffs>701056</BitOffs>
         <Default>
           <SubItem>
             <Name>.fResolution</Name>
@@ -33957,7 +32762,7 @@ External Setpoint Generation:
         <Name>RTD_Axis4_2</Name>
         <Type Namespace="LCLS_General">FB_TempSensor</Type>
         <BitSize>256</BitSize>
-        <BitOffs>881280</BitOffs>
+        <BitOffs>701312</BitOffs>
         <Default>
           <SubItem>
             <Name>.fResolution</Name>
@@ -35850,7 +34655,7 @@ External Setpoint Generation:
             <BitOffs>3072040</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.fbMotion1.fbMotionStage.fbDriveVirtual.MasterAxis.NcToPlc</Name>
+            <Name>PRG_2_AT1K4.fbSATT.fbStage1.fbMotion.fbMotionStage.fbDriveVirtual.MasterAxis.NcToPlc</Name>
             <BitSize>2048</BitSize>
             <BaseType GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}">NCTOPLC_AXIS_REF</BaseType>
             <Properties>
@@ -35859,10 +34664,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639490304</BitOffs>
+            <BitOffs>639488960</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.fbMotion2.fbMotionStage.fbDriveVirtual.MasterAxis.NcToPlc</Name>
+            <Name>PRG_2_AT1K4.fbSATT.fbStage2.fbMotion.fbMotionStage.fbDriveVirtual.MasterAxis.NcToPlc</Name>
             <BitSize>2048</BitSize>
             <BaseType GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}">NCTOPLC_AXIS_REF</BaseType>
             <Properties>
@@ -35871,10 +34676,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639664704</BitOffs>
+            <BitOffs>639663744</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.fbMotion3.fbMotionStage.fbDriveVirtual.MasterAxis.NcToPlc</Name>
+            <Name>PRG_2_AT1K4.fbSATT.fbStage3.fbMotion.fbMotionStage.fbDriveVirtual.MasterAxis.NcToPlc</Name>
             <BitSize>2048</BitSize>
             <BaseType GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}">NCTOPLC_AXIS_REF</BaseType>
             <Properties>
@@ -35883,10 +34688,10 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639839104</BitOffs>
+            <BitOffs>639838528</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.fbMotion4.fbMotionStage.fbDriveVirtual.MasterAxis.NcToPlc</Name>
+            <Name>PRG_2_AT1K4.fbSATT.fbStage4.fbMotion.fbMotionStage.fbDriveVirtual.MasterAxis.NcToPlc</Name>
             <BitSize>2048</BitSize>
             <BaseType GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}">NCTOPLC_AXIS_REF</BaseType>
             <Properties>
@@ -35895,7 +34700,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640013504</BitOffs>
+            <BitOffs>640013312</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis1_1.bError</Name>
@@ -35919,7 +34724,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640366792</BitOffs>
+            <BitOffs>640185288</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis1_1.bUnderrange</Name>
@@ -35931,7 +34736,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640366800</BitOffs>
+            <BitOffs>640185296</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis1_1.bOverrange</Name>
@@ -35943,7 +34748,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640366808</BitOffs>
+            <BitOffs>640185304</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis1_1.iRaw</Name>
@@ -35955,7 +34760,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640366816</BitOffs>
+            <BitOffs>640185312</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis1_2.bError</Name>
@@ -35979,7 +34784,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640367048</BitOffs>
+            <BitOffs>640185544</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis1_2.bUnderrange</Name>
@@ -35991,7 +34796,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640367056</BitOffs>
+            <BitOffs>640185552</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis1_2.bOverrange</Name>
@@ -36003,7 +34808,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640367064</BitOffs>
+            <BitOffs>640185560</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis1_2.iRaw</Name>
@@ -36015,7 +34820,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640367072</BitOffs>
+            <BitOffs>640185568</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis2_1.bError</Name>
@@ -36039,7 +34844,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640367304</BitOffs>
+            <BitOffs>640185800</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis2_1.bUnderrange</Name>
@@ -36051,7 +34856,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640367312</BitOffs>
+            <BitOffs>640185808</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis2_1.bOverrange</Name>
@@ -36063,7 +34868,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640367320</BitOffs>
+            <BitOffs>640185816</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis2_1.iRaw</Name>
@@ -36075,7 +34880,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640367328</BitOffs>
+            <BitOffs>640185824</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis2_2.bError</Name>
@@ -36099,7 +34904,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640367560</BitOffs>
+            <BitOffs>640186056</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis2_2.bUnderrange</Name>
@@ -36111,7 +34916,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640367568</BitOffs>
+            <BitOffs>640186064</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis2_2.bOverrange</Name>
@@ -36123,7 +34928,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640367576</BitOffs>
+            <BitOffs>640186072</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis2_2.iRaw</Name>
@@ -36135,7 +34940,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640367584</BitOffs>
+            <BitOffs>640186080</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis3_1.bError</Name>
@@ -36159,7 +34964,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640367816</BitOffs>
+            <BitOffs>640186312</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis3_1.bUnderrange</Name>
@@ -36171,7 +34976,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640367824</BitOffs>
+            <BitOffs>640186320</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis3_1.bOverrange</Name>
@@ -36183,7 +34988,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640367832</BitOffs>
+            <BitOffs>640186328</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis3_1.iRaw</Name>
@@ -36195,7 +35000,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640367840</BitOffs>
+            <BitOffs>640186336</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis3_2.bError</Name>
@@ -36219,7 +35024,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640368072</BitOffs>
+            <BitOffs>640186568</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis3_2.bUnderrange</Name>
@@ -36231,7 +35036,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640368080</BitOffs>
+            <BitOffs>640186576</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis3_2.bOverrange</Name>
@@ -36243,7 +35048,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640368088</BitOffs>
+            <BitOffs>640186584</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis3_2.iRaw</Name>
@@ -36255,7 +35060,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640368096</BitOffs>
+            <BitOffs>640186592</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis4_1.bError</Name>
@@ -36279,7 +35084,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640368328</BitOffs>
+            <BitOffs>640186824</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis4_1.bUnderrange</Name>
@@ -36291,7 +35096,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640368336</BitOffs>
+            <BitOffs>640186832</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis4_1.bOverrange</Name>
@@ -36303,7 +35108,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640368344</BitOffs>
+            <BitOffs>640186840</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis4_1.iRaw</Name>
@@ -36315,7 +35120,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640368352</BitOffs>
+            <BitOffs>640186848</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis4_2.bError</Name>
@@ -36339,7 +35144,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640368584</BitOffs>
+            <BitOffs>640187080</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis4_2.bUnderrange</Name>
@@ -36351,7 +35156,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640368592</BitOffs>
+            <BitOffs>640187088</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis4_2.bOverrange</Name>
@@ -36363,7 +35168,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640368600</BitOffs>
+            <BitOffs>640187096</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis4_2.iRaw</Name>
@@ -36375,7 +35180,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640368608</BitOffs>
+            <BitOffs>640187104</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.Axis.NcToPlc</Name>
@@ -36387,7 +35192,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640455104</BitOffs>
+            <BitOffs>640189632</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.bLimitForwardEnable</Name>
@@ -36410,7 +35215,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640463040</BitOffs>
+            <BitOffs>640197568</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.bLimitBackwardEnable</Name>
@@ -36433,7 +35238,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640463048</BitOffs>
+            <BitOffs>640197576</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.bHome</Name>
@@ -36456,7 +35261,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640463056</BitOffs>
+            <BitOffs>640197584</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.bHardwareEnable</Name>
@@ -36479,7 +35284,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640463072</BitOffs>
+            <BitOffs>640197600</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.nRawEncoderULINT</Name>
@@ -36492,7 +35297,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640463104</BitOffs>
+            <BitOffs>640197632</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.nRawEncoderUINT</Name>
@@ -36505,7 +35310,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640463168</BitOffs>
+            <BitOffs>640197696</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.nRawEncoderINT</Name>
@@ -36518,7 +35323,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640463184</BitOffs>
+            <BitOffs>640197712</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2.Axis.NcToPlc</Name>
@@ -36530,7 +35335,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640476160</BitOffs>
+            <BitOffs>640210688</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2.bLimitForwardEnable</Name>
@@ -36553,7 +35358,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640484096</BitOffs>
+            <BitOffs>640218624</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2.bLimitBackwardEnable</Name>
@@ -36576,7 +35381,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640484104</BitOffs>
+            <BitOffs>640218632</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2.bHome</Name>
@@ -36599,7 +35404,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640484112</BitOffs>
+            <BitOffs>640218640</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2.bHardwareEnable</Name>
@@ -36622,7 +35427,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640484128</BitOffs>
+            <BitOffs>640218656</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2.nRawEncoderULINT</Name>
@@ -36635,7 +35440,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640484160</BitOffs>
+            <BitOffs>640218688</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2.nRawEncoderUINT</Name>
@@ -36648,7 +35453,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640484224</BitOffs>
+            <BitOffs>640218752</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2.nRawEncoderINT</Name>
@@ -36661,7 +35466,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640484240</BitOffs>
+            <BitOffs>640218768</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3.Axis.NcToPlc</Name>
@@ -36673,7 +35478,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640497216</BitOffs>
+            <BitOffs>640231744</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3.bLimitForwardEnable</Name>
@@ -36696,7 +35501,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640505152</BitOffs>
+            <BitOffs>640239680</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3.bLimitBackwardEnable</Name>
@@ -36719,7 +35524,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640505160</BitOffs>
+            <BitOffs>640239688</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3.bHome</Name>
@@ -36742,7 +35547,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640505168</BitOffs>
+            <BitOffs>640239696</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3.bHardwareEnable</Name>
@@ -36765,7 +35570,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640505184</BitOffs>
+            <BitOffs>640239712</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3.nRawEncoderULINT</Name>
@@ -36778,7 +35583,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640505216</BitOffs>
+            <BitOffs>640239744</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3.nRawEncoderUINT</Name>
@@ -36791,7 +35596,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640505280</BitOffs>
+            <BitOffs>640239808</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3.nRawEncoderINT</Name>
@@ -36804,7 +35609,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640505296</BitOffs>
+            <BitOffs>640239824</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4.Axis.NcToPlc</Name>
@@ -36816,7 +35621,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640518272</BitOffs>
+            <BitOffs>640252800</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4.bLimitForwardEnable</Name>
@@ -36839,7 +35644,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640526208</BitOffs>
+            <BitOffs>640260736</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4.bLimitBackwardEnable</Name>
@@ -36862,7 +35667,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640526216</BitOffs>
+            <BitOffs>640260744</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4.bHome</Name>
@@ -36885,7 +35690,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640526224</BitOffs>
+            <BitOffs>640260752</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4.bHardwareEnable</Name>
@@ -36908,7 +35713,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640526240</BitOffs>
+            <BitOffs>640260768</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4.nRawEncoderULINT</Name>
@@ -36921,7 +35726,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640526272</BitOffs>
+            <BitOffs>640260800</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4.nRawEncoderUINT</Name>
@@ -36934,7 +35739,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640526336</BitOffs>
+            <BitOffs>640260864</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4.nRawEncoderINT</Name>
@@ -36947,7 +35752,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640526352</BitOffs>
+            <BitOffs>640260880</BitOffs>
           </Symbol>
         </DataArea>
         <DataArea>
@@ -36956,7 +35761,7 @@ External Setpoint Generation:
           <ContextId>0</ContextId>
           <ByteSize>80674816</ByteSize>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.fbMotion1.fbMotionStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
+            <Name>PRG_2_AT1K4.fbSATT.fbStage1.fbMotion.fbMotionStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
             <BitSize>1024</BitSize>
             <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
             <Properties>
@@ -36965,10 +35770,10 @@ External Setpoint Generation:
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>639489280</BitOffs>
+            <BitOffs>639487936</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.fbMotion2.fbMotionStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
+            <Name>PRG_2_AT1K4.fbSATT.fbStage2.fbMotion.fbMotionStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
             <BitSize>1024</BitSize>
             <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
             <Properties>
@@ -36977,10 +35782,10 @@ External Setpoint Generation:
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>639663680</BitOffs>
+            <BitOffs>639662720</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.fbMotion3.fbMotionStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
+            <Name>PRG_2_AT1K4.fbSATT.fbStage3.fbMotion.fbMotionStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
             <BitSize>1024</BitSize>
             <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
             <Properties>
@@ -36989,10 +35794,10 @@ External Setpoint Generation:
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>639838080</BitOffs>
+            <BitOffs>639837504</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.fbMotion4.fbMotionStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
+            <Name>PRG_2_AT1K4.fbSATT.fbStage4.fbMotion.fbMotionStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
             <BitSize>1024</BitSize>
             <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
             <Properties>
@@ -37001,7 +35806,7 @@ External Setpoint Generation:
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>640012480</BitOffs>
+            <BitOffs>640012288</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.Axis.PlcToNc</Name>
@@ -37013,7 +35818,7 @@ External Setpoint Generation:
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>640454080</BitOffs>
+            <BitOffs>640188608</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.bBrakeRelease</Name>
@@ -37036,7 +35841,7 @@ External Setpoint Generation:
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>640463064</BitOffs>
+            <BitOffs>640197592</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2.Axis.PlcToNc</Name>
@@ -37048,7 +35853,7 @@ External Setpoint Generation:
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>640475136</BitOffs>
+            <BitOffs>640209664</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2.bBrakeRelease</Name>
@@ -37071,7 +35876,7 @@ External Setpoint Generation:
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>640484120</BitOffs>
+            <BitOffs>640218648</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3.Axis.PlcToNc</Name>
@@ -37083,7 +35888,7 @@ External Setpoint Generation:
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>640496192</BitOffs>
+            <BitOffs>640230720</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3.bBrakeRelease</Name>
@@ -37106,7 +35911,7 @@ External Setpoint Generation:
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>640505176</BitOffs>
+            <BitOffs>640239704</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4.Axis.PlcToNc</Name>
@@ -37118,7 +35923,7 @@ External Setpoint Generation:
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>640517248</BitOffs>
+            <BitOffs>640251776</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4.bBrakeRelease</Name>
@@ -37141,7 +35946,7 @@ External Setpoint Generation:
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>640526232</BitOffs>
+            <BitOffs>640260760</BitOffs>
           </Symbol>
         </DataArea>
         <DataArea>
@@ -43351,8 +42156,8 @@ External Setpoint Generation:
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT</Name>
-            <BitSize>881536</BitSize>
-            <BaseType>FB_SXR_SATT_Sim</BaseType>
+            <BitSize>701568</BitSize>
+            <BaseType>FB_SXR_SATT</BaseType>
             <Properties>
               <Property>
                 <Name>pytmc</Name>
@@ -43408,7 +42213,7 @@ External Setpoint Generation:
     </Value>
               </Property>
             </Properties>
-            <BitOffs>639487104</BitOffs>
+            <BitOffs>639485568</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1</Name>
@@ -43455,7 +42260,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640454016</BitOffs>
+            <BitOffs>640188544</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M2</Name>
@@ -43484,7 +42289,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640475072</BitOffs>
+            <BitOffs>640209600</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M3</Name>
@@ -43513,7 +42318,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640496128</BitOffs>
+            <BitOffs>640230656</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M4</Name>
@@ -43542,7 +42347,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640517184</BitOffs>
+            <BitOffs>640251712</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.RuntimeVersion</Name>
@@ -43572,7 +42377,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640538240</BitOffs>
+            <BitOffs>640272768</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.CompilerVersion</Name>
@@ -43602,7 +42407,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640538304</BitOffs>
+            <BitOffs>640272832</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.RuntimeVersionNumeric</Name>
@@ -43617,7 +42422,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640538368</BitOffs>
+            <BitOffs>640272896</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.CompilerVersionNumeric</Name>
@@ -43632,7 +42437,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640538400</BitOffs>
+            <BitOffs>640272928</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList._AppInfo</Name>
@@ -43646,7 +42451,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640538432</BitOffs>
+            <BitOffs>640272960</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList._TaskInfo</Name>
@@ -43664,7 +42469,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640540480</BitOffs>
+            <BitOffs>640275008</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList._TaskPouOid_PlcTask</Name>
@@ -43678,7 +42483,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640541504</BitOffs>
+            <BitOffs>640276032</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList._TaskOid_PlcTask</Name>
@@ -43692,7 +42497,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640541536</BitOffs>
+            <BitOffs>640276064</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList.__PlcTask</Name>
@@ -43713,7 +42518,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640541568</BitOffs>
+            <BitOffs>640276096</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENTS.LCLSGeneralEventClass</Name>
@@ -43739,7 +42544,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640576128</BitOffs>
+            <BitOffs>640310656</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENT_CLASSES.TcSystemEventClass</Name>
@@ -43811,7 +42616,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640585152</BitOffs>
+            <BitOffs>640319680</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENT_CLASSES.TcGeneralAdsEventClass</Name>
@@ -43883,7 +42688,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640585280</BitOffs>
+            <BitOffs>640319808</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENT_CLASSES.TcRouterEventClass</Name>
@@ -43955,7 +42760,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640585408</BitOffs>
+            <BitOffs>640319936</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENT_CLASSES.TcRTimeEventClass</Name>
@@ -44027,7 +42832,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640585536</BitOffs>
+            <BitOffs>640320064</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENT_CLASSES.Win32EventClass</Name>
@@ -44099,7 +42904,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640585664</BitOffs>
+            <BitOffs>640320192</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENT_CLASSES.LCLSGeneralEventClass</Name>
@@ -44171,7 +42976,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>640585792</BitOffs>
+            <BitOffs>640320320</BitOffs>
           </Symbol>
         </DataArea>
         <DataArea>
@@ -44247,15 +43052,15 @@ External Setpoint Generation:
         </Property>
         <Property>
           <Name>ChangeDate</Name>
-          <Value>2020-10-27T11:20:34</Value>
+          <Value>2020-10-27T11:48:49</Value>
         </Property>
         <Property>
           <Name>GeneratedCodeSize</Name>
-          <Value>536576</Value>
+          <Value>528384</Value>
         </Property>
         <Property>
           <Name>GlobalDataSize</Name>
-          <Value>79704064</Value>
+          <Value>79679488</Value>
         </Property>
       </Properties>
     </Module>

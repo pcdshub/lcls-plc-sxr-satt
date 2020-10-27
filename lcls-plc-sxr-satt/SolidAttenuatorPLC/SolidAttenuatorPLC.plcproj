@@ -28,7 +28,7 @@
     <Compile Include="POUs\FB_SXR_SATT.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FB_SXR_SATT_Sim.TcPOU">
+    <Compile Include="POUs\FB_SXR_SATT_Stage.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\PRG_1_PlcTask.TcPOU">
