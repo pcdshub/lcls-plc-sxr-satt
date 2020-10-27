@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.10" ClassName="CDevEtherCATDef" SubType="111">
-	<Device Id="3" Disabled="true" DevType="111" DevFlags="#x0003" AmsPort="28675" AmsNetId="192.168.58.1.4.1" RemoteName="Device 3 (EtherCAT)">
+	<Device Id="3" DevType="111" DevFlags="#x0003" AmsPort="28675" AmsNetId="192.168.58.1.4.1" RemoteName="Device 3 (EtherCAT)">
 		<Name>__FILENAME__</Name>
 		<AddressInfo>
 			<Pnp>
