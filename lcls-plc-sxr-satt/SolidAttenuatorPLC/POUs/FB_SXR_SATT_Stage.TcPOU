@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <POU Name="FB_SXR_SATT_Stage" Id="{7fb611c7-2215-4e8f-8a28-e51a98acae9a}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_SXR_SATT_Stage
+VAR_IN_OUT
+    stAxis : DUT_MotionStage;
+END_VAR
+VAR_INPUT
+    nEnableMode : ENUM_StageEnableMode;
+
+    stOut		: DUT_PositionState;
+    stFilter1	: DUT_PositionState;
+    stFilter2	: DUT_PositionState;
+    stFilter3	: DUT_PositionState;
+    stFilter4	: DUT_PositionState;
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+    // TODO: debug
+    // fbMotion: FB_MotionStage;
+    fbMotion: FB_MotionStageSim;
+
+    stExtra : DUT_MotionStage_Extras;
+
+    {attribute 'pytmc' := '
+         pv: STATE
+    '}
+    fbState 	: FB_SXR_SATT_PositionState;
+
+    bInitialized: BOOL := FALSE;
+
+    (* EL3202-0020: 0.01 °C per digit *)
+    {attribute 'pytmc' := 'pv: RTD:1'}
+    RTD_1: FB_TempSensor := ( fResolution:=0.01 );
+    {attribute 'pytmc' := 'pv: RTD:2'}
+    RTD_2: FB_TempSensor := ( fResolution:=0.01 );
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF NOT bInitialized THEN
+    bInitialized := TRUE;
+
+    (* Defaults for DUT_MotionStage *)
+    stAxis.bHardwareEnable      := TRUE;
+    stAxis.bLimitBackwardEnable := TRUE;
+    stAxis.bLimitForwardEnable  := TRUE;
+    stAxis.bPowerSelf           := TRUE;
+    stAxis.nBrakeMode           := ENUM_StageBrakeMode.NO_BRAKE;
+    stAxis.nHomingMode          := ENUM_EpicsHomeCmd.NONE;
+
+    (* Defaults for visualization *)
+    stExtra.fVisuStep			:= 0.1;
+
+END_IF
+
+RTD_1();
+RTD_2();
+
+stAxis.nEnableMode := nEnableMode;
+fbMotion(stMotionStage:=stAxis);
+fbState(
+    bEnable:=TRUE,
+    bReset:=FALSE,
+    stMotionStage:=stAxis,
+    stOut:=stOut,
+    stFilter1:=stFilter1,
+    stFilter2:=stFilter2,
+    stFilter3:=stFilter3,
+    stFilter4:=stFilter4
+);
+
+stExtra.bVisuHighLim := NOT stAxis.bAllForwardEnable;
+stExtra.bVisuLowLim := NOT stAxis.bAllBackwardEnable;]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
