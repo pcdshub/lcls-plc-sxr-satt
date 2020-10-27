@@ -1325,10 +1325,6 @@ External Setpoint Generation:
 				<SoftEndMinControl Enable="true" Range="16.5"/>
 				<SoftEndMaxControl Enable="true" Range="152.5"/>
 				<Inc RefSoftSyncMask="#x0000ffff"/>
-				<ParameterChanged>14</ParameterChanged>
-				<ParameterChanged>11</ParameterChanged>
-				<ParameterChanged>13</ParameterChanged>
-				<ParameterChanged>12</ParameterChanged>
 			</EncPara>
 			<Vars VarGrpType="1">
 				<Name>Inputs</Name>
@@ -1444,10 +1440,6 @@ External Setpoint Generation:
 				<PosDiffControl Range="0.2"/>
 				<PID PosKp="20" PosExtKp="1" PosExtVelo="0.1"/>
 				<Observer BandWidth="20"/>
-				<ParameterChanged>263</ParameterChanged>
-				<ParameterChanged>262</ParameterChanged>
-				<ParameterChanged>18</ParameterChanged>
-				<ParameterChanged>258</ParameterChanged>
 			</CtrPara>
 		</Controller>
 		<Vars VarGrpType="1" InsertType="1">
