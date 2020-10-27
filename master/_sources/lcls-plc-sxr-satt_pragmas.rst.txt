@@ -6,7 +6,7 @@ Pragmas
     :header: PLC Name, Total Pragmas, Errors
     :align: center
 
-    :ref:`SolidAttenuatorPLC <SolidAttenuatorPLC_overview_pragmas>`, 27, 0
+    :ref:`SolidAttenuatorPLC <SolidAttenuatorPLC_overview_pragmas>`, 23, 0
 
 
 .. _SolidAttenuatorPLC_overview_pragmas:
@@ -15,7 +15,7 @@ Pragmas
 SolidAttenuatorPLC
 ^^^^^^^^^^^^^^^^^^
 
-Total pragmas found: 27
+Total pragmas found: 23
 Total linter errors: 0
 
 

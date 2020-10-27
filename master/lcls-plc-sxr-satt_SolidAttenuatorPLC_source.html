@@ -97,14 +97,17 @@
 <li class="toctree-l1"><a class="reference internal" href="lcls-plc-sxr-satt_SolidAttenuatorPLC_summary.html#symbols">Symbols</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lcls-plc-sxr-satt_SolidAttenuatorPLC_epics.html">Data Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lcls-plc-sxr-satt_SolidAttenuatorPLC_epics.html#database-records">Database Records</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">DUTs</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">DUTs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#enum-sxr-satt-position">ENUM_SXR_SATT_Position</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="#gvls">GVLs</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#main">Main</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#pous">POUs</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#fb-sxr-satt">FB_SXR_SATT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#fb-sxr-satt-sim">FB_SXR_SATT_Sim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fb-sxr-satt-positionstate">FB_SXR_SATT_PositionState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fb-sxr-satt-stage">FB_SXR_SATT_Stage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#prg-1-plctask">PRG_1_PlcTask</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#prg-2-at1k4">PRG_2_AT1K4</a></li>
 </ul>
@@ -176,6 +179,22 @@
             
   <div class="section" id="duts">
 <h1>DUTs<a class="headerlink" href="#duts" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="enum-sxr-satt-position">
+<h2>ENUM_SXR_SATT_Position<a class="headerlink" href="#enum-sxr-satt-position" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;qualified_only&#39;</span><span class="p">}</span>
+<span class="n">TYPE</span> <span class="n">ENUM_SXR_SATT_Position</span> <span class="p">:</span>
+<span class="p">(</span>
+    <span class="n">UNKNOWN</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">,</span> <span class="o">//</span> <span class="n">UNKNOWN</span> <span class="n">must</span> <span class="n">be</span> <span class="ow">in</span> <span class="n">slot</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">the</span> <span class="n">FB</span> <span class="n">breaks</span>
+    <span class="n">OUT</span> <span class="o">:=</span> <span class="mi">1</span><span class="p">,</span> <span class="o">//</span> <span class="n">OUT</span> <span class="n">at</span> <span class="n">slot</span> <span class="mi">1</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">convention</span>
+    <span class="n">FILTER1</span> <span class="o">:=</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="n">FILTER2</span> <span class="o">:=</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="n">FILTER3</span> <span class="o">:=</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="n">FILTER4</span> <span class="o">:=</span> <span class="mi">5</span>
+<span class="p">);</span>
+<span class="n">END_TYPE</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="gvls">
 <h1>GVLs<a class="headerlink" href="#gvls" title="Permalink to this headline">¶</a></h1>
@@ -240,249 +259,128 @@
 </div>
 <div class="section" id="pous">
 <h1>POUs<a class="headerlink" href="#pous" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="fb-sxr-satt">
-<h2>FB_SXR_SATT<a class="headerlink" href="#fb-sxr-satt" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>FUNCTION_BLOCK FB_SXR_SATT
-VAR_INPUT
-    stAxis1 : DUT_MotionStage;
-    stAxis2 : DUT_MotionStage;
-    stAxis3 : DUT_MotionStage;
-    stAxis4 : DUT_MotionStage;
-    nEnableMode : ENUM_StageEnableMode;
-END_VAR
-VAR_OUTPUT
-END_VAR
-VAR
-    bInit : BOOL := TRUE;
-    (*
-        The 4 motion axes - linked to GVL Main.{M1, M2, M3, and M4}.
+<div class="section" id="fb-sxr-satt-positionstate">
+<h2>FB_SXR_SATT_PositionState<a class="headerlink" href="#fb-sxr-satt-positionstate" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">FUNCTION_BLOCK</span> <span class="n">FB_SXR_SATT_PositionState</span> <span class="n">EXTENDS</span> <span class="n">FB_PositionStateBase</span>
+<span class="n">VAR_INPUT</span>
+     <span class="o">//</span> <span class="n">The</span> <span class="n">enum</span> <span class="n">position</span> <span class="n">to</span> <span class="n">move</span> <span class="n">to</span>
+     <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39;</span>
+         <span class="n">pv</span><span class="p">:</span> <span class="n">SET</span>
+         <span class="n">io</span><span class="p">:</span> <span class="n">io</span>
+     <span class="s1">&#39;}</span>
+     <span class="n">enumSet</span><span class="p">:</span> <span class="n">ENUM_SXR_SATT_Position</span><span class="p">;</span>
 
-        Note that the DUT_MotionStage is where the pytmc pragmas go.
-    *)
-    fbMotion1: FB_MotionStage;
-    fbMotion2: FB_MotionStage;
-    fbMotion3: FB_MotionStage;
-    fbMotion4: FB_MotionStage;
+    <span class="o">//</span> <span class="n">NOTE</span><span class="p">:</span> <span class="n">Do</span> <span class="ow">not</span> <span class="n">pragma</span> <span class="n">these</span><span class="p">,</span> <span class="n">let</span> <span class="n">it</span> <span class="n">happen</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">manager</span><span class="o">.</span>
+     <span class="o">//</span> <span class="n">Information</span> <span class="n">about</span> <span class="n">the</span> <span class="n">OUT</span> <span class="n">position</span>
+     <span class="n">stOut</span>          <span class="p">:</span> <span class="n">DUT_PositionState</span><span class="p">;</span>
+     <span class="n">stFilter1</span>      <span class="p">:</span> <span class="n">DUT_PositionState</span><span class="p">;</span>
+     <span class="n">stFilter2</span>      <span class="p">:</span> <span class="n">DUT_PositionState</span><span class="p">;</span>
+     <span class="n">stFilter3</span>      <span class="p">:</span> <span class="n">DUT_PositionState</span><span class="p">;</span>
+     <span class="n">stFilter4</span>      <span class="p">:</span> <span class="n">DUT_PositionState</span><span class="p">;</span>
 
-    stAxis1Extra : DUT_MotionStage_Extras;
-    stAxis2Extra : DUT_MotionStage_Extras;
-    stAxis3Extra : DUT_MotionStage_Extras;
-    stAxis4Extra : DUT_MotionStage_Extras;
+<span class="n">END_VAR</span>
+<span class="n">VAR_OUTPUT</span>
+    <span class="o">//</span> <span class="n">The</span> <span class="n">enum</span> <span class="n">state</span> <span class="n">readback</span>
+    <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39;</span>
+        <span class="n">pv</span><span class="p">:</span> <span class="n">GET</span>
+        <span class="n">io</span><span class="p">:</span> <span class="n">i</span>
+    <span class="s1">&#39;}</span>
+    <span class="n">enumGet</span><span class="p">:</span> <span class="n">ENUM_SXR_SATT_Position</span><span class="p">;</span>
+<span class="n">END_VAR</span>
+<span class="n">VAR</span>
+    <span class="n">bInitialized</span><span class="p">:</span> <span class="n">BOOL</span> <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+<span class="n">END_VAR</span>
+<span class="n">IF</span> <span class="n">NOT</span> <span class="n">bInitialized</span> <span class="n">THEN</span>
+    <span class="n">bInitialized</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">;</span>
 
-    (* EL3202-0020: 0.01 °C per digit *)
-    {attribute &#39;pytmc&#39; := &#39;pv: MMS:01:RTD1&#39;}
-    RTD_Axis1_1: FB_TempSensor := ( fResolution:=0.01 );
-    {attribute &#39;pytmc&#39; := &#39;pv: MMS:01:RTD2&#39;}
-    RTD_Axis1_2: FB_TempSensor := ( fResolution:=0.01 );
+    <span class="n">arrStates</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">:=</span> <span class="n">stOut</span><span class="p">;</span>
+    <span class="n">arrStates</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">:=</span> <span class="n">stFilter1</span><span class="p">;</span>
+    <span class="n">arrStates</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">:=</span> <span class="n">stFilter2</span><span class="p">;</span>
+    <span class="n">arrStates</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">:=</span> <span class="n">stFilter3</span><span class="p">;</span>
+    <span class="n">arrStates</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">:=</span> <span class="n">stFilter4</span><span class="p">;</span>
 
-    {attribute &#39;pytmc&#39; := &#39;pv: MMS:02:RTD1&#39;}
-    RTD_Axis2_1: FB_TempSensor := ( fResolution:=0.01 );
-    {attribute &#39;pytmc&#39; := &#39;pv: MMS:02:RTD2&#39;}
-    RTD_Axis2_2: FB_TempSensor := ( fResolution:=0.01 );
+<span class="n">END_IF</span>
+<span class="n">setState</span> <span class="o">:=</span> <span class="n">enumSet</span><span class="p">;</span>
+<span class="n">Exec</span><span class="p">();</span>
+<span class="n">enumGet</span> <span class="o">:=</span> <span class="n">getState</span><span class="p">;</span>
+<span class="n">enumSet</span> <span class="o">:=</span> <span class="n">setState</span><span class="p">;</span>
 
-    {attribute &#39;pytmc&#39; := &#39;pv: MMS:03:RTD1&#39;}
-    RTD_Axis3_1: FB_TempSensor := ( fResolution:=0.01 );
-    {attribute &#39;pytmc&#39; := &#39;pv: MMS:03:RTD2&#39;}
-    RTD_Axis3_2: FB_TempSensor := ( fResolution:=0.01 );
-
-    {attribute &#39;pytmc&#39; := &#39;pv: MMS:04:RTD1&#39;}
-    RTD_Axis4_1: FB_TempSensor := ( fResolution:=0.01 );
-    {attribute &#39;pytmc&#39; := &#39;pv: MMS:04:RTD2&#39;}
-    RTD_Axis4_2: FB_TempSensor := ( fResolution:=0.01 );
-
-
-END_VAR
-(* RTDs *)
-RTD_Axis1_1();
-RTD_Axis1_2();
-
-RTD_Axis2_1();
-RTD_Axis2_2();
-
-RTD_Axis3_1();
-RTD_Axis3_2();
-
-RTD_Axis4_1();
-RTD_Axis4_2();
-
-(* Motion *)
-
-IF bInit THEN
-    bInit := FALSE;
-
-    stAxis1.bHardwareEnable      := TRUE;
-    stAxis1.bLimitBackwardEnable := TRUE;
-    stAxis1.bLimitForwardEnable  := TRUE;
-    stAxis1.bPowerSelf           := TRUE;
-    stAxis1.nBrakeMode           := ENUM_StageBrakeMode.NO_BRAKE;
-    stAxis1.nHomingMode          := ENUM_EpicsHomeCmd.NONE;
-
-    stAxis2.bHardwareEnable      := TRUE;
-    stAxis2.bLimitBackwardEnable := TRUE;
-    stAxis2.bLimitForwardEnable  := TRUE;
-    stAxis2.bPowerSelf           := TRUE;
-    stAxis2.nBrakeMode           := ENUM_StageBrakeMode.NO_BRAKE;
-    stAxis2.nHomingMode          := ENUM_EpicsHomeCmd.NONE;
-
-    stAxis3.bHardwareEnable      := TRUE;
-    stAxis3.bLimitBackwardEnable := TRUE;
-    stAxis3.bLimitForwardEnable  := TRUE;
-    stAxis3.bPowerSelf           := TRUE;
-    stAxis3.nBrakeMode           := ENUM_StageBrakeMode.NO_BRAKE;
-    stAxis3.nHomingMode          := ENUM_EpicsHomeCmd.NONE;
-
-    stAxis4.bHardwareEnable      := TRUE;
-    stAxis4.bLimitBackwardEnable := TRUE;
-    stAxis4.bLimitForwardEnable  := TRUE;
-    stAxis4.bPowerSelf           := TRUE;
-    stAxis4.nBrakeMode           := ENUM_StageBrakeMode.NO_BRAKE;
-    stAxis4.nHomingMode          := ENUM_EpicsHomeCmd.NONE;
-END_IF
-
-stAxis1.nEnableMode := nEnableMode;
-stAxis2.nEnableMode := nEnableMode;
-stAxis3.nEnableMode := nEnableMode;
-stAxis4.nEnableMode := nEnableMode;
-fbMotion1(stMotionStage:=stAxis1);
-fbMotion2(stMotionStage:=stAxis2);
-fbMotion3(stMotionStage:=stAxis3);
-fbMotion4(stMotionStage:=stAxis4);
-
-stAxis1Extra.bVisuHighLim := NOT stAxis1.bAllForwardEnable;
-stAxis1Extra.bVisuLowLim := NOT stAxis1.bAllBackwardEnable;
-
-stAxis2Extra.bVisuHighLim := NOT stAxis2.bAllForwardEnable;
-stAxis2Extra.bVisuLowLim := NOT stAxis2.bAllBackwardEnable;
-
-stAxis3Extra.bVisuHighLim := NOT stAxis3.bAllForwardEnable;
-stAxis3Extra.bVisuLowLim := NOT stAxis3.bAllBackwardEnable;
-
-stAxis4Extra.bVisuHighLim := NOT stAxis4.bAllForwardEnable;
-stAxis4Extra.bVisuLowLim := NOT stAxis4.bAllBackwardEnable;
-
-END_FUNCTION_BLOCK
+<span class="n">END_FUNCTION_BLOCK</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="fb-sxr-satt-sim">
-<h2>FB_SXR_SATT_Sim<a class="headerlink" href="#fb-sxr-satt-sim" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>FUNCTION_BLOCK FB_SXR_SATT_Sim
+<div class="section" id="fb-sxr-satt-stage">
+<h2>FB_SXR_SATT_Stage<a class="headerlink" href="#fb-sxr-satt-stage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>FUNCTION_BLOCK FB_SXR_SATT_Stage
+VAR_IN_OUT
+    stAxis : DUT_MotionStage;
+END_VAR
 VAR_INPUT
-    stAxis1 : DUT_MotionStage;
-    stAxis2 : DUT_MotionStage;
-    stAxis3 : DUT_MotionStage;
-    stAxis4 : DUT_MotionStage;
     nEnableMode : ENUM_StageEnableMode;
+
+    stOut           : DUT_PositionState;
+    stFilter1       : DUT_PositionState;
+    stFilter2       : DUT_PositionState;
+    stFilter3       : DUT_PositionState;
+    stFilter4       : DUT_PositionState;
 END_VAR
 VAR_OUTPUT
 END_VAR
 VAR
-    bInit : BOOL := TRUE;
-    (*
-        The 4 motion axes - linked to GVL Main.{M1, M2, M3, and M4}.
+    // TODO: debug
+    // fbMotion: FB_MotionStage;
+    fbMotion: FB_MotionStageSim;
 
-        Note that the DUT_MotionStage is where the pytmc pragmas go.
-    *)
-    fbMotion1: FB_MotionStageSim;
-    fbMotion2: FB_MotionStageSim;
-    fbMotion3: FB_MotionStageSim;
-    fbMotion4: FB_MotionStageSim;
+    stExtra : DUT_MotionStage_Extras;
 
-    stAxis1Extra : DUT_MotionStage_Extras;
-    stAxis2Extra : DUT_MotionStage_Extras;
-    stAxis3Extra : DUT_MotionStage_Extras;
-    stAxis4Extra : DUT_MotionStage_Extras;
+    {attribute &#39;pytmc&#39; := &#39;
+         pv: STATE
+    &#39;}
+    fbState         : FB_SXR_SATT_PositionState;
+
+    bInitialized: BOOL := FALSE;
 
     (* EL3202-0020: 0.01 °C per digit *)
-    {attribute &#39;pytmc&#39; := &#39;pv: MMS:01:RTD1&#39;}
-    RTD_Axis1_1: FB_TempSensor := ( fResolution:=0.01 );
-    {attribute &#39;pytmc&#39; := &#39;pv: MMS:01:RTD2&#39;}
-    RTD_Axis1_2: FB_TempSensor := ( fResolution:=0.01 );
-
-    {attribute &#39;pytmc&#39; := &#39;pv: MMS:02:RTD1&#39;}
-    RTD_Axis2_1: FB_TempSensor := ( fResolution:=0.01 );
-    {attribute &#39;pytmc&#39; := &#39;pv: MMS:02:RTD2&#39;}
-    RTD_Axis2_2: FB_TempSensor := ( fResolution:=0.01 );
-
-    {attribute &#39;pytmc&#39; := &#39;pv: MMS:03:RTD1&#39;}
-    RTD_Axis3_1: FB_TempSensor := ( fResolution:=0.01 );
-    {attribute &#39;pytmc&#39; := &#39;pv: MMS:03:RTD2&#39;}
-    RTD_Axis3_2: FB_TempSensor := ( fResolution:=0.01 );
-
-    {attribute &#39;pytmc&#39; := &#39;pv: MMS:04:RTD1&#39;}
-    RTD_Axis4_1: FB_TempSensor := ( fResolution:=0.01 );
-    {attribute &#39;pytmc&#39; := &#39;pv: MMS:04:RTD2&#39;}
-    RTD_Axis4_2: FB_TempSensor := ( fResolution:=0.01 );
-
+    {attribute &#39;pytmc&#39; := &#39;pv: RTD:1&#39;}
+    RTD_1: FB_TempSensor := ( fResolution:=0.01 );
+    {attribute &#39;pytmc&#39; := &#39;pv: RTD:2&#39;}
+    RTD_2: FB_TempSensor := ( fResolution:=0.01 );
 
 END_VAR
-(* RTDs *)
-RTD_Axis1_1();
-RTD_Axis1_2();
+IF NOT bInitialized THEN
+    bInitialized := TRUE;
 
-RTD_Axis2_1();
-RTD_Axis2_2();
+    (* Defaults for DUT_MotionStage *)
+    stAxis.bHardwareEnable      := TRUE;
+    stAxis.bLimitBackwardEnable := TRUE;
+    stAxis.bLimitForwardEnable  := TRUE;
+    stAxis.bPowerSelf           := TRUE;
+    stAxis.nBrakeMode           := ENUM_StageBrakeMode.NO_BRAKE;
+    stAxis.nHomingMode          := ENUM_EpicsHomeCmd.NONE;
 
-RTD_Axis3_1();
-RTD_Axis3_2();
+    (* Defaults for visualization *)
+    stExtra.fVisuStep                       := 0.1;
 
-RTD_Axis4_1();
-RTD_Axis4_2();
-
-(* Motion *)
-
-IF bInit THEN
-    bInit := FALSE;
-
-    stAxis1.bHardwareEnable      := TRUE;
-    stAxis1.bLimitBackwardEnable := TRUE;
-    stAxis1.bLimitForwardEnable  := TRUE;
-    stAxis1.bPowerSelf           := TRUE;
-    stAxis1.nBrakeMode           := ENUM_StageBrakeMode.NO_BRAKE;
-    stAxis1.nHomingMode          := ENUM_EpicsHomeCmd.NONE;
-
-    stAxis2.bHardwareEnable      := TRUE;
-    stAxis2.bLimitBackwardEnable := TRUE;
-    stAxis2.bLimitForwardEnable  := TRUE;
-    stAxis2.bPowerSelf           := TRUE;
-    stAxis2.nBrakeMode           := ENUM_StageBrakeMode.NO_BRAKE;
-    stAxis2.nHomingMode          := ENUM_EpicsHomeCmd.NONE;
-
-    stAxis3.bHardwareEnable      := TRUE;
-    stAxis3.bLimitBackwardEnable := TRUE;
-    stAxis3.bLimitForwardEnable  := TRUE;
-    stAxis3.bPowerSelf           := TRUE;
-    stAxis3.nBrakeMode           := ENUM_StageBrakeMode.NO_BRAKE;
-    stAxis3.nHomingMode          := ENUM_EpicsHomeCmd.NONE;
-
-    stAxis4.bHardwareEnable      := TRUE;
-    stAxis4.bLimitBackwardEnable := TRUE;
-    stAxis4.bLimitForwardEnable  := TRUE;
-    stAxis4.bPowerSelf           := TRUE;
-    stAxis4.nBrakeMode           := ENUM_StageBrakeMode.NO_BRAKE;
-    stAxis4.nHomingMode          := ENUM_EpicsHomeCmd.NONE;
 END_IF
 
-stAxis1.nEnableMode := nEnableMode;
-stAxis2.nEnableMode := nEnableMode;
-stAxis3.nEnableMode := nEnableMode;
-stAxis4.nEnableMode := nEnableMode;
-fbMotion1(stMotionStage:=stAxis1);
-fbMotion2(stMotionStage:=stAxis2);
-fbMotion3(stMotionStage:=stAxis3);
-fbMotion4(stMotionStage:=stAxis4);
+RTD_1();
+RTD_2();
 
-stAxis1Extra.bVisuHighLim := NOT stAxis1.bAllForwardEnable;
-stAxis1Extra.bVisuLowLim := NOT stAxis1.bAllBackwardEnable;
+stAxis.nEnableMode := nEnableMode;
+fbMotion(stMotionStage:=stAxis);
+fbState(
+    bEnable:=TRUE,
+    bReset:=FALSE,
+    stMotionStage:=stAxis,
+    stOut:=stOut,
+    stFilter1:=stFilter1,
+    stFilter2:=stFilter2,
+    stFilter3:=stFilter3,
+    stFilter4:=stFilter4
+);
 
-stAxis2Extra.bVisuHighLim := NOT stAxis2.bAllForwardEnable;
-stAxis2Extra.bVisuLowLim := NOT stAxis2.bAllBackwardEnable;
-
-stAxis3Extra.bVisuHighLim := NOT stAxis3.bAllForwardEnable;
-stAxis3Extra.bVisuLowLim := NOT stAxis3.bAllBackwardEnable;
-
-stAxis4Extra.bVisuHighLim := NOT stAxis4.bAllForwardEnable;
-stAxis4Extra.bVisuLowLim := NOT stAxis4.bAllBackwardEnable;
+stExtra.bVisuHighLim := NOT stAxis.bAllForwardEnable;
+stExtra.bVisuLowLim := NOT stAxis.bAllBackwardEnable;
 
 END_FUNCTION_BLOCK
 </pre></div>
@@ -506,60 +404,73 @@ END_FUNCTION_BLOCK
 <h2>PRG_2_AT1K4<a class="headerlink" href="#prg-2-at1k4" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PROGRAM</span> <span class="n">PRG_2_AT1K4</span>
 <span class="n">VAR</span>
-    <span class="p">(</span><span class="o">*</span> <span class="n">TODO</span><span class="p">:</span> <span class="n">flip</span> <span class="n">debug</span> <span class="n">flag</span> <span class="n">when</span> <span class="n">no</span> <span class="n">longer</span> <span class="n">relying</span> <span class="n">on</span> <span class="n">visualization</span> <span class="o">*</span><span class="p">)</span>
-    <span class="n">bDebug</span> <span class="p">:</span> <span class="n">BOOL</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">;</span>
+    <span class="p">(</span><span class="o">*</span> <span class="n">TODO</span><span class="p">:</span> <span class="n">use</span> <span class="n">FALSE</span> <span class="k">for</span> <span class="n">simulation</span> <span class="ow">and</span> <span class="n">production</span> <span class="o">*</span><span class="p">)</span>
+    <span class="p">(</span><span class="o">*</span> <span class="n">TODO</span><span class="p">:</span> <span class="n">use</span> <span class="n">TRUE</span> <span class="n">when</span> <span class="n">relying</span> <span class="n">on</span> <span class="n">visualization</span> <span class="o">+</span> <span class="n">actual</span> <span class="n">hardware</span> <span class="o">*</span><span class="p">)</span>
+    <span class="n">bDebug</span> <span class="p">:</span> <span class="n">BOOL</span> <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+
     <span class="n">nEnableMode</span> <span class="p">:</span> <span class="n">ENUM_StageEnableMode</span><span class="p">;</span>
 
-    <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39;pv: AT1K4:L2SI:&#39;</span><span class="p">}</span>
+    <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39;pv: AT1K4:L2SI:MMS:01&#39;</span><span class="p">}</span>
     <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;TcLinkTo&#39;</span> <span class="o">:=</span> <span class="s1">&#39;</span>
 
-        <span class="o">.</span><span class="n">RTD_Axis1_1</span><span class="o">.</span><span class="n">iRaw</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Value</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis1_1</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Error</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis1_1</span><span class="o">.</span><span class="n">bUnderrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Underrange</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis1_1</span><span class="o">.</span><span class="n">bOverrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Overrange</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_1</span><span class="o">.</span><span class="n">iRaw</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Value</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_1</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">error</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_1</span><span class="o">.</span><span class="n">bUnderrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Underrange</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_1</span><span class="o">.</span><span class="n">bOverrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Overrange</span><span class="p">;</span>
 
-        <span class="o">.</span><span class="n">RTD_Axis1_2</span><span class="o">.</span><span class="n">iRaw</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Value</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis1_2</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Error</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis1_2</span><span class="o">.</span><span class="n">bUnderrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Underrange</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis1_2</span><span class="o">.</span><span class="n">bOverrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Overrange</span><span class="p">;</span>
-
-
-        <span class="o">.</span><span class="n">RTD_Axis2_1</span><span class="o">.</span><span class="n">iRaw</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">02</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Value</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis2_1</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">02</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Error</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis2_1</span><span class="o">.</span><span class="n">bUnderrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">02</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Underrange</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis2_1</span><span class="o">.</span><span class="n">bOverrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">02</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Overrange</span><span class="p">;</span>
-
-        <span class="o">.</span><span class="n">RTD_Axis2_2</span><span class="o">.</span><span class="n">iRaw</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">02</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Value</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis2_2</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">02</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Error</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis2_2</span><span class="o">.</span><span class="n">bUnderrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">02</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Underrange</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis2_2</span><span class="o">.</span><span class="n">bOverrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">02</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Overrange</span><span class="p">;</span>
-
-
-        <span class="o">.</span><span class="n">RTD_Axis3_1</span><span class="o">.</span><span class="n">iRaw</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">03</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Value</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis3_1</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">03</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Error</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis3_1</span><span class="o">.</span><span class="n">bUnderrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">03</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Underrange</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis3_1</span><span class="o">.</span><span class="n">bOverrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">03</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Overrange</span><span class="p">;</span>
-
-        <span class="o">.</span><span class="n">RTD_Axis3_2</span><span class="o">.</span><span class="n">iRaw</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">03</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Value</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis3_2</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">03</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Error</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis3_2</span><span class="o">.</span><span class="n">bUnderrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">03</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Underrange</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis3_2</span><span class="o">.</span><span class="n">bOverrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">03</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Overrange</span><span class="p">;</span>
-
-
-        <span class="o">.</span><span class="n">RTD_Axis4_1</span><span class="o">.</span><span class="n">iRaw</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">04</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Value</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis4_1</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">04</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Error</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis4_1</span><span class="o">.</span><span class="n">bUnderrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">04</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Underrange</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis4_1</span><span class="o">.</span><span class="n">bOverrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">04</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Overrange</span><span class="p">;</span>
-
-        <span class="o">.</span><span class="n">RTD_Axis4_2</span><span class="o">.</span><span class="n">iRaw</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">04</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Value</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis4_2</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">04</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Error</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis4_2</span><span class="o">.</span><span class="n">bUnderrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">04</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Underrange</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">RTD_Axis4_2</span><span class="o">.</span><span class="n">bOverrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">04</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Overrange</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_2</span><span class="o">.</span><span class="n">iRaw</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Value</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_2</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">error</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_2</span><span class="o">.</span><span class="n">bUnderrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Underrange</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_2</span><span class="o">.</span><span class="n">bOverrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Overrange</span><span class="p">;</span>
 
     <span class="s1">&#39;}</span>
-    <span class="n">fbSATT</span> <span class="p">:</span> <span class="n">FB_SXR_SATT_Sim</span><span class="p">;</span>
+    <span class="n">fbStage1</span><span class="p">:</span> <span class="n">FB_SXR_SATT_Stage</span><span class="p">;</span>
 
-    <span class="o">//</span>   <span class="n">fbSATT</span> <span class="p">:</span> <span class="n">FB_SXR_SATT</span><span class="p">;</span>
+    <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39;pv: AT1K4:L2SI:MMS:02&#39;</span><span class="p">}</span>
+    <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;TcLinkTo&#39;</span> <span class="o">:=</span> <span class="s1">&#39;</span>
+
+        <span class="o">.</span><span class="n">RTD_1</span><span class="o">.</span><span class="n">iRaw</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">02</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Value</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_1</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">02</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Error</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_1</span><span class="o">.</span><span class="n">bUnderrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">02</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Underrange</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_1</span><span class="o">.</span><span class="n">bOverrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">02</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Overrange</span><span class="p">;</span>
+
+        <span class="o">.</span><span class="n">RTD_2</span><span class="o">.</span><span class="n">iRaw</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">02</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Value</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_2</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">02</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Error</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_2</span><span class="o">.</span><span class="n">bUnderrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">02</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Underrange</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_2</span><span class="o">.</span><span class="n">bOverrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">02</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Overrange</span><span class="p">;</span>
+
+    <span class="s1">&#39;}</span>
+    <span class="n">fbStage2</span><span class="p">:</span> <span class="n">FB_SXR_SATT_Stage</span><span class="p">;</span>
+
+    <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39;pv: AT1K4:L2SI:MMS:03&#39;</span><span class="p">}</span>
+    <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;TcLinkTo&#39;</span> <span class="o">:=</span> <span class="s1">&#39;</span>
+
+        <span class="o">.</span><span class="n">RTD_1</span><span class="o">.</span><span class="n">iRaw</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">03</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Value</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_1</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">03</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Error</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_1</span><span class="o">.</span><span class="n">bUnderrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">03</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Underrange</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_1</span><span class="o">.</span><span class="n">bOverrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">03</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Overrange</span><span class="p">;</span>
+
+        <span class="o">.</span><span class="n">RTD_2</span><span class="o">.</span><span class="n">iRaw</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">03</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Value</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_2</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">03</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Error</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_2</span><span class="o">.</span><span class="n">bUnderrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">03</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Underrange</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_2</span><span class="o">.</span><span class="n">bOverrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">03</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Overrange</span><span class="p">;</span>
+    <span class="s1">&#39;}</span>
+    <span class="n">fbStage3</span><span class="p">:</span> <span class="n">FB_SXR_SATT_Stage</span><span class="p">;</span>
+
+    <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39;pv: AT1K4:L2SI:MMS:04&#39;</span><span class="p">}</span>
+    <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;TcLinkTo&#39;</span> <span class="o">:=</span> <span class="s1">&#39;</span>
+
+        <span class="o">.</span><span class="n">RTD_1</span><span class="o">.</span><span class="n">iRaw</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">04</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Value</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_1</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">04</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Error</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_1</span><span class="o">.</span><span class="n">bUnderrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">04</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Underrange</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_1</span><span class="o">.</span><span class="n">bOverrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">04</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Overrange</span><span class="p">;</span>
+
+        <span class="o">.</span><span class="n">RTD_2</span><span class="o">.</span><span class="n">iRaw</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">04</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Value</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_2</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">04</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Error</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_2</span><span class="o">.</span><span class="n">bUnderrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">04</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Underrange</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">RTD_2</span><span class="o">.</span><span class="n">bOverrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">04</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Overrange</span><span class="p">;</span>
+    <span class="s1">&#39;}</span>
+    <span class="n">fbStage4</span><span class="p">:</span> <span class="n">FB_SXR_SATT_Stage</span><span class="p">;</span>
 
 <span class="n">END_VAR</span>
 <span class="n">IF</span> <span class="n">bDebug</span> <span class="n">THEN</span>
@@ -570,13 +481,157 @@ END_FUNCTION_BLOCK
     <span class="n">nEnableMode</span> <span class="o">:=</span> <span class="n">ENUM_StageEnableMode</span><span class="o">.</span><span class="n">ALWAYS</span><span class="p">;</span>
 <span class="n">END_IF</span>
 
-<span class="n">fbSATT</span><span class="p">(</span>
-    <span class="n">stAxis1</span> <span class="o">:=</span> <span class="n">Main</span><span class="o">.</span><span class="n">M1</span><span class="p">,</span>
-    <span class="n">stAxis2</span> <span class="o">:=</span> <span class="n">Main</span><span class="o">.</span><span class="n">M2</span><span class="p">,</span>
-    <span class="n">stAxis3</span> <span class="o">:=</span> <span class="n">Main</span><span class="o">.</span><span class="n">M3</span><span class="p">,</span>
-    <span class="n">stAxis4</span> <span class="o">:=</span> <span class="n">Main</span><span class="o">.</span><span class="n">M4</span><span class="p">,</span>
-    <span class="n">nEnableMode</span> <span class="o">:=</span> <span class="n">nEnableMode</span>
-<span class="p">);</span>
+<span class="p">(</span><span class="o">*</span> <span class="n">State</span> <span class="n">setup</span> <span class="o">-</span> <span class="n">stage</span> <span class="mi">1</span> <span class="o">*</span><span class="p">)</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">sName</span>         <span class="o">:=</span> <span class="s1">&#39;Out&#39;</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">fPosition</span>     <span class="o">:=</span> <span class="mi">50</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">fDelta</span>        <span class="o">:=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">fVelocity</span>     <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">bValid</span>        <span class="o">:=</span> <span class="n">TRUE</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">bMoveOk</span>       <span class="o">:=</span> <span class="n">TRUE</span><span class="p">;</span>
+
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">sName</span>     <span class="o">:=</span> <span class="s1">&#39;Filter 1&#39;</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">fPosition</span> <span class="o">:=</span> <span class="mi">500</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">fDelta</span>    <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">fVelocity</span> <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">bValid</span>    <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">bMoveOk</span>   <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">sName</span>     <span class="o">:=</span> <span class="s1">&#39;Filter 2&#39;</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">fPosition</span> <span class="o">:=</span> <span class="mi">500</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">fDelta</span>    <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">fVelocity</span> <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">bValid</span>    <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">bMoveOk</span>   <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">sName</span>     <span class="o">:=</span> <span class="s1">&#39;Filter 3&#39;</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">fPosition</span> <span class="o">:=</span> <span class="mi">500</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">fDelta</span>    <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">fVelocity</span> <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">bValid</span>    <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">bMoveOk</span>   <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">sName</span>     <span class="o">:=</span> <span class="s1">&#39;Filter 4&#39;</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">fPosition</span> <span class="o">:=</span> <span class="mi">500</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">fDelta</span>    <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">fVelocity</span> <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">bValid</span>    <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+<span class="n">fbStage1</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">bMoveOk</span>   <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+
+<span class="n">fbStage1</span><span class="p">(</span><span class="n">stAxis</span><span class="o">:=</span><span class="n">Main</span><span class="o">.</span><span class="n">M1</span><span class="p">,</span> <span class="n">nEnableMode</span><span class="o">:=</span><span class="n">nEnableMode</span><span class="p">);</span>
+
+<span class="p">(</span><span class="o">*</span> <span class="n">State</span> <span class="n">setup</span> <span class="o">-</span> <span class="n">stage</span> <span class="mi">2</span> <span class="o">*</span><span class="p">)</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">sName</span>         <span class="o">:=</span> <span class="s1">&#39;Out&#39;</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">fPosition</span>     <span class="o">:=</span> <span class="mi">50</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">fDelta</span>        <span class="o">:=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">fVelocity</span>     <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">bValid</span>        <span class="o">:=</span> <span class="n">TRUE</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">bMoveOk</span>       <span class="o">:=</span> <span class="n">TRUE</span><span class="p">;</span>
+
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">sName</span>     <span class="o">:=</span> <span class="s1">&#39;Filter 1&#39;</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">fPosition</span> <span class="o">:=</span> <span class="mi">500</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">fDelta</span>    <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">fVelocity</span> <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">bValid</span>    <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">bMoveOk</span>   <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">sName</span>     <span class="o">:=</span> <span class="s1">&#39;Filter 2&#39;</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">fPosition</span> <span class="o">:=</span> <span class="mi">500</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">fDelta</span>    <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">fVelocity</span> <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">bValid</span>    <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">bMoveOk</span>   <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">sName</span>     <span class="o">:=</span> <span class="s1">&#39;Filter 3&#39;</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">fPosition</span> <span class="o">:=</span> <span class="mi">500</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">fDelta</span>    <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">fVelocity</span> <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">bValid</span>    <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">bMoveOk</span>   <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">sName</span>     <span class="o">:=</span> <span class="s1">&#39;Filter 4&#39;</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">fPosition</span> <span class="o">:=</span> <span class="mi">500</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">fDelta</span>    <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">fVelocity</span> <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">bValid</span>    <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+<span class="n">fbStage2</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">bMoveOk</span>   <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+
+<span class="n">fbStage2</span><span class="p">(</span><span class="n">stAxis</span><span class="o">:=</span><span class="n">Main</span><span class="o">.</span><span class="n">M2</span><span class="p">,</span> <span class="n">nEnableMode</span><span class="o">:=</span><span class="n">nEnableMode</span><span class="p">);</span>
+
+<span class="p">(</span><span class="o">*</span> <span class="n">State</span> <span class="n">setup</span> <span class="o">-</span> <span class="n">stage</span> <span class="mi">3</span> <span class="o">*</span><span class="p">)</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">sName</span>         <span class="o">:=</span> <span class="s1">&#39;Out&#39;</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">fPosition</span>     <span class="o">:=</span> <span class="mi">50</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">fDelta</span>        <span class="o">:=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">fVelocity</span>     <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">bValid</span>        <span class="o">:=</span> <span class="n">TRUE</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">bMoveOk</span>       <span class="o">:=</span> <span class="n">TRUE</span><span class="p">;</span>
+
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">sName</span>     <span class="o">:=</span> <span class="s1">&#39;Filter 1&#39;</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">fPosition</span> <span class="o">:=</span> <span class="mi">500</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">fDelta</span>    <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">fVelocity</span> <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">bValid</span>    <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">bMoveOk</span>   <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">sName</span>     <span class="o">:=</span> <span class="s1">&#39;Filter 2&#39;</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">fPosition</span> <span class="o">:=</span> <span class="mi">500</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">fDelta</span>    <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">fVelocity</span> <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">bValid</span>    <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">bMoveOk</span>   <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">sName</span>     <span class="o">:=</span> <span class="s1">&#39;Filter 3&#39;</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">fPosition</span> <span class="o">:=</span> <span class="mi">500</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">fDelta</span>    <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">fVelocity</span> <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">bValid</span>    <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">bMoveOk</span>   <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">sName</span>     <span class="o">:=</span> <span class="s1">&#39;Filter 4&#39;</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">fPosition</span> <span class="o">:=</span> <span class="mi">500</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">fDelta</span>    <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">fVelocity</span> <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">bValid</span>    <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+<span class="n">fbStage3</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">bMoveOk</span>   <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+
+<span class="n">fbStage3</span><span class="p">(</span><span class="n">stAxis</span><span class="o">:=</span><span class="n">Main</span><span class="o">.</span><span class="n">M3</span><span class="p">,</span> <span class="n">nEnableMode</span><span class="o">:=</span><span class="n">nEnableMode</span><span class="p">);</span>
+
+<span class="p">(</span><span class="o">*</span> <span class="n">State</span> <span class="n">setup</span> <span class="o">-</span> <span class="n">stage</span> <span class="mi">4</span> <span class="o">*</span><span class="p">)</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">sName</span>         <span class="o">:=</span> <span class="s1">&#39;Out&#39;</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">fPosition</span>     <span class="o">:=</span> <span class="mi">50</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">fDelta</span>        <span class="o">:=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">fVelocity</span>     <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">bValid</span>        <span class="o">:=</span> <span class="n">TRUE</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stOut</span><span class="o">.</span><span class="n">bMoveOk</span>       <span class="o">:=</span> <span class="n">TRUE</span><span class="p">;</span>
+
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">sName</span>     <span class="o">:=</span> <span class="s1">&#39;Filter 1&#39;</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">fPosition</span> <span class="o">:=</span> <span class="mi">500</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">fDelta</span>    <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">fVelocity</span> <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">bValid</span>    <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter1</span><span class="o">.</span><span class="n">bMoveOk</span>   <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">sName</span>     <span class="o">:=</span> <span class="s1">&#39;Filter 2&#39;</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">fPosition</span> <span class="o">:=</span> <span class="mi">500</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">fDelta</span>    <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">fVelocity</span> <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">bValid</span>    <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter2</span><span class="o">.</span><span class="n">bMoveOk</span>   <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">sName</span>     <span class="o">:=</span> <span class="s1">&#39;Filter 3&#39;</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">fPosition</span> <span class="o">:=</span> <span class="mi">500</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">fDelta</span>    <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">fVelocity</span> <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">bValid</span>    <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter3</span><span class="o">.</span><span class="n">bMoveOk</span>   <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">sName</span>     <span class="o">:=</span> <span class="s1">&#39;Filter 4&#39;</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">fPosition</span> <span class="o">:=</span> <span class="mi">500</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">fDelta</span>    <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">fVelocity</span> <span class="o">:=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">bValid</span>    <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+<span class="n">fbStage4</span><span class="o">.</span><span class="n">stFilter4</span><span class="o">.</span><span class="n">bMoveOk</span>   <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
+
+<span class="n">fbStage4</span><span class="p">(</span><span class="n">stAxis</span><span class="o">:=</span><span class="n">Main</span><span class="o">.</span><span class="n">M4</span><span class="p">,</span> <span class="n">nEnableMode</span><span class="o">:=</span><span class="n">nEnableMode</span><span class="p">);</span>
 
 <span class="n">END_PROGRAM</span>
 </pre></div>

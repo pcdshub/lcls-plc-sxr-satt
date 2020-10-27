@@ -30,11 +30,13 @@ Axis 1: AT1K4-M1
     Dynamic:DecelerationMaximum, 400
     Dynamic:DelayTime, 0.008
     Dynamic:Jerk, 80
-    Enc:EncType, 29
+    Enc:EncType, 1
     Enc:Inc:RefSoftSyncMask, #x0000ffff
-    Enc:MaxCount, #xffffffff
-    Enc:ReferenceSystem, 1
     Enc:ScaleFactorNumerator, 5e-05
+    Enc:SoftEndMaxControl:Enable, true
+    Enc:SoftEndMaxControl:Range, 152.5
+    Enc:SoftEndMinControl:Enable, true
+    Enc:SoftEndMinControl:Range, 16.5
     Id, 1
     OtherSettings:AllowMotionCmdToSlave, true
     Velo:Maximum, 80
@@ -63,6 +65,10 @@ Axis 2: AT1K4-M2
     Enc:MaxCount, #xffffffff
     Enc:ReferenceSystem, 1
     Enc:ScaleFactorNumerator, 5e-05
+    Enc:SoftEndMaxControl:Enable, true
+    Enc:SoftEndMaxControl:Range, 152.5
+    Enc:SoftEndMinControl:Enable, true
+    Enc:SoftEndMinControl:Range, 16.5
     Id, 2
     OtherSettings:AllowMotionCmdToSlave, true
     Velo:Maximum, 80
@@ -91,6 +97,10 @@ Axis 3: AT1K4-M3
     Enc:MaxCount, #xffffffff
     Enc:ReferenceSystem, 1
     Enc:ScaleFactorNumerator, 5e-05
+    Enc:SoftEndMaxControl:Enable, true
+    Enc:SoftEndMaxControl:Range, 152.5
+    Enc:SoftEndMinControl:Enable, true
+    Enc:SoftEndMinControl:Range, 16.5
     Id, 3
     OtherSettings:AllowMotionCmdToSlave, true
     Velo:Maximum, 80
@@ -119,6 +129,10 @@ Axis 4: AT1K4-M4
     Enc:MaxCount, #xffffffff
     Enc:ReferenceSystem, 1
     Enc:ScaleFactorNumerator, 5e-05
+    Enc:SoftEndMaxControl:Enable, true
+    Enc:SoftEndMaxControl:Range, 152.5
+    Enc:SoftEndMinControl:Enable, true
+    Enc:SoftEndMinControl:Range, 16.5
     Id, 4
     OtherSettings:AllowMotionCmdToSlave, true
     Velo:Maximum, 80
