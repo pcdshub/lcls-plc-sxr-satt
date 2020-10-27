@@ -2,11 +2,13 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
   <POU Name="FB_SXR_SATT" Id="{2f1f83e9-4200-4508-be54-d328575501f6}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK FB_SXR_SATT
-VAR_INPUT
+VAR_IN_OUT
     stAxis1 : DUT_MotionStage;
     stAxis2 : DUT_MotionStage;
     stAxis3 : DUT_MotionStage;
     stAxis4 : DUT_MotionStage;
+END_VAR
+VAR_INPUT
     nEnableMode : ENUM_StageEnableMode;
 END_VAR
 VAR_OUTPUT

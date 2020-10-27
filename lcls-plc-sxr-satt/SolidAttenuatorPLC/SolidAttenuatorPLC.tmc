@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{A826449F-F625-94C3-A74F-0036267A53CF}" GeneratedBy="TwinCAT XAE Plc">
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{F402322B-475B-34F8-7414-6CE6A4446205}" GeneratedBy="TwinCAT XAE Plc">
   <DataTypes>
     <DataType>
       <Name GUID="{18071995-0000-0000-0000-000000000041}" TcBaseType="true" HideSubItems="true" CName="AmsNetId">AMSNETID</Name>
@@ -33697,52 +33697,52 @@ External Setpoint Generation:
     </DataType>
     <DataType>
       <Name>FB_SXR_SATT_Sim</Name>
-      <BitSize>965504</BitSize>
+      <BitSize>881536</BitSize>
       <SubItem>
         <Name>stAxis1</Name>
-        <Type Namespace="lcls_twincat_motion">DUT_MotionStage</Type>
-        <BitSize>21056</BitSize>
+        <Type Namespace="lcls_twincat_motion" ReferenceTo="true">DUT_MotionStage</Type>
+        <BitSize>64</BitSize>
         <BitOffs>64</BitOffs>
         <Properties>
           <Property>
             <Name>ItemType</Name>
-            <Value>Input</Value>
+            <Value>InOut</Value>
           </Property>
         </Properties>
       </SubItem>
       <SubItem>
         <Name>stAxis2</Name>
-        <Type Namespace="lcls_twincat_motion">DUT_MotionStage</Type>
-        <BitSize>21056</BitSize>
-        <BitOffs>21120</BitOffs>
+        <Type Namespace="lcls_twincat_motion" ReferenceTo="true">DUT_MotionStage</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>128</BitOffs>
         <Properties>
           <Property>
             <Name>ItemType</Name>
-            <Value>Input</Value>
+            <Value>InOut</Value>
           </Property>
         </Properties>
       </SubItem>
       <SubItem>
         <Name>stAxis3</Name>
-        <Type Namespace="lcls_twincat_motion">DUT_MotionStage</Type>
-        <BitSize>21056</BitSize>
-        <BitOffs>42176</BitOffs>
+        <Type Namespace="lcls_twincat_motion" ReferenceTo="true">DUT_MotionStage</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>192</BitOffs>
         <Properties>
           <Property>
             <Name>ItemType</Name>
-            <Value>Input</Value>
+            <Value>InOut</Value>
           </Property>
         </Properties>
       </SubItem>
       <SubItem>
         <Name>stAxis4</Name>
-        <Type Namespace="lcls_twincat_motion">DUT_MotionStage</Type>
-        <BitSize>21056</BitSize>
-        <BitOffs>63232</BitOffs>
+        <Type Namespace="lcls_twincat_motion" ReferenceTo="true">DUT_MotionStage</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>256</BitOffs>
         <Properties>
           <Property>
             <Name>ItemType</Name>
-            <Value>Input</Value>
+            <Value>InOut</Value>
           </Property>
         </Properties>
       </SubItem>
@@ -33750,7 +33750,7 @@ External Setpoint Generation:
         <Name>nEnableMode</Name>
         <Type Namespace="lcls_twincat_motion">ENUM_StageEnableMode</Type>
         <BitSize>16</BitSize>
-        <BitOffs>84288</BitOffs>
+        <BitOffs>320</BitOffs>
         <Properties>
           <Property>
             <Name>ItemType</Name>
@@ -33762,7 +33762,7 @@ External Setpoint Generation:
         <Name>bInit</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <BitOffs>84304</BitOffs>
+        <BitOffs>336</BitOffs>
         <Default>
           <Value>1</Value>
         </Default>
@@ -33776,62 +33776,62 @@ External Setpoint Generation:
         Note that the DUT_MotionStage is where the pytmc pragmas go.
     </Comment>
         <BitSize>174400</BitSize>
-        <BitOffs>84352</BitOffs>
+        <BitOffs>384</BitOffs>
       </SubItem>
       <SubItem>
         <Name>fbMotion2</Name>
         <Type Namespace="lcls_twincat_motion">FB_MotionStageSim</Type>
         <BitSize>174400</BitSize>
-        <BitOffs>258752</BitOffs>
+        <BitOffs>174784</BitOffs>
       </SubItem>
       <SubItem>
         <Name>fbMotion3</Name>
         <Type Namespace="lcls_twincat_motion">FB_MotionStageSim</Type>
         <BitSize>174400</BitSize>
-        <BitOffs>433152</BitOffs>
+        <BitOffs>349184</BitOffs>
       </SubItem>
       <SubItem>
         <Name>fbMotion4</Name>
         <Type Namespace="lcls_twincat_motion">FB_MotionStageSim</Type>
         <BitSize>174400</BitSize>
-        <BitOffs>607552</BitOffs>
+        <BitOffs>523584</BitOffs>
       </SubItem>
       <SubItem>
         <Name>fbState</Name>
         <Type Namespace="lcls_twincat_motion">FB_PositionStateManager</Type>
         <BitSize>180992</BitSize>
-        <BitOffs>781952</BitOffs>
+        <BitOffs>697984</BitOffs>
       </SubItem>
       <SubItem>
         <Name>stAxis1Extra</Name>
         <Type Namespace="lcls_twincat_motion">DUT_MotionStage_Extras</Type>
         <BitSize>128</BitSize>
-        <BitOffs>962944</BitOffs>
+        <BitOffs>878976</BitOffs>
       </SubItem>
       <SubItem>
         <Name>stAxis2Extra</Name>
         <Type Namespace="lcls_twincat_motion">DUT_MotionStage_Extras</Type>
         <BitSize>128</BitSize>
-        <BitOffs>963072</BitOffs>
+        <BitOffs>879104</BitOffs>
       </SubItem>
       <SubItem>
         <Name>stAxis3Extra</Name>
         <Type Namespace="lcls_twincat_motion">DUT_MotionStage_Extras</Type>
         <BitSize>128</BitSize>
-        <BitOffs>963200</BitOffs>
+        <BitOffs>879232</BitOffs>
       </SubItem>
       <SubItem>
         <Name>stAxis4Extra</Name>
         <Type Namespace="lcls_twincat_motion">DUT_MotionStage_Extras</Type>
         <BitSize>128</BitSize>
-        <BitOffs>963328</BitOffs>
+        <BitOffs>879360</BitOffs>
       </SubItem>
       <SubItem>
         <Name>RTD_Axis1_1</Name>
         <Type Namespace="LCLS_General">FB_TempSensor</Type>
         <Comment> EL3202-0020: 0.01 °C per digit </Comment>
         <BitSize>256</BitSize>
-        <BitOffs>963456</BitOffs>
+        <BitOffs>879488</BitOffs>
         <Default>
           <SubItem>
             <Name>.fResolution</Name>
@@ -33849,7 +33849,7 @@ External Setpoint Generation:
         <Name>RTD_Axis1_2</Name>
         <Type Namespace="LCLS_General">FB_TempSensor</Type>
         <BitSize>256</BitSize>
-        <BitOffs>963712</BitOffs>
+        <BitOffs>879744</BitOffs>
         <Default>
           <SubItem>
             <Name>.fResolution</Name>
@@ -33867,7 +33867,7 @@ External Setpoint Generation:
         <Name>RTD_Axis2_1</Name>
         <Type Namespace="LCLS_General">FB_TempSensor</Type>
         <BitSize>256</BitSize>
-        <BitOffs>963968</BitOffs>
+        <BitOffs>880000</BitOffs>
         <Default>
           <SubItem>
             <Name>.fResolution</Name>
@@ -33885,7 +33885,7 @@ External Setpoint Generation:
         <Name>RTD_Axis2_2</Name>
         <Type Namespace="LCLS_General">FB_TempSensor</Type>
         <BitSize>256</BitSize>
-        <BitOffs>964224</BitOffs>
+        <BitOffs>880256</BitOffs>
         <Default>
           <SubItem>
             <Name>.fResolution</Name>
@@ -33903,7 +33903,7 @@ External Setpoint Generation:
         <Name>RTD_Axis3_1</Name>
         <Type Namespace="LCLS_General">FB_TempSensor</Type>
         <BitSize>256</BitSize>
-        <BitOffs>964480</BitOffs>
+        <BitOffs>880512</BitOffs>
         <Default>
           <SubItem>
             <Name>.fResolution</Name>
@@ -33921,7 +33921,7 @@ External Setpoint Generation:
         <Name>RTD_Axis3_2</Name>
         <Type Namespace="LCLS_General">FB_TempSensor</Type>
         <BitSize>256</BitSize>
-        <BitOffs>964736</BitOffs>
+        <BitOffs>880768</BitOffs>
         <Default>
           <SubItem>
             <Name>.fResolution</Name>
@@ -33939,7 +33939,7 @@ External Setpoint Generation:
         <Name>RTD_Axis4_1</Name>
         <Type Namespace="LCLS_General">FB_TempSensor</Type>
         <BitSize>256</BitSize>
-        <BitOffs>964992</BitOffs>
+        <BitOffs>881024</BitOffs>
         <Default>
           <SubItem>
             <Name>.fResolution</Name>
@@ -33957,7 +33957,7 @@ External Setpoint Generation:
         <Name>RTD_Axis4_2</Name>
         <Type Namespace="LCLS_General">FB_TempSensor</Type>
         <BitSize>256</BitSize>
-        <BitOffs>965248</BitOffs>
+        <BitOffs>881280</BitOffs>
         <Default>
           <SubItem>
             <Name>.fResolution</Name>
@@ -35831,7 +35831,7 @@ External Setpoint Generation:
           <AreaNo AreaType="InputDst" CreateSymbols="true">0</AreaNo>
           <Name>PlcTask Inputs</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80740352</ByteSize>
+          <ByteSize>80674816</ByteSize>
           <Symbol>
             <Name>LCLS_General.DefaultGlobals.stSys.I_EcatMaster1</Name>
             <Comment> AMS Net ID used for FB_EcatDiag, among others </Comment>
@@ -35850,578 +35850,6 @@ External Setpoint Generation:
             <BitOffs>3072040</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis1.Axis.NcToPlc</Name>
-            <BitSize>2048</BitSize>
-            <BaseType GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}">NCTOPLC_AXIS_REF</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639488256</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis1.bLimitForwardEnable</Name>
-            <Comment> NC Forward Limit Switch: TRUE if ok to move</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bLimitForwardEnable
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC FALSE if forward limit hit
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639496192</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis1.bLimitBackwardEnable</Name>
-            <Comment> NC Backward Limit Switch: TRUE if ok to move</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bLimitBackwardEnable
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC FALSE if reverse limit hit
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639496200</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis1.bHome</Name>
-            <Comment> NO Home Switch: TRUE if at home</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bHome
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC TRUE if at homing switch
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639496208</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis1.bHardwareEnable</Name>
-            <Comment> NC STO Input: TRUE if ok to move</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bHardwareEnable
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC TRUE if STO not hit
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639496224</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis1.nRawEncoderULINT</Name>
-            <Comment> Raw encoder IO for ULINT (Biss-C)</Comment>
-            <BitSize>64</BitSize>
-            <BaseType>ULINT</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639496256</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis1.nRawEncoderUINT</Name>
-            <Comment> Raw encoder IO for UINT (Relative Encoders)</Comment>
-            <BitSize>16</BitSize>
-            <BaseType>UINT</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639496320</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis1.nRawEncoderINT</Name>
-            <Comment> Raw encoder IO for INT (LVDT)</Comment>
-            <BitSize>16</BitSize>
-            <BaseType>INT</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639496336</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis2.Axis.NcToPlc</Name>
-            <BitSize>2048</BitSize>
-            <BaseType GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}">NCTOPLC_AXIS_REF</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639509312</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis2.bLimitForwardEnable</Name>
-            <Comment> NC Forward Limit Switch: TRUE if ok to move</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bLimitForwardEnable
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC FALSE if forward limit hit
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639517248</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis2.bLimitBackwardEnable</Name>
-            <Comment> NC Backward Limit Switch: TRUE if ok to move</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bLimitBackwardEnable
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC FALSE if reverse limit hit
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639517256</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis2.bHome</Name>
-            <Comment> NO Home Switch: TRUE if at home</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bHome
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC TRUE if at homing switch
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639517264</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis2.bHardwareEnable</Name>
-            <Comment> NC STO Input: TRUE if ok to move</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bHardwareEnable
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC TRUE if STO not hit
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639517280</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis2.nRawEncoderULINT</Name>
-            <Comment> Raw encoder IO for ULINT (Biss-C)</Comment>
-            <BitSize>64</BitSize>
-            <BaseType>ULINT</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639517312</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis2.nRawEncoderUINT</Name>
-            <Comment> Raw encoder IO for UINT (Relative Encoders)</Comment>
-            <BitSize>16</BitSize>
-            <BaseType>UINT</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639517376</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis2.nRawEncoderINT</Name>
-            <Comment> Raw encoder IO for INT (LVDT)</Comment>
-            <BitSize>16</BitSize>
-            <BaseType>INT</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639517392</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis3.Axis.NcToPlc</Name>
-            <BitSize>2048</BitSize>
-            <BaseType GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}">NCTOPLC_AXIS_REF</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639530368</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis3.bLimitForwardEnable</Name>
-            <Comment> NC Forward Limit Switch: TRUE if ok to move</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bLimitForwardEnable
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC FALSE if forward limit hit
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639538304</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis3.bLimitBackwardEnable</Name>
-            <Comment> NC Backward Limit Switch: TRUE if ok to move</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bLimitBackwardEnable
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC FALSE if reverse limit hit
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639538312</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis3.bHome</Name>
-            <Comment> NO Home Switch: TRUE if at home</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bHome
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC TRUE if at homing switch
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639538320</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis3.bHardwareEnable</Name>
-            <Comment> NC STO Input: TRUE if ok to move</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bHardwareEnable
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC TRUE if STO not hit
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639538336</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis3.nRawEncoderULINT</Name>
-            <Comment> Raw encoder IO for ULINT (Biss-C)</Comment>
-            <BitSize>64</BitSize>
-            <BaseType>ULINT</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639538368</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis3.nRawEncoderUINT</Name>
-            <Comment> Raw encoder IO for UINT (Relative Encoders)</Comment>
-            <BitSize>16</BitSize>
-            <BaseType>UINT</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639538432</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis3.nRawEncoderINT</Name>
-            <Comment> Raw encoder IO for INT (LVDT)</Comment>
-            <BitSize>16</BitSize>
-            <BaseType>INT</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639538448</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis4.Axis.NcToPlc</Name>
-            <BitSize>2048</BitSize>
-            <BaseType GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}">NCTOPLC_AXIS_REF</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639551424</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis4.bLimitForwardEnable</Name>
-            <Comment> NC Forward Limit Switch: TRUE if ok to move</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bLimitForwardEnable
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC FALSE if forward limit hit
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639559360</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis4.bLimitBackwardEnable</Name>
-            <Comment> NC Backward Limit Switch: TRUE if ok to move</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bLimitBackwardEnable
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC FALSE if reverse limit hit
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639559368</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis4.bHome</Name>
-            <Comment> NO Home Switch: TRUE if at home</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bHome
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC TRUE if at homing switch
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639559376</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis4.bHardwareEnable</Name>
-            <Comment> NC STO Input: TRUE if ok to move</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bHardwareEnable
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC TRUE if STO not hit
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639559392</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis4.nRawEncoderULINT</Name>
-            <Comment> Raw encoder IO for ULINT (Biss-C)</Comment>
-            <BitSize>64</BitSize>
-            <BaseType>ULINT</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639559424</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis4.nRawEncoderUINT</Name>
-            <Comment> Raw encoder IO for UINT (Relative Encoders)</Comment>
-            <BitSize>16</BitSize>
-            <BaseType>UINT</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639559488</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis4.nRawEncoderINT</Name>
-            <Comment> Raw encoder IO for INT (LVDT)</Comment>
-            <BitSize>16</BitSize>
-            <BaseType>INT</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639559504</BitOffs>
-          </Symbol>
-          <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.fbMotion1.fbMotionStage.fbDriveVirtual.MasterAxis.NcToPlc</Name>
             <BitSize>2048</BitSize>
             <BaseType GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}">NCTOPLC_AXIS_REF</BaseType>
@@ -36431,7 +35859,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639574272</BitOffs>
+            <BitOffs>639490304</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.fbMotion2.fbMotionStage.fbDriveVirtual.MasterAxis.NcToPlc</Name>
@@ -36443,7 +35871,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639748672</BitOffs>
+            <BitOffs>639664704</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.fbMotion3.fbMotionStage.fbDriveVirtual.MasterAxis.NcToPlc</Name>
@@ -36455,7 +35883,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>639923072</BitOffs>
+            <BitOffs>639839104</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.fbMotion4.fbMotionStage.fbDriveVirtual.MasterAxis.NcToPlc</Name>
@@ -36467,7 +35895,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640097472</BitOffs>
+            <BitOffs>640013504</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis1_1.bError</Name>
@@ -36491,7 +35919,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640450760</BitOffs>
+            <BitOffs>640366792</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis1_1.bUnderrange</Name>
@@ -36503,7 +35931,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640450768</BitOffs>
+            <BitOffs>640366800</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis1_1.bOverrange</Name>
@@ -36515,7 +35943,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640450776</BitOffs>
+            <BitOffs>640366808</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis1_1.iRaw</Name>
@@ -36527,7 +35955,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640450784</BitOffs>
+            <BitOffs>640366816</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis1_2.bError</Name>
@@ -36551,7 +35979,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640451016</BitOffs>
+            <BitOffs>640367048</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis1_2.bUnderrange</Name>
@@ -36563,7 +35991,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640451024</BitOffs>
+            <BitOffs>640367056</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis1_2.bOverrange</Name>
@@ -36575,7 +36003,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640451032</BitOffs>
+            <BitOffs>640367064</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis1_2.iRaw</Name>
@@ -36587,7 +36015,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640451040</BitOffs>
+            <BitOffs>640367072</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis2_1.bError</Name>
@@ -36611,7 +36039,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640451272</BitOffs>
+            <BitOffs>640367304</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis2_1.bUnderrange</Name>
@@ -36623,7 +36051,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640451280</BitOffs>
+            <BitOffs>640367312</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis2_1.bOverrange</Name>
@@ -36635,7 +36063,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640451288</BitOffs>
+            <BitOffs>640367320</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis2_1.iRaw</Name>
@@ -36647,7 +36075,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640451296</BitOffs>
+            <BitOffs>640367328</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis2_2.bError</Name>
@@ -36671,7 +36099,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640451528</BitOffs>
+            <BitOffs>640367560</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis2_2.bUnderrange</Name>
@@ -36683,7 +36111,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640451536</BitOffs>
+            <BitOffs>640367568</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis2_2.bOverrange</Name>
@@ -36695,7 +36123,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640451544</BitOffs>
+            <BitOffs>640367576</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis2_2.iRaw</Name>
@@ -36707,7 +36135,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640451552</BitOffs>
+            <BitOffs>640367584</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis3_1.bError</Name>
@@ -36731,7 +36159,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640451784</BitOffs>
+            <BitOffs>640367816</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis3_1.bUnderrange</Name>
@@ -36743,7 +36171,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640451792</BitOffs>
+            <BitOffs>640367824</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis3_1.bOverrange</Name>
@@ -36755,7 +36183,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640451800</BitOffs>
+            <BitOffs>640367832</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis3_1.iRaw</Name>
@@ -36767,7 +36195,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640451808</BitOffs>
+            <BitOffs>640367840</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis3_2.bError</Name>
@@ -36791,7 +36219,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640452040</BitOffs>
+            <BitOffs>640368072</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis3_2.bUnderrange</Name>
@@ -36803,7 +36231,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640452048</BitOffs>
+            <BitOffs>640368080</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis3_2.bOverrange</Name>
@@ -36815,7 +36243,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640452056</BitOffs>
+            <BitOffs>640368088</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis3_2.iRaw</Name>
@@ -36827,7 +36255,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640452064</BitOffs>
+            <BitOffs>640368096</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis4_1.bError</Name>
@@ -36851,7 +36279,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640452296</BitOffs>
+            <BitOffs>640368328</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis4_1.bUnderrange</Name>
@@ -36863,7 +36291,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640452304</BitOffs>
+            <BitOffs>640368336</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis4_1.bOverrange</Name>
@@ -36875,7 +36303,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640452312</BitOffs>
+            <BitOffs>640368344</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis4_1.iRaw</Name>
@@ -36887,7 +36315,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640452320</BitOffs>
+            <BitOffs>640368352</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis4_2.bError</Name>
@@ -36911,7 +36339,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640452552</BitOffs>
+            <BitOffs>640368584</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis4_2.bUnderrange</Name>
@@ -36923,7 +36351,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640452560</BitOffs>
+            <BitOffs>640368592</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis4_2.bOverrange</Name>
@@ -36935,7 +36363,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640452568</BitOffs>
+            <BitOffs>640368600</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.RTD_Axis4_2.iRaw</Name>
@@ -36947,7 +36375,7 @@ External Setpoint Generation:
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>640452576</BitOffs>
+            <BitOffs>640368608</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.Axis.NcToPlc</Name>
@@ -37526,147 +36954,7 @@ External Setpoint Generation:
           <AreaNo AreaType="OutputSrc" CreateSymbols="true">1</AreaNo>
           <Name>PlcTask Outputs</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80740352</ByteSize>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis1.Axis.PlcToNc</Name>
-            <BitSize>1024</BitSize>
-            <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639487232</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis1.bBrakeRelease</Name>
-            <Comment> NC Brake Output: TRUE to release brake</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bBrakeRelease
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC TRUE if brake released
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639496216</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis2.Axis.PlcToNc</Name>
-            <BitSize>1024</BitSize>
-            <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639508288</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis2.bBrakeRelease</Name>
-            <Comment> NC Brake Output: TRUE to release brake</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bBrakeRelease
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC TRUE if brake released
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639517272</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis3.Axis.PlcToNc</Name>
-            <BitSize>1024</BitSize>
-            <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639529344</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis3.bBrakeRelease</Name>
-            <Comment> NC Brake Output: TRUE to release brake</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bBrakeRelease
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC TRUE if brake released
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639538328</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis4.Axis.PlcToNc</Name>
-            <BitSize>1024</BitSize>
-            <BaseType GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">PLCTONC_AXIS_REF</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639550400</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_2_AT1K4.fbSATT.stAxis4.bBrakeRelease</Name>
-            <Comment> NC Brake Output: TRUE to release brake</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: PLC:bBrakeRelease
-        io: i
-        field: ZNAM FALSE
-        field: ONAM TRUE
-        field: DESC TRUE if brake released
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>639559384</BitOffs>
-          </Symbol>
+          <ByteSize>80674816</ByteSize>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.fbMotion1.fbMotionStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
             <BitSize>1024</BitSize>
@@ -37677,7 +36965,7 @@ External Setpoint Generation:
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>639573248</BitOffs>
+            <BitOffs>639489280</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.fbMotion2.fbMotionStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
@@ -37689,7 +36977,7 @@ External Setpoint Generation:
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>639747648</BitOffs>
+            <BitOffs>639663680</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.fbMotion3.fbMotionStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
@@ -37701,7 +36989,7 @@ External Setpoint Generation:
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>639922048</BitOffs>
+            <BitOffs>639838080</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT.fbMotion4.fbMotionStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
@@ -37713,7 +37001,7 @@ External Setpoint Generation:
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>640096448</BitOffs>
+            <BitOffs>640012480</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Main.M1.Axis.PlcToNc</Name>
@@ -37860,7 +37148,7 @@ External Setpoint Generation:
           <AreaNo AreaType="Internal" CreateSymbols="true">3</AreaNo>
           <Name>PlcTask Internal</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80740352</ByteSize>
+          <ByteSize>80674816</ByteSize>
           <Symbol>
             <Name>DefaultGlobals.stSys</Name>
             <Comment>Included for you</Comment>
@@ -44063,7 +43351,7 @@ External Setpoint Generation:
           </Symbol>
           <Symbol>
             <Name>PRG_2_AT1K4.fbSATT</Name>
-            <BitSize>965504</BitSize>
+            <BitSize>881536</BitSize>
             <BaseType>FB_SXR_SATT_Sim</BaseType>
             <Properties>
               <Property>
@@ -44890,7 +44178,7 @@ External Setpoint Generation:
           <AreaNo AreaType="RetainSrc" CreateSymbols="true">4</AreaNo>
           <Name>PlcTask Retains</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80740352</ByteSize>
+          <ByteSize>80674816</ByteSize>
           <Symbol>
             <Name>PMPS_GVL.SuccessfulPreemption</Name>
             <Comment> Any time BPTM applies a new BP request which is confirmed</Comment>
@@ -44959,7 +44247,7 @@ External Setpoint Generation:
         </Property>
         <Property>
           <Name>ChangeDate</Name>
-          <Value>2020-10-27T10:23:49</Value>
+          <Value>2020-10-27T11:20:34</Value>
         </Property>
         <Property>
           <Name>GeneratedCodeSize</Name>
@@ -44967,7 +44255,7 @@ External Setpoint Generation:
         </Property>
         <Property>
           <Name>GlobalDataSize</Name>
-          <Value>79712256</Value>
+          <Value>79704064</Value>
         </Property>
       </Properties>
     </Module>
