@@ -6,6 +6,14 @@ Links
     :header: Owner A, Item A, Owner B, Item B
     :align: center
 
+        , Drive^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, STM Status^Status^Error
+        , Drive^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, STM Status^Status^Motor stall
+        , Drive^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, STM Status^Status^Moving negative
+        , Drive^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, STM Status^Status^Moving positive
+        , Drive^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, STM Status^Status^Ready
+        , Drive^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, STM Status^Status^Ready to enable
+        , Drive^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, STM Status^Status^Torque reduced
+        , Drive^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, STM Status^Status^Warning
         , Drive^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-02, STM Status^Status^Error
         , Drive^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-02, STM Status^Status^Motor stall
         , Drive^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-02, STM Status^Status^Moving negative
@@ -30,6 +38,10 @@ Links
         , Drive^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-04, STM Status^Status^Ready to enable
         , Drive^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-04, STM Status^Status^Torque reduced
         , Drive^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-04, STM Status^Status^Warning
+        , Drive^Inputs^In^nState2, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, STM Status^Status^Digital input 1
+        , Drive^Inputs^In^nState2, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, STM Status^Status^Digital input 2
+        , Drive^Inputs^In^nState2, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, STM Status^Status^Sync error
+        , Drive^Inputs^In^nState2, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, STM Status^Status^TxPDO Toggle
         , Drive^Inputs^In^nState2, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-02, STM Status^Status^Digital input 1
         , Drive^Inputs^In^nState2, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-02, STM Status^Status^Digital input 2
         , Drive^Inputs^In^nState2, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-02, STM Status^Status^Sync error
@@ -42,12 +54,17 @@ Links
         , Drive^Inputs^In^nState2, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-04, STM Status^Status^Digital input 2
         , Drive^Inputs^In^nState2, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-04, STM Status^Status^Sync error
         , Drive^Inputs^In^nState2, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-04, STM Status^Status^TxPDO Toggle
+        , Drive^Inputs^In^nState4, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, WcState^InputToggle
+        , Drive^Inputs^In^nState4, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, WcState^WcState
         , Drive^Inputs^In^nState4, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-02, WcState^InputToggle
         , Drive^Inputs^In^nState4, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-02, WcState^WcState
         , Drive^Inputs^In^nState4, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-03, WcState^InputToggle
         , Drive^Inputs^In^nState4, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-03, WcState^WcState
         , Drive^Inputs^In^nState4, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-04, WcState^InputToggle
         , Drive^Inputs^In^nState4, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-04, WcState^WcState
+        , Drive^Outputs^Out^nCtrl1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, STM Control^Control^Enable
+        , Drive^Outputs^Out^nCtrl1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, STM Control^Control^Reduce torque
+        , Drive^Outputs^Out^nCtrl1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, STM Control^Control^Reset
         , Drive^Outputs^Out^nCtrl1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-02, STM Control^Control^Enable
         , Drive^Outputs^Out^nCtrl1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-02, STM Control^Control^Reduce torque
         , Drive^Outputs^Out^nCtrl1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-02, STM Control^Control^Reset
@@ -57,21 +74,32 @@ Links
         , Drive^Outputs^Out^nCtrl1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-04, STM Control^Control^Enable
         , Drive^Outputs^Out^nCtrl1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-04, STM Control^Control^Reduce torque
         , Drive^Outputs^Out^nCtrl1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-04, STM Control^Control^Reset
+        , Drive^Outputs^Out^nCtrl2, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, STM Control^Control^Digital output 1
         , Drive^Outputs^Out^nCtrl2, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-02, STM Control^Control^Digital output 1
         , Drive^Outputs^Out^nCtrl2, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-03, STM Control^Control^Digital output 1
         , Drive^Outputs^Out^nCtrl2, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-04, STM Control^Control^Digital output 1
+        , Drive^Outputs^Out^nDataOut2[0], TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, STM Velocity^Velocity
         , Drive^Outputs^Out^nDataOut2[0], TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-02, STM Velocity^Velocity
         , Drive^Outputs^Out^nDataOut2[0], TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-03, STM Velocity^Velocity
         , Drive^Outputs^Out^nDataOut2[0], TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-04, STM Velocity^Velocity
+        , Enc^Inputs^In^nComState, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-01, WcState^InputToggle
+        , Enc^Inputs^In^nComState, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-01, WcState^WcState
         , Enc^Inputs^In^nComState, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-01, WcState^InputToggle
         , Enc^Inputs^In^nComState, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-01, WcState^WcState
         , Enc^Inputs^In^nComState, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-02, WcState^InputToggle
         , Enc^Inputs^In^nComState, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-02, WcState^WcState
         , Enc^Inputs^In^nComState, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-02, WcState^InputToggle
         , Enc^Inputs^In^nComState, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-02, WcState^WcState
+        , Enc^Inputs^In^nDataIn1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-01, FB Inputs Channel 1^Position
         , Enc^Inputs^In^nDataIn1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-01, FB Inputs Channel 2^Position
         , Enc^Inputs^In^nDataIn1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-02, FB Inputs Channel 1^Position
         , Enc^Inputs^In^nDataIn1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-02, FB Inputs Channel 2^Position
+        , Enc^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-01, FB Inputs Channel 1^Status^Diag
+        , Enc^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-01, FB Inputs Channel 1^Status^Error
+        , Enc^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-01, FB Inputs Channel 1^Status^Input cycle counter
+        , Enc^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-01, FB Inputs Channel 1^Status^Ready
+        , Enc^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-01, FB Inputs Channel 1^Status^TxPDO State
+        , Enc^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-01, FB Inputs Channel 1^Status^Warning
         , Enc^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-01, FB Inputs Channel 2^Status^Diag
         , Enc^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-01, FB Inputs Channel 2^Status^Error
         , Enc^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-01, FB Inputs Channel 2^Status^Input cycle counter
@@ -91,9 +119,6 @@ Links
         , Enc^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-02, FB Inputs Channel 2^Status^TxPDO State
         , Enc^Inputs^In^nState1, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-02, FB Inputs Channel 2^Status^Warning
         SolidAttenuatorPLC Instance, PlcTask Inputs^Main.M1.Axis.NcToPlc, TINC^NC-Task 1 SAF^Axes^AT1K4-M1, Outputs^ToPlc
-        SolidAttenuatorPLC Instance, PlcTask Inputs^Main.M1.bLimitBackwardEnable, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, STM Status^Status^Digital input 2
-        SolidAttenuatorPLC Instance, PlcTask Inputs^Main.M1.bLimitForwardEnable, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01, STM Status^Status^Digital input 1
-        SolidAttenuatorPLC Instance, PlcTask Inputs^Main.M1.nRawEncoderULINT, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-01, FB Inputs Channel 1^Position
         SolidAttenuatorPLC Instance, PlcTask Inputs^Main.M2.Axis.NcToPlc, TINC^NC-Task 1 SAF^Axes^AT1K4-M2, Outputs^ToPlc
         SolidAttenuatorPLC Instance, PlcTask Inputs^Main.M2.bLimitBackwardEnable, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-02, STM Status^Status^Digital input 2
         SolidAttenuatorPLC Instance, PlcTask Inputs^Main.M2.bLimitForwardEnable, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-02, STM Status^Status^Digital input 1
@@ -106,36 +131,36 @@ Links
         SolidAttenuatorPLC Instance, PlcTask Inputs^Main.M4.bLimitBackwardEnable, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-04, STM Status^Status^Digital input 2
         SolidAttenuatorPLC Instance, PlcTask Inputs^Main.M4.bLimitForwardEnable, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-04, STM Status^Status^Digital input 1
         SolidAttenuatorPLC Instance, PlcTask Inputs^Main.M4.nRawEncoderULINT, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-02, FB Inputs Channel 2^Position
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage1.RTD_1.bOverrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-01, RTD Inputs Channel 1^Status^Overrange
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage1.RTD_1.bUnderrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-01, RTD Inputs Channel 1^Status^Underrange
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage1.RTD_1.iRaw, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-01, RTD Inputs Channel 1^Value
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage1.RTD_2.bOverrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-01, RTD Inputs Channel 2^Status^Overrange
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage1.RTD_2.bUnderrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-01, RTD Inputs Channel 2^Status^Underrange
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage1.RTD_2.iRaw, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-01, RTD Inputs Channel 2^Value
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage2.RTD_1.bError, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-02, RTD Inputs Channel 1^Status^Error
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage2.RTD_1.bOverrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-02, RTD Inputs Channel 1^Status^Overrange
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage2.RTD_1.bUnderrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-02, RTD Inputs Channel 1^Status^Underrange
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage2.RTD_1.iRaw, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-02, RTD Inputs Channel 1^Value
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage2.RTD_2.bError, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-02, RTD Inputs Channel 2^Status^Error
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage2.RTD_2.bOverrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-02, RTD Inputs Channel 2^Status^Overrange
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage2.RTD_2.bUnderrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-02, RTD Inputs Channel 2^Status^Underrange
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage2.RTD_2.iRaw, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-02, RTD Inputs Channel 2^Value
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage3.RTD_1.bError, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-03, RTD Inputs Channel 1^Status^Error
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage3.RTD_1.bOverrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-03, RTD Inputs Channel 1^Status^Overrange
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage3.RTD_1.bUnderrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-03, RTD Inputs Channel 1^Status^Underrange
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage3.RTD_1.iRaw, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-03, RTD Inputs Channel 1^Value
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage3.RTD_2.bError, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-03, RTD Inputs Channel 2^Status^Error
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage3.RTD_2.bOverrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-03, RTD Inputs Channel 2^Status^Overrange
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage3.RTD_2.bUnderrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-03, RTD Inputs Channel 2^Status^Underrange
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage3.RTD_2.iRaw, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-03, RTD Inputs Channel 2^Value
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage4.RTD_1.bError, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-04, RTD Inputs Channel 1^Status^Error
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage4.RTD_1.bOverrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-04, RTD Inputs Channel 1^Status^Overrange
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage4.RTD_1.bUnderrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-04, RTD Inputs Channel 1^Status^Underrange
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage4.RTD_1.iRaw, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-04, RTD Inputs Channel 1^Value
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage4.RTD_2.bError, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-04, RTD Inputs Channel 2^Status^Error
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage4.RTD_2.bOverrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-04, RTD Inputs Channel 2^Status^Overrange
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage4.RTD_2.bUnderrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-04, RTD Inputs Channel 2^Status^Underrange
-        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage4.RTD_2.iRaw, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-04, RTD Inputs Channel 2^Value
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage1.fbRTD_1.bOverrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-01, RTD Inputs Channel 1^Status^Overrange
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage1.fbRTD_1.bUnderrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-01, RTD Inputs Channel 1^Status^Underrange
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage1.fbRTD_1.iRaw, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-01, RTD Inputs Channel 1^Value
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage1.fbRTD_2.bOverrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-01, RTD Inputs Channel 2^Status^Overrange
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage1.fbRTD_2.bUnderrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-01, RTD Inputs Channel 2^Status^Underrange
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage1.fbRTD_2.iRaw, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-01, RTD Inputs Channel 2^Value
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage2.fbRTD_1.bError, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-02, RTD Inputs Channel 1^Status^Error
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage2.fbRTD_1.bOverrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-02, RTD Inputs Channel 1^Status^Overrange
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage2.fbRTD_1.bUnderrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-02, RTD Inputs Channel 1^Status^Underrange
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage2.fbRTD_1.iRaw, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-02, RTD Inputs Channel 1^Value
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage2.fbRTD_2.bError, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-02, RTD Inputs Channel 2^Status^Error
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage2.fbRTD_2.bOverrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-02, RTD Inputs Channel 2^Status^Overrange
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage2.fbRTD_2.bUnderrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-02, RTD Inputs Channel 2^Status^Underrange
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage2.fbRTD_2.iRaw, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-02, RTD Inputs Channel 2^Value
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage3.fbRTD_1.bError, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-03, RTD Inputs Channel 1^Status^Error
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage3.fbRTD_1.bOverrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-03, RTD Inputs Channel 1^Status^Overrange
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage3.fbRTD_1.bUnderrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-03, RTD Inputs Channel 1^Status^Underrange
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage3.fbRTD_1.iRaw, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-03, RTD Inputs Channel 1^Value
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage3.fbRTD_2.bError, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-03, RTD Inputs Channel 2^Status^Error
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage3.fbRTD_2.bOverrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-03, RTD Inputs Channel 2^Status^Overrange
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage3.fbRTD_2.bUnderrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-03, RTD Inputs Channel 2^Status^Underrange
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage3.fbRTD_2.iRaw, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-03, RTD Inputs Channel 2^Value
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage4.fbRTD_1.bError, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-04, RTD Inputs Channel 1^Status^Error
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage4.fbRTD_1.bOverrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-04, RTD Inputs Channel 1^Status^Overrange
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage4.fbRTD_1.bUnderrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-04, RTD Inputs Channel 1^Status^Underrange
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage4.fbRTD_1.iRaw, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-04, RTD Inputs Channel 1^Value
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage4.fbRTD_2.bError, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-04, RTD Inputs Channel 2^Status^Error
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage4.fbRTD_2.bOverrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-04, RTD Inputs Channel 2^Status^Overrange
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage4.fbRTD_2.bUnderrange, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-04, RTD Inputs Channel 2^Status^Underrange
+        SolidAttenuatorPLC Instance, PlcTask Inputs^PRG_2_AT1K4.fbStage4.fbRTD_2.iRaw, TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-04, RTD Inputs Channel 2^Value
         SolidAttenuatorPLC Instance, PlcTask Outputs^Main.M1.Axis.PlcToNc, TINC^NC-Task 1 SAF^Axes^AT1K4-M1, Inputs^FromPlc
         SolidAttenuatorPLC Instance, PlcTask Outputs^Main.M2.Axis.PlcToNc, TINC^NC-Task 1 SAF^Axes^AT1K4-M2, Inputs^FromPlc
         SolidAttenuatorPLC Instance, PlcTask Outputs^Main.M3.Axis.PlcToNc, TINC^NC-Task 1 SAF^Axes^AT1K4-M3, Inputs^FromPlc

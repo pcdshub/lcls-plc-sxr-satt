@@ -777,7 +777,7 @@ FB_SXR_SATT_Stage
       - Pragma
     * - $(PREFIX):RTD:1:CONN_RBV
       - bi
-      - $(SYMBOL).RTD_1.bConnected
+      - $(SYMBOL).fbRTD_1.bConnected
       - | field: ONAM Connected
         | field: ZNAM Disconnected
         | io: input
@@ -785,7 +785,7 @@ FB_SXR_SATT_Stage
 
     * - $(PREFIX):RTD:1:ERR_RBV
       - bi
-      - $(SYMBOL).RTD_1.bError
+      - $(SYMBOL).fbRTD_1.bError
       - | field: ONAM True
         | field: ZNAM False
         | io: input
@@ -793,7 +793,7 @@ FB_SXR_SATT_Stage
 
     * - $(PREFIX):RTD:1:TEMP_RBV
       - ai
-      - $(SYMBOL).RTD_1.fTemp
+      - $(SYMBOL).fbRTD_1.fTemp
       - | field: EGU C
         | field: PREC 2
         | io: input
@@ -801,7 +801,7 @@ FB_SXR_SATT_Stage
 
     * - $(PREFIX):RTD:2:CONN_RBV
       - bi
-      - $(SYMBOL).RTD_2.bConnected
+      - $(SYMBOL).fbRTD_2.bConnected
       - | field: ONAM Connected
         | field: ZNAM Disconnected
         | io: input
@@ -809,7 +809,7 @@ FB_SXR_SATT_Stage
 
     * - $(PREFIX):RTD:2:ERR_RBV
       - bi
-      - $(SYMBOL).RTD_2.bError
+      - $(SYMBOL).fbRTD_2.bError
       - | field: ONAM True
         | field: ZNAM False
         | io: input
@@ -817,7 +817,7 @@ FB_SXR_SATT_Stage
 
     * - $(PREFIX):RTD:2:TEMP_RBV
       - ai
-      - $(SYMBOL).RTD_2.fTemp
+      - $(SYMBOL).fbRTD_2.fTemp
       - | field: EGU C
         | field: PREC 2
         | io: input
@@ -4760,7 +4760,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:01:RTD:1:CONN_RBV
       - bi
-      - PRG_2_AT1K4.fbStage1.RTD_1.bConnected
+      - PRG_2_AT1K4.fbStage1.fbRTD_1.bConnected
       - | field: ONAM Connected
         | field: ZNAM Disconnected
         | io: input
@@ -4768,7 +4768,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:01:RTD:1:ERR_RBV
       - bi
-      - PRG_2_AT1K4.fbStage1.RTD_1.bError
+      - PRG_2_AT1K4.fbStage1.fbRTD_1.bError
       - | field: ONAM True
         | field: ZNAM False
         | io: input
@@ -4776,7 +4776,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:01:RTD:1:TEMP_RBV
       - ai
-      - PRG_2_AT1K4.fbStage1.RTD_1.fTemp
+      - PRG_2_AT1K4.fbStage1.fbRTD_1.fTemp
       - | field: EGU C
         | field: PREC 2
         | io: input
@@ -4784,7 +4784,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:01:RTD:2:CONN_RBV
       - bi
-      - PRG_2_AT1K4.fbStage1.RTD_2.bConnected
+      - PRG_2_AT1K4.fbStage1.fbRTD_2.bConnected
       - | field: ONAM Connected
         | field: ZNAM Disconnected
         | io: input
@@ -4792,7 +4792,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:01:RTD:2:ERR_RBV
       - bi
-      - PRG_2_AT1K4.fbStage1.RTD_2.bError
+      - PRG_2_AT1K4.fbStage1.fbRTD_2.bError
       - | field: ONAM True
         | field: ZNAM False
         | io: input
@@ -4800,7 +4800,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:01:RTD:2:TEMP_RBV
       - ai
-      - PRG_2_AT1K4.fbStage1.RTD_2.fTemp
+      - PRG_2_AT1K4.fbStage1.fbRTD_2.fTemp
       - | field: EGU C
         | field: PREC 2
         | io: input
@@ -5872,7 +5872,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:02:RTD:1:CONN_RBV
       - bi
-      - PRG_2_AT1K4.fbStage2.RTD_1.bConnected
+      - PRG_2_AT1K4.fbStage2.fbRTD_1.bConnected
       - | field: ONAM Connected
         | field: ZNAM Disconnected
         | io: input
@@ -5880,7 +5880,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:02:RTD:1:ERR_RBV
       - bi
-      - PRG_2_AT1K4.fbStage2.RTD_1.bError
+      - PRG_2_AT1K4.fbStage2.fbRTD_1.bError
       - | field: ONAM True
         | field: ZNAM False
         | io: input
@@ -5888,7 +5888,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:02:RTD:1:TEMP_RBV
       - ai
-      - PRG_2_AT1K4.fbStage2.RTD_1.fTemp
+      - PRG_2_AT1K4.fbStage2.fbRTD_1.fTemp
       - | field: EGU C
         | field: PREC 2
         | io: input
@@ -5896,7 +5896,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:02:RTD:2:CONN_RBV
       - bi
-      - PRG_2_AT1K4.fbStage2.RTD_2.bConnected
+      - PRG_2_AT1K4.fbStage2.fbRTD_2.bConnected
       - | field: ONAM Connected
         | field: ZNAM Disconnected
         | io: input
@@ -5904,7 +5904,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:02:RTD:2:ERR_RBV
       - bi
-      - PRG_2_AT1K4.fbStage2.RTD_2.bError
+      - PRG_2_AT1K4.fbStage2.fbRTD_2.bError
       - | field: ONAM True
         | field: ZNAM False
         | io: input
@@ -5912,7 +5912,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:02:RTD:2:TEMP_RBV
       - ai
-      - PRG_2_AT1K4.fbStage2.RTD_2.fTemp
+      - PRG_2_AT1K4.fbStage2.fbRTD_2.fTemp
       - | field: EGU C
         | field: PREC 2
         | io: input
@@ -6984,7 +6984,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:03:RTD:1:CONN_RBV
       - bi
-      - PRG_2_AT1K4.fbStage3.RTD_1.bConnected
+      - PRG_2_AT1K4.fbStage3.fbRTD_1.bConnected
       - | field: ONAM Connected
         | field: ZNAM Disconnected
         | io: input
@@ -6992,7 +6992,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:03:RTD:1:ERR_RBV
       - bi
-      - PRG_2_AT1K4.fbStage3.RTD_1.bError
+      - PRG_2_AT1K4.fbStage3.fbRTD_1.bError
       - | field: ONAM True
         | field: ZNAM False
         | io: input
@@ -7000,7 +7000,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:03:RTD:1:TEMP_RBV
       - ai
-      - PRG_2_AT1K4.fbStage3.RTD_1.fTemp
+      - PRG_2_AT1K4.fbStage3.fbRTD_1.fTemp
       - | field: EGU C
         | field: PREC 2
         | io: input
@@ -7008,7 +7008,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:03:RTD:2:CONN_RBV
       - bi
-      - PRG_2_AT1K4.fbStage3.RTD_2.bConnected
+      - PRG_2_AT1K4.fbStage3.fbRTD_2.bConnected
       - | field: ONAM Connected
         | field: ZNAM Disconnected
         | io: input
@@ -7016,7 +7016,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:03:RTD:2:ERR_RBV
       - bi
-      - PRG_2_AT1K4.fbStage3.RTD_2.bError
+      - PRG_2_AT1K4.fbStage3.fbRTD_2.bError
       - | field: ONAM True
         | field: ZNAM False
         | io: input
@@ -7024,7 +7024,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:03:RTD:2:TEMP_RBV
       - ai
-      - PRG_2_AT1K4.fbStage3.RTD_2.fTemp
+      - PRG_2_AT1K4.fbStage3.fbRTD_2.fTemp
       - | field: EGU C
         | field: PREC 2
         | io: input
@@ -8096,7 +8096,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:04:RTD:1:CONN_RBV
       - bi
-      - PRG_2_AT1K4.fbStage4.RTD_1.bConnected
+      - PRG_2_AT1K4.fbStage4.fbRTD_1.bConnected
       - | field: ONAM Connected
         | field: ZNAM Disconnected
         | io: input
@@ -8104,7 +8104,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:04:RTD:1:ERR_RBV
       - bi
-      - PRG_2_AT1K4.fbStage4.RTD_1.bError
+      - PRG_2_AT1K4.fbStage4.fbRTD_1.bError
       - | field: ONAM True
         | field: ZNAM False
         | io: input
@@ -8112,7 +8112,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:04:RTD:1:TEMP_RBV
       - ai
-      - PRG_2_AT1K4.fbStage4.RTD_1.fTemp
+      - PRG_2_AT1K4.fbStage4.fbRTD_1.fTemp
       - | field: EGU C
         | field: PREC 2
         | io: input
@@ -8120,7 +8120,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:04:RTD:2:CONN_RBV
       - bi
-      - PRG_2_AT1K4.fbStage4.RTD_2.bConnected
+      - PRG_2_AT1K4.fbStage4.fbRTD_2.bConnected
       - | field: ONAM Connected
         | field: ZNAM Disconnected
         | io: input
@@ -8128,7 +8128,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:04:RTD:2:ERR_RBV
       - bi
-      - PRG_2_AT1K4.fbStage4.RTD_2.bError
+      - PRG_2_AT1K4.fbStage4.fbRTD_2.bError
       - | field: ONAM True
         | field: ZNAM False
         | io: input
@@ -8136,7 +8136,7 @@ Database Records
 
     * - AT1K4:L2SI:MMS:04:RTD:2:TEMP_RBV
       - ai
-      - PRG_2_AT1K4.fbStage4.RTD_2.fTemp
+      - PRG_2_AT1K4.fbStage4.fbRTD_2.fTemp
       - | field: EGU C
         | field: PREC 2
         | io: input

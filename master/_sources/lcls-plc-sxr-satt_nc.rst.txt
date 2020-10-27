@@ -30,8 +30,9 @@ Axis 1: AT1K4-M1
     Dynamic:DecelerationMaximum, 400
     Dynamic:DelayTime, 0.008
     Dynamic:Jerk, 80
-    Enc:EncType, 1
+    Enc:EncType, 29
     Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:MaxCount, #xffffffff
     Enc:ScaleFactorNumerator, 5e-05
     Enc:SoftEndMaxControl:Enable, true
     Enc:SoftEndMaxControl:Range, 152.5
