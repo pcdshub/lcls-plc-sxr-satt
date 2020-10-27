@@ -3,8 +3,10 @@
   <POU Name="PRG_2_AT1K4" Id="{3f89469d-5e9e-4d7e-887c-28b1c1638b9a}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM PRG_2_AT1K4
 VAR
-    (* TODO: flip debug flag when no longer relying on visualization *)
-    bDebug : BOOL := TRUE;
+    (* TODO: use FALSE for simulation and production *)
+    (* TODO: use TRUE when relying on visualization + actual hardware *)
+    bDebug : BOOL := FALSE;
+
     nEnableMode : ENUM_StageEnableMode;
 
     {attribute 'pytmc' := 'pv: AT1K4:L2SI'}

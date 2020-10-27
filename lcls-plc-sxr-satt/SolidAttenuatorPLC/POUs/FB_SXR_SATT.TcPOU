@@ -14,9 +14,14 @@ END_VAR
 VAR_OUTPUT
 END_VAR
 VAR
+
+    {attribute 'pytmc' := 'pv: MMS:01'}
     fbStage1: FB_SXR_SATT_Stage;
+    {attribute 'pytmc' := 'pv: MMS:02'}
     fbStage2: FB_SXR_SATT_Stage;
+    {attribute 'pytmc' := 'pv: MMS:03'}
     fbStage3: FB_SXR_SATT_Stage;
+    {attribute 'pytmc' := 'pv: MMS:04'}
     fbStage4: FB_SXR_SATT_Stage;
 
     (* EL3202-0020: 0.01 °C per digit *)
