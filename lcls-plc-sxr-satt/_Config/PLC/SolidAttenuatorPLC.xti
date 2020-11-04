@@ -1723,7 +1723,7 @@ External Setpoint Generation:
 	</Project>
 	<Mappings>
 		<OwnerA Name="SolidAttenuatorPLC Instance">
-			<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-01">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 16 (EK1100)^AT1K4-EL3202-01">
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage1.fbRTD_1.bError" VarB="RTD Inputs Channel 1^Status^Error" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage1.fbRTD_1.bOverrange" VarB="RTD Inputs Channel 1^Status^Overrange" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage1.fbRTD_1.bUnderrange" VarB="RTD Inputs Channel 1^Status^Underrange" AutoLink="true"/>
@@ -1733,7 +1733,7 @@ External Setpoint Generation:
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage1.fbRTD_2.bUnderrange" VarB="RTD Inputs Channel 2^Status^Underrange" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage1.fbRTD_2.iRaw" VarB="RTD Inputs Channel 2^Value" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-02">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 16 (EK1100)^AT1K4-EL3202-02">
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage2.fbRTD_1.bError" VarB="RTD Inputs Channel 1^Status^Error" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage2.fbRTD_1.bOverrange" VarB="RTD Inputs Channel 1^Status^Overrange" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage2.fbRTD_1.bUnderrange" VarB="RTD Inputs Channel 1^Status^Underrange" AutoLink="true"/>
@@ -1743,7 +1743,7 @@ External Setpoint Generation:
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage2.fbRTD_2.bUnderrange" VarB="RTD Inputs Channel 2^Status^Underrange" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage2.fbRTD_2.iRaw" VarB="RTD Inputs Channel 2^Value" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-03">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 16 (EK1100)^AT1K4-EL3202-03">
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage3.fbRTD_1.bError" VarB="RTD Inputs Channel 1^Status^Error" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage3.fbRTD_1.bOverrange" VarB="RTD Inputs Channel 1^Status^Overrange" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage3.fbRTD_1.bUnderrange" VarB="RTD Inputs Channel 1^Status^Underrange" AutoLink="true"/>
@@ -1753,7 +1753,7 @@ External Setpoint Generation:
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage3.fbRTD_2.bUnderrange" VarB="RTD Inputs Channel 2^Status^Underrange" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage3.fbRTD_2.iRaw" VarB="RTD Inputs Channel 2^Value" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL3202-04">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 16 (EK1100)^AT1K4-EL3202-04">
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage4.fbRTD_1.bError" VarB="RTD Inputs Channel 1^Status^Error" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage4.fbRTD_1.bOverrange" VarB="RTD Inputs Channel 1^Status^Overrange" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage4.fbRTD_1.bUnderrange" VarB="RTD Inputs Channel 1^Status^Underrange" AutoLink="true"/>
@@ -1763,27 +1763,27 @@ External Setpoint Generation:
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage4.fbRTD_2.bUnderrange" VarB="RTD Inputs Channel 2^Status^Underrange" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^PRG_2_AT1K4.fbStage4.fbRTD_2.iRaw" VarB="RTD Inputs Channel 2^Value" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-01">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 16 (EK1100)^AT1K4-EL5042-01">
 				<Link VarA="PlcTask Inputs^Main.M1.nRawEncoderULINT" VarB="FB Inputs Channel 1^Position" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^Main.M2.nRawEncoderULINT" VarB="FB Inputs Channel 2^Position" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL5042-02">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 16 (EK1100)^AT1K4-EL5042-02">
 				<Link VarA="PlcTask Inputs^Main.M3.nRawEncoderULINT" VarB="FB Inputs Channel 1^Position" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^Main.M4.nRawEncoderULINT" VarB="FB Inputs Channel 2^Position" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-01">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 16 (EK1100)^AT1K4-EL7047-01">
 				<Link VarA="PlcTask Inputs^Main.M1.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^Main.M1.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-02">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 16 (EK1100)^AT1K4-EL7047-02">
 				<Link VarA="PlcTask Inputs^Main.M2.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^Main.M2.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-03">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 16 (EK1100)^AT1K4-EL7047-03">
 				<Link VarA="PlcTask Inputs^Main.M3.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^Main.M3.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^AT1K4-EL7047-04">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 16 (EK1100)^AT1K4-EL7047-04">
 				<Link VarA="PlcTask Inputs^Main.M4.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^Main.M4.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true"/>
 			</OwnerB>
