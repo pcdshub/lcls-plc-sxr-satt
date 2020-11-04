@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <POU Name="PRG_2_AT1K4" Id="{3f89469d-5e9e-4d7e-887c-28b1c1638b9a}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM PRG_2_AT1K4
 VAR
@@ -13,12 +13,12 @@ VAR
     {attribute 'TcLinkTo' := '
 
         .fbRTD_1.iRaw := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Value;
-        .fbRTD_1.bError := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^error;
+        .fbRTD_1.bError := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^Error;
         .fbRTD_1.bUnderrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^Underrange;
         .fbRTD_1.bOverrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 1^Status^Overrange;
 
         .fbRTD_2.iRaw := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Value;
-        .fbRTD_2.bError := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^error;
+        .fbRTD_2.bError := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^Error;
         .fbRTD_2.bUnderrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^Underrange;
         .fbRTD_2.bOverrange := TIIB[AT1K4-EL3202-01]^RTD Inputs Channel 2^Status^Overrange;
 
