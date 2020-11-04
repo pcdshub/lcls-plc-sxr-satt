@@ -41,6 +41,11 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"966"</v>
+              <v n="TextDefault">"Admin"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"17"</v>
               <v n="TextDefault">"Axis 1"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -63,6 +68,16 @@
             <o>
               <v n="TextID">"650"</v>
               <v n="TextDefault">"Axis X"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"84"</v>
+              <v n="TextDefault">"Channel 1: %f C"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"18"</v>
+              <v n="TextDefault">"Channel 2: %f C"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -121,6 +136,31 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"823"</v>
+              <v n="TextDefault">"None"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"269"</v>
+              <v n="TextDefault">"Operator"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"721"</v>
+              <v n="TextDefault">"RTD1: %f C"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"433"</v>
+              <v n="TextDefault">"RTD2: %f C"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"878"</v>
+              <v n="TextDefault">"Service"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"410"</v>
               <v n="TextDefault">"Set Position"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -153,6 +193,11 @@
             <o>
               <v n="TextID">"719"</v>
               <v n="TextDefault">"Temp 2: %f C"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"647"</v>
+              <v n="TextDefault">"Temperature Sensors"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
