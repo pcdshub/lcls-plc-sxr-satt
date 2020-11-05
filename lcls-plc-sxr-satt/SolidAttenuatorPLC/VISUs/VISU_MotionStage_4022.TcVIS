@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
-  <Visu Name="VISU_MotionStage" Id="{f7de9cfd-6d88-430a-8070-305db7bc83b0}">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <Visu Name="VISU_MotionStage_4022" Id="{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}">
     <XmlArchive>
       <Data>
         <o xml:space="preserve" t="VisualObject">
@@ -31,7 +31,7 @@
                         </o>
                         <o>
                           <v n="Id">357335551L</v>
-                          <v n="Value">17</v>
+                          <v n="Value">16</v>
                         </o>
                         <o>
                           <v n="Id">2422045748L</v>
@@ -86,12 +86,8 @@
                           <v n="Value">"Extras.bVisuLowLim"</v>
                         </o>
                         <o>
-                          <v n="Id">3719097617L</v>
-                          <v n="Value">0</v>
-                        </o>
-                        <o>
                           <v n="Id">3438453433L</v>
-                          <v n="Value">"20"</v>
+                          <v n="Value">"404"</v>
                         </o>
                       </l>
                     </o>
@@ -103,7 +99,7 @@
                     <n n="VisualElementFrameInformation" />
                     <d n="VisualElementInputActions" t="Hashtable" />
                     <v n="VisualElementIdentification">{91db9e10-7044-43b4-842c-0b0dfe8cb183}</v>
-                    <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                    <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">11</v>
@@ -197,7 +193,7 @@
                         </o>
                         <o>
                           <v n="Id">357335551L</v>
-                          <v n="Value">18</v>
+                          <v n="Value">7</v>
                         </o>
                         <o>
                           <v n="Id">2422045748L</v>
@@ -212,13 +208,10 @@
                           <l n="Value" t="ArrayList" cet="NamedStyleFont">
                             <o>
                               <v n="FontStyle">0</v>
-                              <v n="AdditionalFontStyle" t="UInt16">0</v>
                               <v n="ExplicitColor">-16777216</v>
                               <v n="CanonicalName">"Font-Standard"</v>
                               <v n="FontName">"Arial"</v>
                               <v n="FontSize">12</v>
-                              <v n="ScriptIdentification">0</v>
-                              <v n="DoubleFontSize" t="Double">0</v>
                               <o n="NamedColor" t="NamedStyleColor">
                                 <v n="Color">-16777216</v>
                                 <v n="CanonicalName">"Font-Default-Color"</v>
@@ -232,7 +225,7 @@
                         </o>
                         <o>
                           <v n="Id">1473355128L</v>
-                          <v n="Value">33</v>
+                          <v n="Value">22</v>
                         </o>
                         <o>
                           <v n="Id">2678395525L</v>
@@ -255,16 +248,12 @@
                           <v n="Value">"VisuMotionStage.stAxisStatus.fActPosition"</v>
                         </o>
                         <o>
-                          <v n="Id">3719097617L</v>
-                          <v n="Value">0</v>
-                        </o>
-                        <o>
                           <v n="Id">823443203L</v>
-                          <v n="Value">"21"</v>
+                          <v n="Value">"405"</v>
                         </o>
                         <o>
                           <v n="Id">3438453433L</v>
-                          <v n="Value">"22"</v>
+                          <v n="Value">"406"</v>
                         </o>
                       </l>
                     </o>
@@ -276,7 +265,7 @@
                     <n n="VisualElementFrameInformation" />
                     <d n="VisualElementInputActions" t="Hashtable" />
                     <v n="VisualElementIdentification">{dbd42342-acfa-4d6d-893f-186478dadaa3}</v>
-                    <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                    <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">9</v>
@@ -302,7 +291,7 @@
                         </o>
                         <o>
                           <v n="Id">357335551L</v>
-                          <v n="Value" t="Int16">18</v>
+                          <v n="Value" t="Int16">17</v>
                         </o>
                         <o>
                           <v n="Id">2422045748L</v>
@@ -357,12 +346,8 @@
                           <v n="Value">"Extras.bVisuHighLim"</v>
                         </o>
                         <o>
-                          <v n="Id">3719097617L</v>
-                          <v n="Value">0</v>
-                        </o>
-                        <o>
                           <v n="Id">3438453433L</v>
-                          <v n="Value">"23"</v>
+                          <v n="Value">"407"</v>
                         </o>
                       </l>
                     </o>
@@ -374,7 +359,7 @@
                     <n n="VisualElementFrameInformation" />
                     <d n="VisualElementInputActions" t="Hashtable" />
                     <v n="VisualElementIdentification">{eaad0f06-ec09-4c2f-a76f-9f09fadbb2d5}</v>
-                    <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                    <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">20</v>
@@ -400,7 +385,7 @@
                         </o>
                         <o>
                           <v n="Id">357335551L</v>
-                          <v n="Value">17</v>
+                          <v n="Value">16</v>
                         </o>
                         <o>
                           <v n="Id">2422045748L</v>
@@ -454,10 +439,6 @@
                           <v n="Id">743958181L</v>
                           <v n="Value">"VisuMotionStage.bBusy"</v>
                         </o>
-                        <o>
-                          <v n="Id">3719097617L</v>
-                          <v n="Value">0</v>
-                        </o>
                       </l>
                     </o>
                     <v n="VisualElementName">"Lamp1"</v>
@@ -468,7 +449,7 @@
                     <n n="VisualElementFrameInformation" />
                     <d n="VisualElementInputActions" t="Hashtable" />
                     <v n="VisualElementIdentification">{fcc60cae-850d-4a5a-8bf7-18258bb95850}</v>
-                    <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                    <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">17</v>
@@ -526,7 +507,7 @@
                         </o>
                         <o>
                           <v n="Id">357335551L</v>
-                          <v n="Value">16</v>
+                          <v n="Value">15</v>
                         </o>
                         <o>
                           <v n="Id">2422045748L</v>
@@ -545,13 +526,10 @@
                           <l n="Value" t="ArrayList" cet="NamedStyleFont">
                             <o>
                               <v n="FontStyle">0</v>
-                              <v n="AdditionalFontStyle" t="UInt16">0</v>
                               <v n="ExplicitColor">-16777216</v>
                               <v n="CanonicalName">"Font-Standard"</v>
                               <v n="FontName">"Arial"</v>
                               <v n="FontSize">12</v>
-                              <v n="ScriptIdentification">0</v>
-                              <v n="DoubleFontSize" t="Double">0</v>
                               <o n="NamedColor" t="NamedStyleColor">
                                 <v n="Color">-16777216</v>
                                 <v n="CanonicalName">"Font-Default-Color"</v>
@@ -580,12 +558,8 @@
                           <v n="Value">true</v>
                         </o>
                         <o>
-                          <v n="Id">3719097617L</v>
-                          <v n="Value">0</v>
-                        </o>
-                        <o>
                           <v n="Id">823443203L</v>
-                          <v n="Value">"24"</v>
+                          <v n="Value">"408"</v>
                         </o>
                       </l>
                     </o>
@@ -597,7 +571,7 @@
                     <n n="VisualElementFrameInformation" />
                     <d n="VisualElementInputActions" t="Hashtable" />
                     <v n="VisualElementIdentification">{b1d08774-89c2-4696-b706-1ae1ebbb0195}</v>
-                    <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                    <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">26</v>
@@ -663,7 +637,7 @@
                         </o>
                         <o>
                           <v n="Id">357335551L</v>
-                          <v n="Value">10</v>
+                          <v n="Value">9</v>
                         </o>
                         <o>
                           <v n="Id">2422045748L</v>
@@ -1048,10 +1022,10 @@
                                     <v>TL_ElementProperties.Points</v>
                                     <v>DescriptionUseFromParent</v>
                                     <v></v>
-                                    <v>DefaultArraySize</v>
-                                    <v>500</v>
                                     <v>''NORMAL__COMMENT</v>
                                     <v> There is no more information than the parent provides</v>
+                                    <v>DefaultArraySize</v>
+                                    <v>500</v>
                                   </d>
                                   <v n="ConvDone">true</v>
                                 </o>
@@ -1104,8 +1078,6 @@
                             <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                               <v n="AttrFlags">81920UL</v>
                               <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
-                                <v>PolygonPoints</v>
-                                <v></v>
                                 <v>DescriptionTextId</v>
                                 <v>TL_ElementProperties.Desc_StaticLinePos</v>
                                 <v>DisplayTextId</v>
@@ -1120,6 +1092,8 @@
                                 <v>visu_elemdev</v>
                                 <v>Storable</v>
                                 <v>True</v>
+                                <v>PolygonPoints</v>
+                                <v></v>
                               </d>
                               <v n="ConvDone">true</v>
                             </o>
@@ -1137,7 +1111,7 @@
                         </o>
                         <o>
                           <v n="Id">669032122L</v>
-                          <v n="Value">52</v>
+                          <v n="Value">51</v>
                         </o>
                         <o>
                           <v n="Id">1837598620L</v>
@@ -1145,20 +1119,17 @@
                         </o>
                         <o>
                           <v n="Id">444643082L</v>
-                          <v n="Value">10</v>
+                          <v n="Value">9</v>
                         </o>
                         <o>
                           <v n="Id">3729828405L</v>
                           <l n="Value" t="ArrayList" cet="NamedStyleFont">
                             <o>
                               <v n="FontStyle">0</v>
-                              <v n="AdditionalFontStyle" t="UInt16">0</v>
                               <v n="ExplicitColor">-16777216</v>
                               <v n="CanonicalName">"Font-Standard"</v>
                               <v n="FontName">"Arial"</v>
                               <v n="FontSize">12</v>
-                              <v n="ScriptIdentification">0</v>
-                              <v n="DoubleFontSize" t="Double">0</v>
                               <o n="NamedColor" t="NamedStyleColor">
                                 <v n="Color">-16777216</v>
                                 <v n="CanonicalName">"Font-Default-Color"</v>
@@ -1190,7 +1161,7 @@
                         </o>
                         <o>
                           <v n="Id">1473355128L</v>
-                          <v n="Value">31</v>
+                          <v n="Value">30</v>
                         </o>
                         <o>
                           <v n="Id">493260384L</v>
@@ -1212,10 +1183,6 @@
                           <v n="Id">2597686782L</v>
                           <v n="Value">true</v>
                         </o>
-                        <o>
-                          <v n="Id">3553112287L</v>
-                          <v n="Value">0</v>
-                        </o>
                       </l>
                     </o>
                     <v n="VisualElementName">"Line"</v>
@@ -1226,7 +1193,7 @@
                     <n n="VisualElementFrameInformation" />
                     <d n="VisualElementInputActions" t="Hashtable" />
                     <v n="VisualElementIdentification">{2150ad86-7853-40f0-bf27-ac5ec4653d87}</v>
-                    <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                    <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">28</v>
@@ -1252,7 +1219,7 @@
                         </o>
                         <o>
                           <v n="Id">357335551L</v>
-                          <v n="Value">18</v>
+                          <v n="Value">17</v>
                         </o>
                         <o>
                           <v n="Id">2422045748L</v>
@@ -1306,10 +1273,6 @@
                           <v n="Id">743958181L</v>
                           <v n="Value">"VisuMotionStage.bError"</v>
                         </o>
-                        <o>
-                          <v n="Id">3719097617L</v>
-                          <v n="Value">0</v>
-                        </o>
                       </l>
                     </o>
                     <v n="VisualElementName">"Lamp1"</v>
@@ -1320,7 +1283,7 @@
                     <n n="VisualElementFrameInformation" />
                     <d n="VisualElementInputActions" t="Hashtable" />
                     <v n="VisualElementIdentification">{a28be0d1-b4c1-4a9b-b84a-998d6388f908}</v>
-                    <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                    <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">34</v>
@@ -1441,13 +1404,10 @@
                       <l n="Value" t="ArrayList" cet="NamedStyleFont">
                         <o>
                           <v n="FontStyle">0</v>
-                          <v n="AdditionalFontStyle" t="UInt16">0</v>
                           <v n="ExplicitColor">-16777216</v>
                           <v n="CanonicalName">"Font-Standard"</v>
                           <v n="FontName">"Arial"</v>
                           <v n="FontSize">12</v>
-                          <v n="ScriptIdentification">0</v>
-                          <v n="DoubleFontSize" t="Double">0</v>
                           <o n="NamedColor" t="NamedStyleColor">
                             <v n="Color">-16777216</v>
                             <v n="CanonicalName">"Font-Default-Color"</v>
@@ -1480,12 +1440,8 @@
                       <v n="Value">false</v>
                     </o>
                     <o>
-                      <v n="Id">3719097617L</v>
-                      <v n="Value">0</v>
-                    </o>
-                    <o>
                       <v n="Id">823443203L</v>
-                      <v n="Value">"19"</v>
+                      <v n="Value">"403"</v>
                     </o>
                   </l>
                 </o>
@@ -1497,7 +1453,7 @@
                 <n n="VisualElementFrameInformation" />
                 <d n="VisualElementInputActions" t="Hashtable" />
                 <v n="VisualElementIdentification">{43d513ce-4571-412a-99f3-fc25c92d02a1}</v>
-                <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                 <a n="LMGuids" et="Guid" />
                 <d n="SubElements" t="Hashtable" />
                 <v n="VisualElementId">3</v>
@@ -1606,13 +1562,10 @@
                       <l n="Value" t="ArrayList" cet="NamedStyleFont">
                         <o>
                           <v n="FontStyle">0</v>
-                          <v n="AdditionalFontStyle" t="UInt16">0</v>
                           <v n="ExplicitColor">-16777216</v>
                           <v n="CanonicalName">"Font-Standard"</v>
                           <v n="FontName">"Arial"</v>
                           <v n="FontSize">12</v>
-                          <v n="ScriptIdentification">0</v>
-                          <v n="DoubleFontSize" t="Double">0</v>
                           <o n="NamedColor" t="NamedStyleColor">
                             <v n="Color">-16777216</v>
                             <v n="CanonicalName">"Font-Default-Color"</v>
@@ -1644,10 +1597,6 @@
                       <v n="Id">2597686782L</v>
                       <v n="Value">true</v>
                     </o>
-                    <o>
-                      <v n="Id">3719097617L</v>
-                      <v n="Value">0</v>
-                    </o>
                   </l>
                 </o>
                 <v n="VisualElementName">"Rectangle"</v>
@@ -1658,7 +1607,7 @@
                 <n n="VisualElementFrameInformation" />
                 <d n="VisualElementInputActions" t="Hashtable" />
                 <v n="VisualElementIdentification">{85c1bc11-fc06-491e-9420-d74fbbd513bc}</v>
-                <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                 <a n="LMGuids" et="Guid" />
                 <d n="SubElements" t="Hashtable" />
                 <v n="VisualElementId">7</v>
@@ -1770,13 +1719,10 @@
                           <l n="Value" t="ArrayList" cet="NamedStyleFont">
                             <o>
                               <v n="FontStyle">0</v>
-                              <v n="AdditionalFontStyle" t="UInt16">0</v>
                               <v n="ExplicitColor">-16777216</v>
                               <v n="CanonicalName">"Font-Standard"</v>
                               <v n="FontName">"Arial"</v>
                               <v n="FontSize">12</v>
-                              <v n="ScriptIdentification">0</v>
-                              <v n="DoubleFontSize" t="Double">0</v>
                               <o n="NamedColor" t="NamedStyleColor">
                                 <v n="Color">-16777216</v>
                                 <v n="CanonicalName">"Font-Default-Color"</v>
@@ -1813,16 +1759,12 @@
                           <v n="Value">"VisuMotionStage.fPosition"</v>
                         </o>
                         <o>
-                          <v n="Id">3719097617L</v>
-                          <v n="Value">0</v>
-                        </o>
-                        <o>
                           <v n="Id">823443203L</v>
-                          <v n="Value">"21"</v>
+                          <v n="Value">"405"</v>
                         </o>
                         <o>
                           <v n="Id">3438453433L</v>
-                          <v n="Value">"26"</v>
+                          <v n="Value">"410"</v>
                         </o>
                       </l>
                     </o>
@@ -1846,14 +1788,11 @@
                           <v n="TextOutputVariableInitialized">true</v>
                           <v n="OtherVarConversion">""</v>
                           <v n="Format">""</v>
-                          <v n="DialogPosition" t="DialogPositionSetting">UseGlobalSetting</v>
-                          <v n="DialogXPos">""</v>
-                          <v n="DialogYPos">""</v>
                         </o>
                       </a>
                     </d>
                     <v n="VisualElementIdentification">{4bfba01f-cacf-4a8e-ba4f-a3a7a29d0af3}</v>
-                    <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                    <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">10</v>
@@ -1956,13 +1895,10 @@
                           <l n="Value" t="ArrayList" cet="NamedStyleFont">
                             <o>
                               <v n="FontStyle">0</v>
-                              <v n="AdditionalFontStyle" t="UInt16">0</v>
                               <v n="ExplicitColor">-16777216</v>
                               <v n="CanonicalName">"Font-Standard"</v>
                               <v n="FontName">"Arial"</v>
                               <v n="FontSize">12</v>
-                              <v n="ScriptIdentification">0</v>
-                              <v n="DoubleFontSize" t="Double">0</v>
                               <o n="NamedColor" t="NamedStyleColor">
                                 <v n="Color">-16777216</v>
                                 <v n="CanonicalName">"Element-Button-FontColor"</v>
@@ -2003,12 +1939,8 @@
                           <v n="Value">false</v>
                         </o>
                         <o>
-                          <v n="Id">3719097617L</v>
-                          <v n="Value">0</v>
-                        </o>
-                        <o>
                           <v n="Id">823443203L</v>
-                          <v n="Value">"27"</v>
+                          <v n="Value">"411"</v>
                         </o>
                       </l>
                     </o>
@@ -2029,7 +1961,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                       </a>
                     </d>
                     <v n="VisualElementIdentification">{32e8463e-3124-4dc5-9646-06b245c5ca27}</v>
-                    <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                    <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">12</v>
@@ -2138,13 +2070,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <l n="Value" t="ArrayList" cet="NamedStyleFont">
                             <o>
                               <v n="FontStyle">0</v>
-                              <v n="AdditionalFontStyle" t="UInt16">0</v>
                               <v n="ExplicitColor">-16777216</v>
                               <v n="CanonicalName">"Font-Standard"</v>
                               <v n="FontName">"Arial"</v>
                               <v n="FontSize">12</v>
-                              <v n="ScriptIdentification">0</v>
-                              <v n="DoubleFontSize" t="Double">0</v>
                               <o n="NamedColor" t="NamedStyleColor">
                                 <v n="Color">-16777216</v>
                                 <v n="CanonicalName">"Font-Default-Color"</v>
@@ -2181,16 +2110,12 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <v n="Value">"Extras.fVisuStep"</v>
                         </o>
                         <o>
-                          <v n="Id">3719097617L</v>
-                          <v n="Value">0</v>
-                        </o>
-                        <o>
                           <v n="Id">823443203L</v>
-                          <v n="Value">"21"</v>
+                          <v n="Value">"405"</v>
                         </o>
                         <o>
                           <v n="Id">3438453433L</v>
-                          <v n="Value">"28"</v>
+                          <v n="Value">"412"</v>
                         </o>
                       </l>
                     </o>
@@ -2214,14 +2139,11 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <v n="TextOutputVariableInitialized">true</v>
                           <v n="OtherVarConversion">""</v>
                           <v n="Format">""</v>
-                          <v n="DialogPosition" t="DialogPositionSetting">UseGlobalSetting</v>
-                          <v n="DialogXPos">""</v>
-                          <v n="DialogYPos">""</v>
                         </o>
                       </a>
                     </d>
                     <v n="VisualElementIdentification">{bce5510d-ab7c-448a-83a1-b5ef76df3007}</v>
-                    <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                    <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">13</v>
@@ -2324,13 +2246,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <l n="Value" t="ArrayList" cet="NamedStyleFont">
                             <o>
                               <v n="FontStyle">0</v>
-                              <v n="AdditionalFontStyle" t="UInt16">0</v>
                               <v n="ExplicitColor">-16777216</v>
                               <v n="CanonicalName">"Font-Standard"</v>
                               <v n="FontName">"Arial"</v>
                               <v n="FontSize">12</v>
-                              <v n="ScriptIdentification">0</v>
-                              <v n="DoubleFontSize" t="Double">0</v>
                               <o n="NamedColor" t="NamedStyleColor">
                                 <v n="Color">-16777216</v>
                                 <v n="CanonicalName">"Element-Button-FontColor"</v>
@@ -2371,16 +2290,12 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <v n="Value">false</v>
                         </o>
                         <o>
-                          <v n="Id">3719097617L</v>
-                          <v n="Value">0</v>
-                        </o>
-                        <o>
                           <v n="Id">823443203L</v>
-                          <v n="Value">"29"</v>
+                          <v n="Value">"413"</v>
                         </o>
                         <o>
                           <v n="Id">3438453433L</v>
-                          <v n="Value">"31"</v>
+                          <v n="Value">"414"</v>
                         </o>
                       </l>
                     </o>
@@ -2400,7 +2315,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                       </a>
                     </d>
                     <v n="VisualElementIdentification">{f243839c-f69e-44ec-a737-7a44b7dbbf4e}</v>
-                    <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                    <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">14</v>
@@ -2851,10 +2766,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                                     <v>TL_ElementProperties.Points</v>
                                     <v>DescriptionUseFromParent</v>
                                     <v></v>
-                                    <v>DefaultArraySize</v>
-                                    <v>500</v>
                                     <v>''NORMAL__COMMENT</v>
                                     <v> There is no more information than the parent provides</v>
+                                    <v>DefaultArraySize</v>
+                                    <v>500</v>
                                   </d>
                                   <v n="ConvDone">true</v>
                                 </o>
@@ -2907,8 +2822,6 @@ VisuMotionStage.bExecute := TRUE;"</v>
                             <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                               <v n="AttrFlags">81920UL</v>
                               <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
-                                <v>PolygonPoints</v>
-                                <v></v>
                                 <v>DescriptionTextId</v>
                                 <v>TL_ElementProperties.Desc_StaticLinePos</v>
                                 <v>DisplayTextId</v>
@@ -2923,6 +2836,8 @@ VisuMotionStage.bExecute := TRUE;"</v>
                                 <v>visu_elemdev</v>
                                 <v>Storable</v>
                                 <v>True</v>
+                                <v>PolygonPoints</v>
+                                <v></v>
                               </d>
                               <v n="ConvDone">true</v>
                             </o>
@@ -2955,13 +2870,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <l n="Value" t="ArrayList" cet="NamedStyleFont">
                             <o>
                               <v n="FontStyle">0</v>
-                              <v n="AdditionalFontStyle" t="UInt16">0</v>
                               <v n="ExplicitColor">-16777216</v>
                               <v n="CanonicalName">"Font-Standard"</v>
                               <v n="FontName">"Arial"</v>
                               <v n="FontSize">12</v>
-                              <v n="ScriptIdentification">0</v>
-                              <v n="DoubleFontSize" t="Double">0</v>
                               <o n="NamedColor" t="NamedStyleColor">
                                 <v n="Color">-16777216</v>
                                 <v n="CanonicalName">"Font-Default-Color"</v>
@@ -3015,10 +2927,6 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <v n="Id">2597686782L</v>
                           <v n="Value">true</v>
                         </o>
-                        <o>
-                          <v n="Id">3553112287L</v>
-                          <v n="Value">0</v>
-                        </o>
                       </l>
                     </o>
                     <v n="VisualElementName">"Line"</v>
@@ -3029,7 +2937,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                     <n n="VisualElementFrameInformation" />
                     <d n="VisualElementInputActions" t="Hashtable" />
                     <v n="VisualElementIdentification">{0e279dc1-e7f7-4453-b4d2-25323104b38a}</v>
-                    <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                    <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">38</v>
@@ -3480,10 +3388,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                                     <v>TL_ElementProperties.Points</v>
                                     <v>DescriptionUseFromParent</v>
                                     <v></v>
-                                    <v>''NORMAL__COMMENT</v>
-                                    <v> There is no more information than the parent provides</v>
                                     <v>DefaultArraySize</v>
                                     <v>500</v>
+                                    <v>''NORMAL__COMMENT</v>
+                                    <v> There is no more information than the parent provides</v>
                                   </d>
                                   <v n="ConvDone">true</v>
                                 </o>
@@ -3536,6 +3444,8 @@ VisuMotionStage.bExecute := TRUE;"</v>
                             <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                               <v n="AttrFlags">81920UL</v>
                               <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
+                                <v>PolygonPoints</v>
+                                <v></v>
                                 <v>DescriptionTextId</v>
                                 <v>TL_ElementProperties.Desc_StaticLinePos</v>
                                 <v>DisplayTextId</v>
@@ -3550,8 +3460,6 @@ VisuMotionStage.bExecute := TRUE;"</v>
                                 <v>visu_elemdev</v>
                                 <v>Storable</v>
                                 <v>True</v>
-                                <v>PolygonPoints</v>
-                                <v></v>
                               </d>
                               <v n="ConvDone">true</v>
                             </o>
@@ -3584,13 +3492,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <l n="Value" t="ArrayList" cet="NamedStyleFont">
                             <o>
                               <v n="FontStyle">0</v>
-                              <v n="AdditionalFontStyle" t="UInt16">0</v>
                               <v n="ExplicitColor">-16777216</v>
                               <v n="CanonicalName">"Font-Standard"</v>
                               <v n="FontName">"Arial"</v>
                               <v n="FontSize">12</v>
-                              <v n="ScriptIdentification">0</v>
-                              <v n="DoubleFontSize" t="Double">0</v>
                               <o n="NamedColor" t="NamedStyleColor">
                                 <v n="Color">-16777216</v>
                                 <v n="CanonicalName">"Font-Default-Color"</v>
@@ -3644,10 +3549,6 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <v n="Id">2597686782L</v>
                           <v n="Value">true</v>
                         </o>
-                        <o>
-                          <v n="Id">3553112287L</v>
-                          <v n="Value">0</v>
-                        </o>
                       </l>
                     </o>
                     <v n="VisualElementName">"Line"</v>
@@ -3658,7 +3559,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                     <n n="VisualElementFrameInformation" />
                     <d n="VisualElementInputActions" t="Hashtable" />
                     <v n="VisualElementIdentification">{73cf7866-2f52-46a1-8efc-fcdda3a17dc9}</v>
-                    <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                    <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">40</v>
@@ -3780,13 +3681,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <l n="Value" t="ArrayList" cet="NamedStyleFont">
                             <o>
                               <v n="FontStyle">0</v>
-                              <v n="AdditionalFontStyle" t="UInt16">0</v>
                               <v n="ExplicitColor">-16777216</v>
                               <v n="CanonicalName">"Font-Standard"</v>
                               <v n="FontName">"Arial"</v>
                               <v n="FontSize">12</v>
-                              <v n="ScriptIdentification">0</v>
-                              <v n="DoubleFontSize" t="Double">0</v>
                               <o n="NamedColor" t="NamedStyleColor">
                                 <v n="Color">-16777216</v>
                                 <v n="CanonicalName">"Element-Button-FontColor"</v>
@@ -3827,12 +3725,8 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <v n="Value">false</v>
                         </o>
                         <o>
-                          <v n="Id">3719097617L</v>
-                          <v n="Value">0</v>
-                        </o>
-                        <o>
                           <v n="Id">823443203L</v>
-                          <v n="Value">"33"</v>
+                          <v n="Value">"415"</v>
                         </o>
                       </l>
                     </o>
@@ -3844,7 +3738,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                     <n n="VisualElementFrameInformation" />
                     <d n="VisualElementInputActions" t="Hashtable" />
                     <v n="VisualElementIdentification">{3b0b114d-ec91-4874-a1b0-2b08aad58218}</v>
-                    <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                    <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">42</v>
@@ -3947,13 +3841,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <l n="Value" t="ArrayList" cet="NamedStyleFont">
                             <o>
                               <v n="FontStyle">0</v>
-                              <v n="AdditionalFontStyle" t="UInt16">0</v>
                               <v n="ExplicitColor">-16777216</v>
                               <v n="CanonicalName">"Font-Standard"</v>
                               <v n="FontName">"Arial"</v>
                               <v n="FontSize">12</v>
-                              <v n="ScriptIdentification">0</v>
-                              <v n="DoubleFontSize" t="Double">0</v>
                               <o n="NamedColor" t="NamedStyleColor">
                                 <v n="Color">-16777216</v>
                                 <v n="CanonicalName">"Element-Button-FontColor"</v>
@@ -3994,16 +3885,12 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <v n="Value">false</v>
                         </o>
                         <o>
-                          <v n="Id">3719097617L</v>
-                          <v n="Value">0</v>
-                        </o>
-                        <o>
                           <v n="Id">823443203L</v>
-                          <v n="Value">"34"</v>
+                          <v n="Value">"416"</v>
                         </o>
                         <o>
                           <v n="Id">3438453433L</v>
-                          <v n="Value">"31"</v>
+                          <v n="Value">"414"</v>
                         </o>
                       </l>
                     </o>
@@ -4022,7 +3909,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                       </a>
                     </d>
                     <v n="VisualElementIdentification">{59a454cf-e273-499d-bf3a-1ea7deef57e4}</v>
-                    <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                    <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">55</v>
@@ -4125,13 +4012,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <l n="Value" t="ArrayList" cet="NamedStyleFont">
                             <o>
                               <v n="FontStyle">0</v>
-                              <v n="AdditionalFontStyle" t="UInt16">0</v>
                               <v n="ExplicitColor">-16777216</v>
                               <v n="CanonicalName">"Font-Standard"</v>
                               <v n="FontName">"Arial"</v>
                               <v n="FontSize">12</v>
-                              <v n="ScriptIdentification">0</v>
-                              <v n="DoubleFontSize" t="Double">0</v>
                               <o n="NamedColor" t="NamedStyleColor">
                                 <v n="Color">-16777216</v>
                                 <v n="CanonicalName">"Element-Button-FontColor"</v>
@@ -4172,12 +4056,8 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <v n="Value">false</v>
                         </o>
                         <o>
-                          <v n="Id">3719097617L</v>
-                          <v n="Value">0</v>
-                        </o>
-                        <o>
                           <v n="Id">823443203L</v>
-                          <v n="Value">"32"</v>
+                          <v n="Value">"417"</v>
                         </o>
                       </l>
                     </o>
@@ -4198,7 +4078,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                       </a>
                     </d>
                     <v n="VisualElementIdentification">{e489f991-1df1-4643-80c4-a636779cbca0}</v>
-                    <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                    <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">58</v>
@@ -4319,13 +4199,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleFont">
                         <o>
                           <v n="FontStyle">0</v>
-                          <v n="AdditionalFontStyle" t="UInt16">0</v>
                           <v n="ExplicitColor">-16777216</v>
                           <v n="CanonicalName">"Font-Standard"</v>
                           <v n="FontName">"Arial"</v>
                           <v n="FontSize">12</v>
-                          <v n="ScriptIdentification">0</v>
-                          <v n="DoubleFontSize" t="Double">0</v>
                           <o n="NamedColor" t="NamedStyleColor">
                             <v n="Color">-16777216</v>
                             <v n="CanonicalName">"Font-Default-Color"</v>
@@ -4358,12 +4235,8 @@ VisuMotionStage.bExecute := TRUE;"</v>
                       <v n="Value">false</v>
                     </o>
                     <o>
-                      <v n="Id">3719097617L</v>
-                      <v n="Value">0</v>
-                    </o>
-                    <o>
                       <v n="Id">823443203L</v>
-                      <v n="Value">"25"</v>
+                      <v n="Value">"409"</v>
                     </o>
                   </l>
                 </o>
@@ -4375,7 +4248,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                 <n n="VisualElementFrameInformation" />
                 <d n="VisualElementInputActions" t="Hashtable" />
                 <v n="VisualElementIdentification">{2c80cb04-1a94-4233-9035-12e220ee2552}</v>
-                <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                 <a n="LMGuids" et="Guid" />
                 <d n="SubElements" t="Hashtable" />
                 <v n="VisualElementId">15</v>
@@ -4487,13 +4360,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <l n="Value" t="ArrayList" cet="NamedStyleFont">
                             <o>
                               <v n="FontStyle">0</v>
-                              <v n="AdditionalFontStyle" t="UInt16">0</v>
                               <v n="ExplicitColor">-16777216</v>
                               <v n="CanonicalName">"Font-Standard"</v>
                               <v n="FontName">"Arial"</v>
                               <v n="FontSize">12</v>
-                              <v n="ScriptIdentification">0</v>
-                              <v n="DoubleFontSize" t="Double">0</v>
                               <o n="NamedColor" t="NamedStyleColor">
                                 <v n="Color">-16777216</v>
                                 <v n="CanonicalName">"Font-Default-Color"</v>
@@ -4530,12 +4400,8 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <v n="Value">"VisuMotionStage.fVelocity"</v>
                         </o>
                         <o>
-                          <v n="Id">3719097617L</v>
-                          <v n="Value">0</v>
-                        </o>
-                        <o>
                           <v n="Id">823443203L</v>
-                          <v n="Value">"35"</v>
+                          <v n="Value">"419"</v>
                         </o>
                       </l>
                     </o>
@@ -4559,14 +4425,11 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <v n="TextOutputVariableInitialized">true</v>
                           <v n="OtherVarConversion">""</v>
                           <v n="Format">""</v>
-                          <v n="DialogPosition" t="DialogPositionSetting">UseGlobalSetting</v>
-                          <v n="DialogXPos">""</v>
-                          <v n="DialogYPos">""</v>
                         </o>
                       </a>
                     </d>
                     <v n="VisualElementIdentification">{4a689b45-26f8-4c11-818b-58222898ecfc}</v>
-                    <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                    <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">46</v>
@@ -4675,13 +4538,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <l n="Value" t="ArrayList" cet="NamedStyleFont">
                             <o>
                               <v n="FontStyle">0</v>
-                              <v n="AdditionalFontStyle" t="UInt16">0</v>
                               <v n="ExplicitColor">-16777216</v>
                               <v n="CanonicalName">"Font-Standard"</v>
                               <v n="FontName">"Arial"</v>
                               <v n="FontSize">12</v>
-                              <v n="ScriptIdentification">0</v>
-                              <v n="DoubleFontSize" t="Double">0</v>
                               <o n="NamedColor" t="NamedStyleColor">
                                 <v n="Color">-16777216</v>
                                 <v n="CanonicalName">"Font-Default-Color"</v>
@@ -4718,16 +4578,12 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <v n="Value">"VisuMotionStage.fAcceleration"</v>
                         </o>
                         <o>
-                          <v n="Id">3719097617L</v>
-                          <v n="Value">0</v>
-                        </o>
-                        <o>
                           <v n="Id">823443203L</v>
-                          <v n="Value">"36"</v>
+                          <v n="Value">"420"</v>
                         </o>
                         <o>
                           <v n="Id">3438453433L</v>
-                          <v n="Value">"37"</v>
+                          <v n="Value">"421"</v>
                         </o>
                       </l>
                     </o>
@@ -4751,14 +4607,11 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <v n="TextOutputVariableInitialized">true</v>
                           <v n="OtherVarConversion">""</v>
                           <v n="Format">""</v>
-                          <v n="DialogPosition" t="DialogPositionSetting">UseGlobalSetting</v>
-                          <v n="DialogXPos">""</v>
-                          <v n="DialogYPos">""</v>
                         </o>
                       </a>
                     </d>
                     <v n="VisualElementIdentification">{4565ad41-1f43-4601-adde-bfaefa18a7ce}</v>
-                    <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                    <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">48</v>
@@ -4867,13 +4720,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <l n="Value" t="ArrayList" cet="NamedStyleFont">
                             <o>
                               <v n="FontStyle">0</v>
-                              <v n="AdditionalFontStyle" t="UInt16">0</v>
                               <v n="ExplicitColor">-16777216</v>
                               <v n="CanonicalName">"Font-Standard"</v>
                               <v n="FontName">"Arial"</v>
                               <v n="FontSize">12</v>
-                              <v n="ScriptIdentification">0</v>
-                              <v n="DoubleFontSize" t="Double">0</v>
                               <o n="NamedColor" t="NamedStyleColor">
                                 <v n="Color">-16777216</v>
                                 <v n="CanonicalName">"Font-Default-Color"</v>
@@ -4910,16 +4760,12 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <v n="Value">"VisuMotionStage.fDeceleration"</v>
                         </o>
                         <o>
-                          <v n="Id">3719097617L</v>
-                          <v n="Value">0</v>
-                        </o>
-                        <o>
                           <v n="Id">823443203L</v>
-                          <v n="Value">"38"</v>
+                          <v n="Value">"422"</v>
                         </o>
                         <o>
                           <v n="Id">3438453433L</v>
-                          <v n="Value">"182"</v>
+                          <v n="Value">"423"</v>
                         </o>
                       </l>
                     </o>
@@ -4943,14 +4789,11 @@ VisuMotionStage.bExecute := TRUE;"</v>
                           <v n="TextOutputVariableInitialized">true</v>
                           <v n="OtherVarConversion">""</v>
                           <v n="Format">""</v>
-                          <v n="DialogPosition" t="DialogPositionSetting">UseGlobalSetting</v>
-                          <v n="DialogXPos">""</v>
-                          <v n="DialogYPos">""</v>
                         </o>
                       </a>
                     </d>
                     <v n="VisualElementIdentification">{66339035-6235-49a6-a9f8-97dd656e7241}</v>
-                    <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                    <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">50</v>
@@ -5071,13 +4914,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleFont">
                         <o>
                           <v n="FontStyle">0</v>
-                          <v n="AdditionalFontStyle" t="UInt16">0</v>
                           <v n="ExplicitColor">-16777216</v>
                           <v n="CanonicalName">"Font-Standard"</v>
                           <v n="FontName">"Arial"</v>
                           <v n="FontSize">12</v>
-                          <v n="ScriptIdentification">0</v>
-                          <v n="DoubleFontSize" t="Double">0</v>
                           <o n="NamedColor" t="NamedStyleColor">
                             <v n="Color">-16777216</v>
                             <v n="CanonicalName">"Font-Default-Color"</v>
@@ -5110,12 +4950,8 @@ VisuMotionStage.bExecute := TRUE;"</v>
                       <v n="Value">false</v>
                     </o>
                     <o>
-                      <v n="Id">3719097617L</v>
-                      <v n="Value">0</v>
-                    </o>
-                    <o>
                       <v n="Id">823443203L</v>
-                      <v n="Value">"470"</v>
+                      <v n="Value">"418"</v>
                     </o>
                   </l>
                 </o>
@@ -5127,7 +4963,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                 <n n="VisualElementFrameInformation" />
                 <d n="VisualElementInputActions" t="Hashtable" />
                 <v n="VisualElementIdentification">{2c38fd99-c0b3-4bd4-8a73-59ec0a0d80ca}</v>
-                <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                 <a n="LMGuids" et="Guid" />
                 <d n="SubElements" t="Hashtable" />
                 <v n="VisualElementId">18</v>
@@ -5193,7 +5029,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value">27</v>
+                      <v n="Value">26</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
@@ -5578,10 +5414,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                                 <v>TL_ElementProperties.Points</v>
                                 <v>DescriptionUseFromParent</v>
                                 <v></v>
-                                <v>''NORMAL__COMMENT</v>
-                                <v> There is no more information than the parent provides</v>
                                 <v>DefaultArraySize</v>
                                 <v>500</v>
+                                <v>''NORMAL__COMMENT</v>
+                                <v> There is no more information than the parent provides</v>
                               </d>
                               <v n="ConvDone">true</v>
                             </o>
@@ -5634,6 +5470,8 @@ VisuMotionStage.bExecute := TRUE;"</v>
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
+                            <v>PolygonPoints</v>
+                            <v></v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_StaticLinePos</v>
                             <v>DisplayTextId</v>
@@ -5648,8 +5486,6 @@ VisuMotionStage.bExecute := TRUE;"</v>
                             <v>visu_elemdev</v>
                             <v>Storable</v>
                             <v>True</v>
-                            <v>PolygonPoints</v>
-                            <v></v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -5667,7 +5503,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                     </o>
                     <o>
                       <v n="Id">669032122L</v>
-                      <v n="Value">69</v>
+                      <v n="Value">68</v>
                     </o>
                     <o>
                       <v n="Id">1837598620L</v>
@@ -5675,20 +5511,17 @@ VisuMotionStage.bExecute := TRUE;"</v>
                     </o>
                     <o>
                       <v n="Id">444643082L</v>
-                      <v n="Value">27</v>
+                      <v n="Value">26</v>
                     </o>
                     <o>
                       <v n="Id">3729828405L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleFont">
                         <o>
                           <v n="FontStyle">0</v>
-                          <v n="AdditionalFontStyle" t="UInt16">0</v>
                           <v n="ExplicitColor">-16777216</v>
                           <v n="CanonicalName">"Font-Standard"</v>
                           <v n="FontName">"Arial"</v>
                           <v n="FontSize">12</v>
-                          <v n="ScriptIdentification">0</v>
-                          <v n="DoubleFontSize" t="Double">0</v>
                           <o n="NamedColor" t="NamedStyleColor">
                             <v n="Color">-16777216</v>
                             <v n="CanonicalName">"Font-Default-Color"</v>
@@ -5720,7 +5553,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                     </o>
                     <o>
                       <v n="Id">1473355128L</v>
-                      <v n="Value">48</v>
+                      <v n="Value">47</v>
                     </o>
                     <o>
                       <v n="Id">493260384L</v>
@@ -5742,10 +5575,6 @@ VisuMotionStage.bExecute := TRUE;"</v>
                       <v n="Id">2597686782L</v>
                       <v n="Value">true</v>
                     </o>
-                    <o>
-                      <v n="Id">3553112287L</v>
-                      <v n="Value">0</v>
-                    </o>
                   </l>
                 </o>
                 <v n="VisualElementName">"Line"</v>
@@ -5756,7 +5585,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                 <n n="VisualElementFrameInformation" />
                 <d n="VisualElementInputActions" t="Hashtable" />
                 <v n="VisualElementIdentification">{2e22922e-98a5-42e0-b872-a338c0cfbc0a}</v>
-                <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                 <a n="LMGuids" et="Guid" />
                 <d n="SubElements" t="Hashtable" />
                 <v n="VisualElementId">25</v>
@@ -5814,7 +5643,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value">34</v>
+                      <v n="Value">33</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
@@ -5833,13 +5662,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleFont">
                         <o>
                           <v n="FontStyle">0</v>
-                          <v n="AdditionalFontStyle" t="UInt16">0</v>
                           <v n="ExplicitColor">-16777216</v>
                           <v n="CanonicalName">"Font-Standard"</v>
                           <v n="FontName">"Arial"</v>
                           <v n="FontSize">12</v>
-                          <v n="ScriptIdentification">0</v>
-                          <v n="DoubleFontSize" t="Double">0</v>
                           <o n="NamedColor" t="NamedStyleColor">
                             <v n="Color">-16777216</v>
                             <v n="CanonicalName">"Font-Default-Color"</v>
@@ -5868,12 +5694,8 @@ VisuMotionStage.bExecute := TRUE;"</v>
                       <v n="Value">true</v>
                     </o>
                     <o>
-                      <v n="Id">3719097617L</v>
-                      <v n="Value">0</v>
-                    </o>
-                    <o>
                       <v n="Id">823443203L</v>
-                      <v n="Value">"183"</v>
+                      <v n="Value">"424"</v>
                     </o>
                   </l>
                 </o>
@@ -5885,7 +5707,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                 <n n="VisualElementFrameInformation" />
                 <d n="VisualElementInputActions" t="Hashtable" />
                 <v n="VisualElementIdentification">{b6e7194c-2772-47ef-acd9-994c2e93983c}</v>
-                <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                 <a n="LMGuids" et="Guid" />
                 <d n="SubElements" t="Hashtable" />
                 <v n="VisualElementId">36</v>
@@ -5994,13 +5816,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleFont">
                         <o>
                           <v n="FontStyle">0</v>
-                          <v n="AdditionalFontStyle" t="UInt16">0</v>
                           <v n="ExplicitColor">-16777216</v>
                           <v n="CanonicalName">"Font-Standard"</v>
                           <v n="FontName">"Arial"</v>
                           <v n="FontSize">12</v>
-                          <v n="ScriptIdentification">0</v>
-                          <v n="DoubleFontSize" t="Double">0</v>
                           <o n="NamedColor" t="NamedStyleColor">
                             <v n="Color">-16777216</v>
                             <v n="CanonicalName">"Font-Default-Color"</v>
@@ -6037,16 +5856,12 @@ VisuMotionStage.bExecute := TRUE;"</v>
                       <v n="Value">"VisuMotionStage.stAxisStatus.nErrorId"</v>
                     </o>
                     <o>
-                      <v n="Id">3719097617L</v>
-                      <v n="Value">0</v>
-                    </o>
-                    <o>
                       <v n="Id">823443203L</v>
-                      <v n="Value">"184"</v>
+                      <v n="Value">"425"</v>
                     </o>
                     <o>
                       <v n="Id">3438453433L</v>
-                      <v n="Value">"185"</v>
+                      <v n="Value">"426"</v>
                     </o>
                   </l>
                 </o>
@@ -6058,10 +5873,176 @@ VisuMotionStage.bExecute := TRUE;"</v>
                 <n n="VisualElementFrameInformation" />
                 <d n="VisualElementInputActions" t="Hashtable" />
                 <v n="VisualElementIdentification">{3d997ea6-2c13-41b9-9555-f6740d059474}</v>
-                <v n="VisualElementOwningObjectGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+                <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                 <a n="LMGuids" et="Guid" />
                 <d n="SubElements" t="Hashtable" />
                 <v n="VisualElementId">44</v>
+                <l n="UserManagementAccessRights" t="ArrayList" />
+              </o>
+              <o>
+                <a n="ConfiguredComplexInputs" et="ComplexInput" />
+                <l n="Elements" t="ArrayList" />
+                <n n="VisualElementDescription" />
+                <o n="VisualElemMemberList" t="VisualElemMemberList">
+                  <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
+                    <o>
+                      <v n="Id">571893170L</v>
+                      <v n="Value">"Current Position (raw)"</v>
+                    </o>
+                    <o>
+                      <v n="Id">494569607L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"BasicElement-Frame-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">2812299069L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"BasicElement-Fill-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">135947015L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
+                          <v n="Color">-65536</v>
+                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">493260384L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
+                          <v n="Color">-12337</v>
+                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">2340015797L</v>
+                      <v n="Value">"HCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2565699834L</v>
+                      <v n="Value">"VCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">4134387352L</v>
+                      <v n="Value">"NONE"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1603690730L</v>
+                      <v n="Value">"Arial"</v>
+                    </o>
+                    <o>
+                      <v n="Id">4253639993L</v>
+                      <v n="Value" t="Int16">12</v>
+                    </o>
+                    <o>
+                      <v n="Id">2729990903L</v>
+                      <v n="Value">0U</v>
+                    </o>
+                    <o>
+                      <v n="Id">1213979116L</v>
+                      <v n="Value">0U</v>
+                    </o>
+                    <o>
+                      <v n="Id">3488306084L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">"&lt;toggle/tap variable&gt;"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1649127785L</v>
+                      <v n="Value">68</v>
+                    </o>
+                    <o>
+                      <v n="Id">357335551L</v>
+                      <v n="Value">58</v>
+                    </o>
+                    <o>
+                      <v n="Id">2422045748L</v>
+                      <v n="Value">149</v>
+                    </o>
+                    <o>
+                      <v n="Id">2134141914L</v>
+                      <v n="Value">20</v>
+                    </o>
+                    <o>
+                      <v n="Id">3729828405L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleFont">
+                        <o>
+                          <v n="FontStyle">0</v>
+                          <v n="ExplicitColor">-16777216</v>
+                          <v n="CanonicalName">"Font-Standard"</v>
+                          <v n="FontName">"Arial"</v>
+                          <v n="FontSize">12</v>
+                          <o n="NamedColor" t="NamedStyleColor">
+                            <v n="Color">-16777216</v>
+                            <v n="CanonicalName">"Font-Default-Color"</v>
+                          </o>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">550940142L</v>
+                      <v n="Value">142</v>
+                    </o>
+                    <o>
+                      <v n="Id">1473355128L</v>
+                      <v n="Value">68</v>
+                    </o>
+                    <o>
+                      <v n="Id">2678395525L</v>
+                      <v n="Value">1U</v>
+                    </o>
+                    <o>
+                      <v n="Id">564465120L</v>
+                      <v n="Value">"VISU_ST_RECTANGLE"</v>
+                    </o>
+                    <o>
+                      <v n="Id">390574330L</v>
+                      <v n="Value">"%d"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2597686782L</v>
+                      <v n="Value">false</v>
+                    </o>
+                    <o>
+                      <v n="Id">2477733581L</v>
+                      <v n="Value">"VisuMotionStage.nRawEncoderULINT"</v>
+                    </o>
+                    <o>
+                      <v n="Id">823443203L</v>
+                      <v n="Value">"468"</v>
+                    </o>
+                    <o>
+                      <v n="Id">3438453433L</v>
+                      <v n="Value">"463"</v>
+                    </o>
+                  </l>
+                </o>
+                <v n="VisualElementName">"Rectangle"</v>
+                <v n="VisualElementTypeName">"VisuFbElemSimple"</v>
+                <v n="VisualElementIsRectangle">true</v>
+                <v n="VisualElementIdentifier">"GenElemInst_60"</v>
+                <n n="VisualElementOfflinePaintCommands" />
+                <n n="VisualElementFrameInformation" />
+                <d n="VisualElementInputActions" t="Hashtable" />
+                <v n="VisualElementIdentification">{acd6cea5-8e84-48ba-9935-64f4a04dd4d3}</v>
+                <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
+                <a n="LMGuids" et="Guid" />
+                <d n="SubElements" t="Hashtable" />
+                <v n="VisualElementId">61</v>
                 <l n="UserManagementAccessRights" t="ArrayList" />
               </o>
             </l>
@@ -6080,67 +6061,69 @@ VisuMotionStage.bExecute := TRUE;"</v>
           <o n="GeneratedLMMDescriptions" t="GeneratedLanguageModelEntriesData">
             <o n="GeneratedVisuFbDescription" t="GenericFbDescription">
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
-                <v>GetUpdateRects</v>
-                <v>85b72d08-c475-4368-9146-29958c9d737b</v>
-                <v>ContainsPoint</v>
-                <v>84124220-1625-408e-90af-f210dc76a674</v>
-                <v>FB_Reinit</v>
-                <v>d7683734-3b08-4d41-a02b-31f9b74c4759</v>
-                <v>SetStaticState</v>
-                <v>6eda698a-2ad0-4d5d-831b-80f43a598802</v>
-                <v>Update</v>
-                <v>df86606c-89a9-4d1f-9334-2f8db9748977</v>
-                <v>GetTooltip</v>
-                <v>3e1a09aa-cb26-4610-a7a6-3578d980fbca</v>
-                <v>GetNamespace</v>
-                <v>6d72cda9-334d-4a0b-9f00-ebb2d63485a9</v>
-                <v>GetTranslator</v>
-                <v>f590a7eb-9442-47c1-9fb9-6fabba4b58da</v>
-                <v>SetClientData</v>
-                <v>821c77e1-0193-4956-b776-497667e5d658</v>
-                <v>GetClientData</v>
-                <v>1c50bf54-1289-4fb5-b713-948872ee0b11</v>
-                <v>Paint</v>
-                <v>e07aa5b0-abf3-4bb7-a7dd-7c1b887f54f4</v>
                 <v>HasVisibilityAccess</v>
-                <v>51ac2357-d41e-427d-a22d-9d17585cd624</v>
-                <v>GetElementArray</v>
-                <v>f99ab14e-79d8-43fb-98cc-d1d87559b6b3</v>
-                <v>SetVisuFlagsInternal</v>
-                <v>e602afe3-3be9-4092-b4f8-a2ce43b1377a</v>
-                <v>GetText</v>
-                <v>36470c08-9308-4c0c-8bf2-6b68515970ed</v>
-                <v>GetTextProperties</v>
-                <v>e22cad91-f8aa-43e6-8fb7-69d7623d8ca0</v>
-                <v>IsAntialiasingInactive</v>
-                <v>52f611b0-73c7-4ac4-a9b8-d0afc5e9e0aa</v>
-                <v>Initialize</v>
-                <v>d638c7aa-82e9-4d9c-be08-f4248635d8df</v>
+                <v>05799a21-4154-4e0f-81a6-0ad89fe3d86e</v>
+                <v>ContainsPoint</v>
+                <v>b706aa7f-6a6e-4f85-83bd-20e7ab6e62a4</v>
                 <v>HasInputAccess</v>
-                <v>e668c5b1-d6a2-498f-82e9-06d45458b16d</v>
+                <v>94304950-528d-496f-84a3-d043a39b183f</v>
+                <v>HasInputAccessIntern</v>
+                <v>46c2b1cc-f516-4c53-a1bf-806608c7fa9a</v>
+                <v>GetTooltip</v>
+                <v>db6851d8-90e8-4089-8f12-43b8806df828</v>
+                <v>GetUpdateRects</v>
+                <v>b317e0fe-434c-45b4-a42c-fbeecb9c9d56</v>
+                <v>GetNamespace</v>
+                <v>39a0db51-4830-4585-8afd-36a410cdfaba</v>
+                <v>GetTranslator</v>
+                <v>bdb2faa0-b981-4b90-aafd-65b12b0945cb</v>
+                <v>Update</v>
+                <v>f82985cd-f9e2-4fb6-96a4-9d292f504808</v>
+                <v>SetClientData</v>
+                <v>a25e73d6-bde5-44a8-a48d-9af664bfda45</v>
+                <v>GetClientData</v>
+                <v>06dbdc60-6cee-4e8c-9a88-50f7d7d7da8e</v>
+                <v>Paint</v>
+                <v>11324d57-93e2-4c0d-b0c2-4e148ff12ab2</v>
+                <v>GetElementArray</v>
+                <v>029a4cb9-f0d0-4ad0-b5d0-4b6d2424c80c</v>
+                <v>SetVisuFlagsInternal</v>
+                <v>2e0b7897-5525-4e45-b7a9-016c2bf79f27</v>
+                <v>GetText</v>
+                <v>d73240ad-b757-4932-9d7d-b227c79db3eb</v>
+                <v>GetTextProperties</v>
+                <v>30ba8cc0-9164-4eee-a32c-1f21048421ee</v>
+                <v>Initialize</v>
+                <v>b9899d81-1480-4c0b-9bca-8335fcf619e0</v>
+                <v>HasVisibilityAccessIntern</v>
+                <v>11aa918f-653a-4f19-9fb0-fe7c3d4e6752</v>
                 <v>GetSurroundingRect</v>
-                <v>99c622c7-a0ac-4357-a558-2015176787eb</v>
-                <v>GetLocalUsergroup</v>
-                <v>b5a61f94-07a8-4944-824e-b59638e96561</v>
-                <v>GetName</v>
-                <v>98ca1e5e-199b-4bf2-9ab1-783a4ef4cb5f</v>
-                <v>GetSize</v>
-                <v>fbe59981-7f17-4479-9808-29218f46aeca</v>
-                <v>Destruct</v>
-                <v>322f97d6-43dc-42b6-8cec-ad8558d3c719</v>
-                <v>FB_Exit</v>
-                <v>b477bdc9-d209-4ed5-b382-43e080f2910b</v>
-                <v>GetInitializeVersion</v>
-                <v>e48e6f7c-8fe0-47f8-b2b3-09c340dac9ba</v>
-                <v>GetElementIdArray</v>
-                <v>0c074665-e6ce-4b2c-83d1-a49b96755017</v>
-                <v>HandleInput</v>
-                <v>a46f0481-a1d7-46a3-83f8-068f2e7e623b</v>
+                <v>b474e80f-3c8a-45ee-95b5-2853ca5e04c6</v>
                 <v>ElementInfo</v>
-                <v>2f5802ec-3272-4478-8a52-751e04088527</v>
+                <v>dec52d4a-89c0-4d58-8add-4f147a33659e</v>
+                <v>SetStaticState</v>
+                <v>1cd34188-07b1-4de7-9258-a4b795babd91</v>
+                <v>GetLocalUsergroup</v>
+                <v>d529b423-e709-4a1b-9605-44a941e232e9</v>
+                <v>GetName</v>
+                <v>bb1ad725-ac86-4059-b9c0-383eb932a95c</v>
+                <v>GetSize</v>
+                <v>09937f21-d637-4849-b26b-fb2e4de429de</v>
+                <v>FB_Reinit</v>
+                <v>a6025d57-590a-4de2-8434-beae88c6728c</v>
+                <v>FB_Exit</v>
+                <v>c06f02f4-91f5-4ce3-ad06-7770f2c24a43</v>
+                <v>GetInitializeVersion</v>
+                <v>05020f60-eedc-472c-bfad-ff151931641f</v>
+                <v>GetElementIdArray</v>
+                <v>0b9d8d58-75ed-435a-a35b-7940e5c8a9c4</v>
+                <v>HandleInput</v>
+                <v>59e4682e-a1a6-46b8-96f2-a66e63c12590</v>
+                <v>Destruct</v>
+                <v>41f15799-e7ca-45a5-9560-bbf36e1a5fd1</v>
               </d>
               <v n="FbName">"NotImportant"</v>
-              <v n="FbGuid">{f7de9cfd-6d88-430a-8070-305db7bc83b0}</v>
+              <v n="FbGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
             </o>
             <v n="GeneratedGlobalVisuVarsGuid">{4f29cbc4-183d-42bb-8edb-23f543cbf6e6}</v>
             <v n="GeneratedGlobalTheVisuVarlistGuid">{032b9e58-a1f0-4aa5-9303-47cd170d186f}</v>
@@ -6150,10 +6133,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>f0e5f4a3-d458-48fa-b2c5-bede6841743b</v>
-                <v>FB_Exit</v>
-                <v>c07aad96-70dc-42ed-8427-1f5e3793ca6f</v>
                 <v>FB_Reinit</v>
                 <v>524e822e-cc49-4bc3-9fc8-67e0bdb739a1</v>
+                <v>FB_Exit</v>
+                <v>c07aad96-70dc-42ed-8427-1f5e3793ca6f</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{77787e81-a6b2-4a43-abb9-2fb26de678ff}</v>
@@ -6197,7 +6180,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
             </o>
             <v n="DialogDut">{711b198b-348d-4ea1-ab23-3d2887b198b0}</v>
           </o>
-          <v n="LastUsedIdForIdentifier">56</v>
+          <v n="LastUsedIdForIdentifier">60</v>
           <o n="TextDocument" t="TextDocument">
             <a n="TextLines" cet="TextLine">
               <o>
@@ -6235,10 +6218,6 @@ VisuMotionStage.bExecute := TRUE;"</v>
             <v n="IdStep">1048576L</v>
             <l2 n="Inputs" />
           </o>
-          <o n="VisuSizeManager" t="VisualObjectSizeManager">
-            <n n="Size" />
-            <v n="Version">0</v>
-          </o>
         </o>
       </Data>
       <TypeList>
@@ -6249,8 +6228,6 @@ VisuMotionStage.bExecute := TRUE;"</v>
         <Type n="CaseInsensitiveHashtable">{02a85e84-ef2d-46fc-93f2-acb0bbff3eda}</Type>
         <Type n="CaseInsensitiveHashtable_1">{7df88604-7ac5-4e36-91c4-55e4fdad3e68}</Type>
         <Type n="ComplexInput">{1de566f6-72a7-494c-9353-9a418172c96e}</Type>
-        <Type n="DialogPositionSetting">{16f3f59a-37ad-4991-a1af-cc2926974e08}</Type>
-        <Type n="Double">System.Double</Type>
         <Type n="DynamicArrayNode">{6c16f79c-dd98-4c29-b3ba-7042e3055542}</Type>
         <Type n="GeneratedLanguageModelEntriesData">{703465dc-4679-4ff2-bcc3-c57d0a204da3}</Type>
         <Type n="GenericFbDescription">{40d6dd8d-dfd0-493a-8e29-c9a35e1e6539}</Type>
@@ -6259,7 +6236,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
         <Type n="Hashtable">System.Collections.Hashtable</Type>
         <Type n="HotkeyConfiguration">{6b108d46-58af-4e41-a3f4-174d8f160cc4}</Type>
         <Type n="InputBoxInputAction">{e8e7e747-f76f-4dee-ab1c-b9637e41ac26}</Type>
-        <Type n="InputBoxInputAction[]">_3S.CoDeSys.VisualElem.InputBoxInputAction[], VisualElem.plugin, Version=3.5.13.30, Culture=neutral, PublicKeyToken=null</Type>
+        <Type n="InputBoxInputAction[]">_3S.CoDeSys.VisualElem.InputBoxInputAction[], VisualElem.plugin, Version=3.5.10.32, Culture=neutral, PublicKeyToken=null</Type>
         <Type n="Int16">System.Int16</Type>
         <Type n="Int32">System.Int32</Type>
         <Type n="Int64">System.Int64</Type>
@@ -6268,13 +6245,12 @@ VisuMotionStage.bExecute := TRUE;"</v>
         <Type n="String">System.String</Type>
         <Type n="StructuredTypeNode">{503c5b2e-e80e-4ee7-ae00-c5b93a62b1aa}</Type>
         <Type n="STSnippetInputAction">{6302d3fe-6ea5-4c42-819a-a9734a133b3d}</Type>
-        <Type n="STSnippetInputAction[]">_3S.CoDeSys.VisualElem.STSnippetInputAction[], VisualElem.plugin, Version=3.5.13.30, Culture=neutral, PublicKeyToken=null</Type>
+        <Type n="STSnippetInputAction[]">_3S.CoDeSys.VisualElem.STSnippetInputAction[], VisualElem.plugin, Version=3.5.10.32, Culture=neutral, PublicKeyToken=null</Type>
         <Type n="TextDocument">{f3878285-8e4f-490b-bb1b-9acbb7eb04db}</Type>
         <Type n="TextLine">{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}</Type>
         <Type n="TypeClass">{16f7aa24-038f-444e-9d81-b001bc091d35}</Type>
         <Type n="TypeNodeAttributes2">{c1464dbe-c10d-4717-be8f-63efe8638434}</Type>
         <Type n="TypeNodeType">{b12a9636-e818-4598-ae0d-fb6a2446102c}</Type>
-        <Type n="UInt16">System.UInt16</Type>
         <Type n="UInt32">System.UInt32</Type>
         <Type n="UInt64">System.UInt64</Type>
         <Type n="VisualElemCollection">{ef9d0b20-c96e-48db-b361-2ded4063150e}</Type>
@@ -6283,7 +6259,6 @@ VisuMotionStage.bExecute := TRUE;"</v>
         <Type n="VisualElemMemberCollection">{a4b83bea-3742-489c-9fe8-d96d68dba7ab}</Type>
         <Type n="VisualElemMemberList">{17e26cd1-bb9b-47fe-a3d5-18fcd63b9c96}</Type>
         <Type n="VisualObject">{f18bec89-9fef-401d-9953-2f11739a6808}</Type>
-        <Type n="VisualObjectSizeManager">{5f612b0e-b404-455f-8177-27864e9f5332}</Type>
       </TypeList>
     </XmlArchive>
     <ObjectProperties>
@@ -6296,8 +6271,6 @@ VisuMotionStage.bExecute := TRUE;"</v>
             <v n="IsStartVisu">false</v>
             <v n="VisuSizeMode" t="VisualVisuSizeMode">Specified</v>
             <v n="Internal">false</v>
-            <v n="DialogIsOpaque">false</v>
-            <v n="DialogIsOpaqueIsSet">false</v>
           </o>
         </Data>
         <TypeList>

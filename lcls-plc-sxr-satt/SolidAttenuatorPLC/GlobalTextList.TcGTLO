@@ -1,10 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <GlobalTextList Name="GlobalTextList" Id="{8d41656a-d98f-4e83-9d58-bfb847d2154f}">
     <XmlArchive>
       <Data>
         <o xml:space="preserve" t="GlobalTextListObject">
           <l n="TextList" t="ArrayList" cet="TextListRow">
+            <o>
+              <v n="TextID">"468"</v>
+              <v n="TextDefault">"%d"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
             <o>
               <v n="TextID">"405"</v>
               <v n="TextDefault">"%f"</v>
@@ -41,6 +46,11 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"966"</v>
+              <v n="TextDefault">"Admin"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"17"</v>
               <v n="TextDefault">"Axis 1"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -66,6 +76,26 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"588"</v>
+              <v n="TextDefault">"Channel 1: %.2f C"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"84"</v>
+              <v n="TextDefault">"Channel 1: %f C"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"809"</v>
+              <v n="TextDefault">"Channel 2: %.2f C"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"18"</v>
+              <v n="TextDefault">"Channel 2: %f C"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"415"</v>
               <v n="TextDefault">"Clear"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -78,6 +108,11 @@
             <o>
               <v n="TextID">"406"</v>
               <v n="TextDefault">"Current Position"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"463"</v>
+              <v n="TextDefault">"Current Position (raw)"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -121,6 +156,31 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"823"</v>
+              <v n="TextDefault">"None"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"269"</v>
+              <v n="TextDefault">"Operator"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"721"</v>
+              <v n="TextDefault">"RTD1: %f C"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"433"</v>
+              <v n="TextDefault">"RTD2: %f C"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"878"</v>
+              <v n="TextDefault">"Service"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"410"</v>
               <v n="TextDefault">"Set Position"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -153,6 +213,11 @@
             <o>
               <v n="TextID">"719"</v>
               <v n="TextDefault">"Temp 2: %f C"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"647"</v>
+              <v n="TextDefault">"Temperature Sensors"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>

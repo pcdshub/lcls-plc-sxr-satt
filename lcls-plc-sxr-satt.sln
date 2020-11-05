@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# TcXaeShell Solution File, Format Version 11.00
+VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{B1E792BE-AA5F-4E3C-8C82-674BF9C0715B}") = "lcls-plc-sxr-satt", "lcls-plc-sxr-satt\lcls-plc-sxr-satt.tsproj", "{3AB608F5-0F66-40C3-9B60-88E2AC19166D}"
 EndProject
@@ -52,5 +52,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {484C2BFE-BD7B-4B2F-8AE1-A842688B8D48}
 	EndGlobalSection
 EndGlobal

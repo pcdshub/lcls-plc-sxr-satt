@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4022.30" ClassName="CDevEthernetUsbDef" SubType="57">
+	<Device Id="4" Disabled="true" DevType="57" AmsPort="28676">
+		<Name>__FILENAME__</Name>
+		<Image Id="9" AddrType="1" ImageType="3">
+			<Name>Image</Name>
+		</Image>
+		<Usb VirtualDeviceName="true"/>
+	</Device>
+</TcSmItem>
