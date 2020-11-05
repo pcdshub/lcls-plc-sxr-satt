@@ -143,7 +143,7 @@
                         </o>
                         <o>
                           <v n="Id">390574330L</v>
-                          <v n="Value">"Channel 1: %f C"</v>
+                          <v n="Value">"Channel 1: %.2f C"</v>
                         </o>
                         <o>
                           <v n="Id">2597686782L</v>
@@ -155,7 +155,7 @@
                         </o>
                         <o>
                           <v n="Id">823443203L</v>
-                          <v n="Value">"84"</v>
+                          <v n="Value">"588"</v>
                         </o>
                       </l>
                     </o>
@@ -321,7 +321,7 @@
                         </o>
                         <o>
                           <v n="Id">390574330L</v>
-                          <v n="Value">"Channel 2: %f C"</v>
+                          <v n="Value">"Channel 2: %.2f C"</v>
                         </o>
                         <o>
                           <v n="Id">2597686782L</v>
@@ -333,7 +333,7 @@
                         </o>
                         <o>
                           <v n="Id">823443203L</v>
-                          <v n="Value">"18"</v>
+                          <v n="Value">"809"</v>
                         </o>
                         <o>
                           <v n="Id">3438453433L</v>

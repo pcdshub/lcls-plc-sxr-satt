@@ -31,7 +31,7 @@
                         </o>
                         <o>
                           <v n="Id">357335551L</v>
-                          <v n="Value">17</v>
+                          <v n="Value">16</v>
                         </o>
                         <o>
                           <v n="Id">2422045748L</v>
@@ -193,7 +193,7 @@
                         </o>
                         <o>
                           <v n="Id">357335551L</v>
-                          <v n="Value">18</v>
+                          <v n="Value">7</v>
                         </o>
                         <o>
                           <v n="Id">2422045748L</v>
@@ -225,7 +225,7 @@
                         </o>
                         <o>
                           <v n="Id">1473355128L</v>
-                          <v n="Value">33</v>
+                          <v n="Value">22</v>
                         </o>
                         <o>
                           <v n="Id">2678395525L</v>
@@ -291,7 +291,7 @@
                         </o>
                         <o>
                           <v n="Id">357335551L</v>
-                          <v n="Value" t="Int16">18</v>
+                          <v n="Value" t="Int16">17</v>
                         </o>
                         <o>
                           <v n="Id">2422045748L</v>
@@ -385,7 +385,7 @@
                         </o>
                         <o>
                           <v n="Id">357335551L</v>
-                          <v n="Value">17</v>
+                          <v n="Value">16</v>
                         </o>
                         <o>
                           <v n="Id">2422045748L</v>
@@ -507,7 +507,7 @@
                         </o>
                         <o>
                           <v n="Id">357335551L</v>
-                          <v n="Value">16</v>
+                          <v n="Value">15</v>
                         </o>
                         <o>
                           <v n="Id">2422045748L</v>
@@ -637,7 +637,7 @@
                         </o>
                         <o>
                           <v n="Id">357335551L</v>
-                          <v n="Value">10</v>
+                          <v n="Value">9</v>
                         </o>
                         <o>
                           <v n="Id">2422045748L</v>
@@ -1022,10 +1022,10 @@
                                     <v>TL_ElementProperties.Points</v>
                                     <v>DescriptionUseFromParent</v>
                                     <v></v>
-                                    <v>DefaultArraySize</v>
-                                    <v>500</v>
                                     <v>''NORMAL__COMMENT</v>
                                     <v> There is no more information than the parent provides</v>
+                                    <v>DefaultArraySize</v>
+                                    <v>500</v>
                                   </d>
                                   <v n="ConvDone">true</v>
                                 </o>
@@ -1078,8 +1078,6 @@
                             <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                               <v n="AttrFlags">81920UL</v>
                               <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
-                                <v>PolygonPoints</v>
-                                <v></v>
                                 <v>DescriptionTextId</v>
                                 <v>TL_ElementProperties.Desc_StaticLinePos</v>
                                 <v>DisplayTextId</v>
@@ -1094,6 +1092,8 @@
                                 <v>visu_elemdev</v>
                                 <v>Storable</v>
                                 <v>True</v>
+                                <v>PolygonPoints</v>
+                                <v></v>
                               </d>
                               <v n="ConvDone">true</v>
                             </o>
@@ -1111,7 +1111,7 @@
                         </o>
                         <o>
                           <v n="Id">669032122L</v>
-                          <v n="Value">52</v>
+                          <v n="Value">51</v>
                         </o>
                         <o>
                           <v n="Id">1837598620L</v>
@@ -1119,7 +1119,7 @@
                         </o>
                         <o>
                           <v n="Id">444643082L</v>
-                          <v n="Value">10</v>
+                          <v n="Value">9</v>
                         </o>
                         <o>
                           <v n="Id">3729828405L</v>
@@ -1161,7 +1161,7 @@
                         </o>
                         <o>
                           <v n="Id">1473355128L</v>
-                          <v n="Value">31</v>
+                          <v n="Value">30</v>
                         </o>
                         <o>
                           <v n="Id">493260384L</v>
@@ -1219,7 +1219,7 @@
                         </o>
                         <o>
                           <v n="Id">357335551L</v>
-                          <v n="Value">18</v>
+                          <v n="Value">17</v>
                         </o>
                         <o>
                           <v n="Id">2422045748L</v>
@@ -2766,10 +2766,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                                     <v>TL_ElementProperties.Points</v>
                                     <v>DescriptionUseFromParent</v>
                                     <v></v>
-                                    <v>DefaultArraySize</v>
-                                    <v>500</v>
                                     <v>''NORMAL__COMMENT</v>
                                     <v> There is no more information than the parent provides</v>
+                                    <v>DefaultArraySize</v>
+                                    <v>500</v>
                                   </d>
                                   <v n="ConvDone">true</v>
                                 </o>
@@ -2822,8 +2822,6 @@ VisuMotionStage.bExecute := TRUE;"</v>
                             <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                               <v n="AttrFlags">81920UL</v>
                               <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
-                                <v>PolygonPoints</v>
-                                <v></v>
                                 <v>DescriptionTextId</v>
                                 <v>TL_ElementProperties.Desc_StaticLinePos</v>
                                 <v>DisplayTextId</v>
@@ -2838,6 +2836,8 @@ VisuMotionStage.bExecute := TRUE;"</v>
                                 <v>visu_elemdev</v>
                                 <v>Storable</v>
                                 <v>True</v>
+                                <v>PolygonPoints</v>
+                                <v></v>
                               </d>
                               <v n="ConvDone">true</v>
                             </o>
@@ -3388,10 +3388,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                                     <v>TL_ElementProperties.Points</v>
                                     <v>DescriptionUseFromParent</v>
                                     <v></v>
-                                    <v>''NORMAL__COMMENT</v>
-                                    <v> There is no more information than the parent provides</v>
                                     <v>DefaultArraySize</v>
                                     <v>500</v>
+                                    <v>''NORMAL__COMMENT</v>
+                                    <v> There is no more information than the parent provides</v>
                                   </d>
                                   <v n="ConvDone">true</v>
                                 </o>
@@ -3444,6 +3444,8 @@ VisuMotionStage.bExecute := TRUE;"</v>
                             <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                               <v n="AttrFlags">81920UL</v>
                               <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
+                                <v>PolygonPoints</v>
+                                <v></v>
                                 <v>DescriptionTextId</v>
                                 <v>TL_ElementProperties.Desc_StaticLinePos</v>
                                 <v>DisplayTextId</v>
@@ -3458,8 +3460,6 @@ VisuMotionStage.bExecute := TRUE;"</v>
                                 <v>visu_elemdev</v>
                                 <v>Storable</v>
                                 <v>True</v>
-                                <v>PolygonPoints</v>
-                                <v></v>
                               </d>
                               <v n="ConvDone">true</v>
                             </o>
@@ -5029,7 +5029,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value">27</v>
+                      <v n="Value">26</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
@@ -5414,10 +5414,10 @@ VisuMotionStage.bExecute := TRUE;"</v>
                                 <v>TL_ElementProperties.Points</v>
                                 <v>DescriptionUseFromParent</v>
                                 <v></v>
-                                <v>''NORMAL__COMMENT</v>
-                                <v> There is no more information than the parent provides</v>
                                 <v>DefaultArraySize</v>
                                 <v>500</v>
+                                <v>''NORMAL__COMMENT</v>
+                                <v> There is no more information than the parent provides</v>
                               </d>
                               <v n="ConvDone">true</v>
                             </o>
@@ -5470,6 +5470,8 @@ VisuMotionStage.bExecute := TRUE;"</v>
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
+                            <v>PolygonPoints</v>
+                            <v></v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_StaticLinePos</v>
                             <v>DisplayTextId</v>
@@ -5484,8 +5486,6 @@ VisuMotionStage.bExecute := TRUE;"</v>
                             <v>visu_elemdev</v>
                             <v>Storable</v>
                             <v>True</v>
-                            <v>PolygonPoints</v>
-                            <v></v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -5503,7 +5503,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                     </o>
                     <o>
                       <v n="Id">669032122L</v>
-                      <v n="Value">69</v>
+                      <v n="Value">68</v>
                     </o>
                     <o>
                       <v n="Id">1837598620L</v>
@@ -5511,7 +5511,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                     </o>
                     <o>
                       <v n="Id">444643082L</v>
-                      <v n="Value">27</v>
+                      <v n="Value">26</v>
                     </o>
                     <o>
                       <v n="Id">3729828405L</v>
@@ -5553,7 +5553,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                     </o>
                     <o>
                       <v n="Id">1473355128L</v>
-                      <v n="Value">48</v>
+                      <v n="Value">47</v>
                     </o>
                     <o>
                       <v n="Id">493260384L</v>
@@ -5643,7 +5643,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value">34</v>
+                      <v n="Value">33</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
@@ -5886,6 +5886,46 @@ VisuMotionStage.bExecute := TRUE;"</v>
                 <o n="VisualElemMemberList" t="VisualElemMemberList">
                   <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
                     <o>
+                      <v n="Id">571893170L</v>
+                      <v n="Value">"Current Position (raw)"</v>
+                    </o>
+                    <o>
+                      <v n="Id">494569607L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"BasicElement-Frame-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">2812299069L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"BasicElement-Fill-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">135947015L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
+                          <v n="Color">-65536</v>
+                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">493260384L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
+                          <v n="Color">-12337</v>
+                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
                       <v n="Id">2340015797L</v>
                       <v n="Value">"HCENTER"</v>
                     </o>
@@ -5918,32 +5958,24 @@ VisuMotionStage.bExecute := TRUE;"</v>
                       <v n="Value">4278190080U</v>
                     </o>
                     <o>
-                      <v n="Id">2812299069L</v>
-                      <v n="Value">4294967295U</v>
-                    </o>
-                    <o>
-                      <v n="Id">494569607L</v>
-                      <v n="Value">4278190080U</v>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">"&lt;toggle/tap variable&gt;"</v>
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">136</v>
+                      <v n="Value">68</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value">266</v>
+                      <v n="Value">58</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
-                      <v n="Value">0</v>
+                      <v n="Value">149</v>
                     </o>
                     <o>
                       <v n="Id">2134141914L</v>
-                      <v n="Value">1</v>
-                    </o>
-                    <o>
-                      <v n="Id">390574330L</v>
-                      <v n="Value">"Label"</v>
+                      <v n="Value">20</v>
                     </o>
                     <o>
                       <v n="Id">3729828405L</v>
@@ -5962,43 +5994,55 @@ VisuMotionStage.bExecute := TRUE;"</v>
                       </l>
                     </o>
                     <o>
-                      <v n="Id">493260384L</v>
-                      <v n="Value">4294967295U</v>
+                      <v n="Id">550940142L</v>
+                      <v n="Value">142</v>
                     </o>
                     <o>
-                      <v n="Id">135947015L</v>
-                      <v n="Value">4278190080U</v>
+                      <v n="Id">1473355128L</v>
+                      <v n="Value">68</v>
                     </o>
                     <o>
                       <v n="Id">2678395525L</v>
                       <v n="Value">1U</v>
                     </o>
                     <o>
-                      <v n="Id">571893170L</v>
-                      <v n="Value">""</v>
+                      <v n="Id">564465120L</v>
+                      <v n="Value">"VISU_ST_RECTANGLE"</v>
                     </o>
                     <o>
-                      <v n="Id">823443203L</v>
-                      <v n="Value">""</v>
+                      <v n="Id">390574330L</v>
+                      <v n="Value">"%d"</v>
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
-                      <v n="Value">true</v>
+                      <v n="Value">false</v>
+                    </o>
+                    <o>
+                      <v n="Id">2477733581L</v>
+                      <v n="Value">"VisuMotionStage.nRawEncoderULINT"</v>
+                    </o>
+                    <o>
+                      <v n="Id">823443203L</v>
+                      <v n="Value">"468"</v>
+                    </o>
+                    <o>
+                      <v n="Id">3438453433L</v>
+                      <v n="Value">"463"</v>
                     </o>
                   </l>
                 </o>
-                <v n="VisualElementName">"Label"</v>
-                <v n="VisualElementTypeName">"VisuFbLabel"</v>
+                <v n="VisualElementName">"Rectangle"</v>
+                <v n="VisualElementTypeName">"VisuFbElemSimple"</v>
                 <v n="VisualElementIsRectangle">true</v>
-                <v n="VisualElementIdentifier">"GenElemInst_58"</v>
+                <v n="VisualElementIdentifier">"GenElemInst_60"</v>
                 <n n="VisualElementOfflinePaintCommands" />
                 <n n="VisualElementFrameInformation" />
                 <d n="VisualElementInputActions" t="Hashtable" />
-                <v n="VisualElementIdentification">{c79d5629-fc7e-4d26-bd93-e8f42a8ad783}</v>
+                <v n="VisualElementIdentification">{acd6cea5-8e84-48ba-9935-64f4a04dd4d3}</v>
                 <v n="VisualElementOwningObjectGuid">{725b6e3a-a1e8-433f-b44e-ff746b8bd38a}</v>
                 <a n="LMGuids" et="Guid" />
                 <d n="SubElements" t="Hashtable" />
-                <v n="VisualElementId">0</v>
+                <v n="VisualElementId">61</v>
                 <l n="UserManagementAccessRights" t="ArrayList" />
               </o>
             </l>
@@ -6017,16 +6061,18 @@ VisuMotionStage.bExecute := TRUE;"</v>
           <o n="GeneratedLMMDescriptions" t="GeneratedLanguageModelEntriesData">
             <o n="GeneratedVisuFbDescription" t="GenericFbDescription">
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
-                <v>GetUpdateRects</v>
-                <v>b317e0fe-434c-45b4-a42c-fbeecb9c9d56</v>
+                <v>HasVisibilityAccess</v>
+                <v>05799a21-4154-4e0f-81a6-0ad89fe3d86e</v>
                 <v>ContainsPoint</v>
                 <v>b706aa7f-6a6e-4f85-83bd-20e7ab6e62a4</v>
-                <v>SetStaticState</v>
-                <v>1cd34188-07b1-4de7-9258-a4b795babd91</v>
+                <v>HasInputAccess</v>
+                <v>94304950-528d-496f-84a3-d043a39b183f</v>
                 <v>HasInputAccessIntern</v>
                 <v>46c2b1cc-f516-4c53-a1bf-806608c7fa9a</v>
                 <v>GetTooltip</v>
                 <v>db6851d8-90e8-4089-8f12-43b8806df828</v>
+                <v>GetUpdateRects</v>
+                <v>b317e0fe-434c-45b4-a42c-fbeecb9c9d56</v>
                 <v>GetNamespace</v>
                 <v>39a0db51-4830-4585-8afd-36a410cdfaba</v>
                 <v>GetTranslator</v>
@@ -6039,8 +6085,6 @@ VisuMotionStage.bExecute := TRUE;"</v>
                 <v>06dbdc60-6cee-4e8c-9a88-50f7d7d7da8e</v>
                 <v>Paint</v>
                 <v>11324d57-93e2-4c0d-b0c2-4e148ff12ab2</v>
-                <v>HasVisibilityAccess</v>
-                <v>05799a21-4154-4e0f-81a6-0ad89fe3d86e</v>
                 <v>GetElementArray</v>
                 <v>029a4cb9-f0d0-4ad0-b5d0-4b6d2424c80c</v>
                 <v>SetVisuFlagsInternal</v>
@@ -6051,14 +6095,14 @@ VisuMotionStage.bExecute := TRUE;"</v>
                 <v>30ba8cc0-9164-4eee-a32c-1f21048421ee</v>
                 <v>Initialize</v>
                 <v>b9899d81-1480-4c0b-9bca-8335fcf619e0</v>
-                <v>HasInputAccess</v>
-                <v>94304950-528d-496f-84a3-d043a39b183f</v>
                 <v>HasVisibilityAccessIntern</v>
                 <v>11aa918f-653a-4f19-9fb0-fe7c3d4e6752</v>
                 <v>GetSurroundingRect</v>
                 <v>b474e80f-3c8a-45ee-95b5-2853ca5e04c6</v>
                 <v>ElementInfo</v>
                 <v>dec52d4a-89c0-4d58-8add-4f147a33659e</v>
+                <v>SetStaticState</v>
+                <v>1cd34188-07b1-4de7-9258-a4b795babd91</v>
                 <v>GetLocalUsergroup</v>
                 <v>d529b423-e709-4a1b-9605-44a941e232e9</v>
                 <v>GetName</v>
@@ -6136,7 +6180,7 @@ VisuMotionStage.bExecute := TRUE;"</v>
             </o>
             <v n="DialogDut">{711b198b-348d-4ea1-ab23-3d2887b198b0}</v>
           </o>
-          <v n="LastUsedIdForIdentifier">58</v>
+          <v n="LastUsedIdForIdentifier">60</v>
           <o n="TextDocument" t="TextDocument">
             <a n="TextLines" cet="TextLine">
               <o>

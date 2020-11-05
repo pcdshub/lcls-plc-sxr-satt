@@ -6,20 +6,20 @@
         <o xml:space="preserve" t="VisualManagerObject">
           <v n="UseUnicodeStrings" t="UnicodeSupport">Undefined</v>
           <o n="ViewSettings" t="VisualManagerViewSettings">
-            <v n="StartVisu">""</v>
-            <v n="StartVisu33">""</v>
+            <n n="StartVisu" />
+            <v n="StartVisu33">"VISU_RTDs_4022"</v>
             <v n="OpenTargetvisu">false</v>
             <v n="BestFit">false</v>
             <v n="ClientSizeMode" t="VisualClientSizeMode">AutoDetect</v>
             <v n="ClientSizeX">2000</v>
             <v n="ClientSizeY">2000</v>
-            <v n="ExtendedSettings">false</v>
+            <v n="ExtendedSettings">true</v>
             <v n="PaintBufferSize">50000</v>
             <v n="MemorybufferSize">400000</v>
             <v n="VisuInternal">false</v>
             <v n="CurrentVisuGlobal">false</v>
             <v n="FileTransferMode">true</v>
-            <v n="VisuStyle">"Basic style, 3.1.6.0 (Beckhoff Automation GmbH)"</v>
+            <v n="VisuStyle">"Flat style, 3.1.7.0 (Beckhoff Automation GmbH)"</v>
             <v n="MaxNumOfClients">100</v>
             <v n="Language">"en"</v>
             <v n="NumpadDialog">"VisuDialogs.Numpad"</v>
@@ -37,8 +37,8 @@
             <v n="GuidShowChangeConfigDialogFunction">{00000000-0000-0000-0000-000000000000}</v>
             <v n="UseStandardKeyboardHandling">true</v>
             <v n="PaintDeactiveElementsGrayedOut">true</v>
-            <v n="ConvertImages">false</v>
-            <v n="ConversionType">""</v>
+            <v n="ConvertImages">true</v>
+            <v n="ConversionType">"png"</v>
           </o>
           <o n="RegisterDesc" t="GenericFbDescription">
             <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
@@ -49,7 +49,7 @@
               <v>FB_Exit</v>
               <v>05e89609-ae7b-49b7-8c28-cb57fe72489b</v>
             </d>
-            <v n="FbName">"NotImportant"</v>
+            <v n="FbName">"__VisuInitInstantiation_Fb"</v>
             <v n="FbGuid">{7594d63b-70d9-466d-af16-fa2d8187bd36}</v>
           </o>
           <o n="TargetProperties" t="VisualizationTargetProperties">
@@ -580,5 +580,37 @@
         <Type n="VisualManagerViewSettings">{ec9b2ec6-92a2-4856-be72-7866fb274c64}</Type>
       </TypeList>
     </XmlArchive>
+    <TargetVisu Name="TargetVisualization" Id="{680fa876-c32a-4522-b37d-4fd4167c1d6d}">
+      <XmlArchive>
+        <Data>
+          <o xml:space="preserve" t="TargetVisualizationObject">
+            <o n="ViewSettings" t="TargetVisualizationViewSettings">
+              <v n="StartVisu">"AT2K2_4022"</v>
+              <n n="HtmFileName" />
+              <v n="UpdateRate">200</v>
+              <v n="CommBufferSize">50000</v>
+              <v n="BestFit">false</v>
+              <v n="ClientSizeMode" t="VisualClientSizeMode">AutoDetect</v>
+              <v n="ClientSizeX">2000</v>
+              <v n="ClientSizeY">2000</v>
+              <v n="Antialiasing">true</v>
+              <v n="ClientOperationType" t="eDefaultInputSetting">Keyboard</v>
+              <v n="ScaleTypeIsotropic">false</v>
+              <v n="HideCursor">false</v>
+              <v n="TouchActivate">true</v>
+            </o>
+          </o>
+        </Data>
+        <TypeList>
+          <Type n="Boolean">System.Boolean</Type>
+          <Type n="eDefaultInputSetting">{bd122c9a-5824-461f-8b56-d89816d314bf}</Type>
+          <Type n="Int32">System.Int32</Type>
+          <Type n="String">System.String</Type>
+          <Type n="TargetVisualizationObject">{bc63f5fa-d286-4786-994e-7b27e4f97bd5}</Type>
+          <Type n="TargetVisualizationViewSettings">{cb5403ec-4e3b-4965-9be8-913e6068f7cb}</Type>
+          <Type n="VisualClientSizeMode">{c37fe731-4f69-4d98-82fe-4f9aefbe200d}</Type>
+        </TypeList>
+      </XmlArchive>
+    </TargetVisu>
   </VisuManager>
 </TcPlcObject>

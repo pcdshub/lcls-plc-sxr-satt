@@ -1717,6 +1717,7 @@ External Setpoint Generation:
 				</Var>
 			</Vars>
 			<TaskPouOids>
+				<TaskPouOid Prio="30" OTCID="#x08502002"/>
 				<TaskPouOid Prio="20" OTCID="#x08502001"/>
 			</TaskPouOids>
 		</Instance>
