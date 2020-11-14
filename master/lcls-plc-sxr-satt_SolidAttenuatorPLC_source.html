@@ -98,6 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="lcls-plc-sxr-satt_SolidAttenuatorPLC_epics.html">Data Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lcls-plc-sxr-satt_SolidAttenuatorPLC_epics.html#database-records">Database Records</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">DUTs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dut-motionstage-extras">DUT_MotionStage_Extras</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#enum-sxr-satt-position">ENUM_SXR_SATT_Position</a></li>
 </ul>
 </li>
@@ -179,6 +180,18 @@
             
   <div class="section" id="duts">
 <h1>DUTs<a class="headerlink" href="#duts" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="dut-motionstage-extras">
+<h2>DUT_MotionStage_Extras<a class="headerlink" href="#dut-motionstage-extras" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">TYPE</span> <span class="n">DUT_MotionStage_Extras</span> <span class="p">:</span>
+<span class="n">STRUCT</span>
+    <span class="n">fVisuStep</span><span class="p">:</span> <span class="n">LREAL</span><span class="p">;</span>
+    <span class="n">bVisuLowLim</span><span class="p">:</span> <span class="n">BOOL</span><span class="p">;</span>
+    <span class="n">bVisuHighLim</span><span class="p">:</span> <span class="n">BOOL</span><span class="p">;</span>
+<span class="n">END_STRUCT</span>
+<span class="n">END_TYPE</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="enum-sxr-satt-position">
 <h2>ENUM_SXR_SATT_Position<a class="headerlink" href="#enum-sxr-satt-position" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;qualified_only&#39;</span><span class="p">}</span>
@@ -418,12 +431,12 @@ END_FUNCTION_BLOCK
     <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;TcLinkTo&#39;</span> <span class="o">:=</span> <span class="s1">&#39;</span>
 
         <span class="o">.</span><span class="n">fbRTD_1</span><span class="o">.</span><span class="n">iRaw</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Value</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">fbRTD_1</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">error</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">fbRTD_1</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Error</span><span class="p">;</span>
         <span class="o">.</span><span class="n">fbRTD_1</span><span class="o">.</span><span class="n">bUnderrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Underrange</span><span class="p">;</span>
         <span class="o">.</span><span class="n">fbRTD_1</span><span class="o">.</span><span class="n">bOverrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Overrange</span><span class="p">;</span>
 
         <span class="o">.</span><span class="n">fbRTD_2</span><span class="o">.</span><span class="n">iRaw</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Value</span><span class="p">;</span>
-        <span class="o">.</span><span class="n">fbRTD_2</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">error</span><span class="p">;</span>
+        <span class="o">.</span><span class="n">fbRTD_2</span><span class="o">.</span><span class="n">bError</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Error</span><span class="p">;</span>
         <span class="o">.</span><span class="n">fbRTD_2</span><span class="o">.</span><span class="n">bUnderrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Underrange</span><span class="p">;</span>
         <span class="o">.</span><span class="n">fbRTD_2</span><span class="o">.</span><span class="n">bOverrange</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">AT1K4</span><span class="o">-</span><span class="n">EL3202</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span><span class="o">^</span><span class="n">RTD</span> <span class="n">Inputs</span> <span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Status</span><span class="o">^</span><span class="n">Overrange</span><span class="p">;</span>
 
