@@ -114,4 +114,4 @@ Encoder information:
 | AT1K4 | SN-11345 | 1085       | 1    | *MMS:04* |                   |          |              | 12 µm C  | 6 µm C   | 3 µm C   | 3 µm C   | 0.20 µm Al     |
 | AT1K4 | SN-11345 | 1070       | 2    | *MMS:03* |                   |          |              |          |          | 25 µm C  | 12 µm C  | 6 µm C         |
 | AT1K4 | SN-11345 | 1084       | 3    | *MMS:02* |                   |          |              |          | 50µm C   | 25 µm C  | 12 µm C  | 10 µm Si       |
-| AT1K4 | SN-11345 | 1072       | 4    | *MMS:01* | 25 µm C (?)       | 50 µm C  | 100 µm C (?) | 320µm Si | 160µm Si | 80µm Si  | 40 µm Si | 20 µm Si       |
+| AT1K4 | SN-11345 | 1072       | 4    | *MMS:01* | 25 µm C           | 50 µm C  | 100 µm C     | 320µm Si | 160µm Si | 80µm Si  | 40 µm Si | 20 µm Si       |
