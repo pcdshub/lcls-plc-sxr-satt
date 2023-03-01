@@ -18,6 +18,10 @@ DUT_MotionStage_Extras
     END_TYPE
 
 
+Related:
+    * `DUT_MotionStage_Extras`_
+
+
 ENUM_SXR_SATT_Position
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -34,6 +38,8 @@ ENUM_SXR_SATT_Position
         FILTER4 := 5
     );
     END_TYPE
+
+
 
 
 GVLs
@@ -100,6 +106,8 @@ Main
     END_VAR
 
 
+
+
 POUs
 ----
 
@@ -154,6 +162,10 @@ FB_SXR_SATT_PositionState
     enumSet := setState;
 
     END_FUNCTION_BLOCK
+
+
+Related:
+    * `ENUM_SXR_SATT_Position`_
 
 
 FB_SXR_SATT_Stage
@@ -239,6 +251,11 @@ FB_SXR_SATT_Stage
     END_FUNCTION_BLOCK
 
 
+Related:
+    * `DUT_MotionStage_Extras`_
+    * `FB_SXR_SATT_PositionState`_
+
+
 PRG_1_PlcTask
 ^^^^^^^^^^^^^
 
@@ -253,6 +270,10 @@ PRG_1_PlcTask
     PRG_2_AT1K4();
 
     END_PROGRAM
+
+
+Related:
+    * `PRG_2_AT1K4`_
 
 
 PRG_2_AT1K4
@@ -492,4 +513,9 @@ PRG_2_AT1K4
     fbStage4(stAxis:=Main.M4, nEnableMode:=nEnableMode);
 
     END_PROGRAM
+
+
+Related:
+    * `FB_SXR_SATT_Stage`_
+    * `Main`_
 
